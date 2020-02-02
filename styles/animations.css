@@ -6,13 +6,6 @@
 .animation-left {
   width: 14em;
 }
-
-@media (max-width: 575.98px) { 
-  .animation-left {
-    width: 20%;  
-  }
-}
-
 .animation-left img {
     width: 100%;
 }
@@ -21,13 +14,24 @@
   vertical-align: bottom;
 }
 
+.animation-left, .animation-right {
+  display: inline-block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) { 
+  .animation-left {
+    width: 20%;  
+  }
   .animation-right {
     width: 60%;
     margin-left: 2%;
   }
 }
 
-.animation-left, .animation-right {
-  display: inline-block;
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .animation-left {
+    width: 8rem;
+  }
 }
