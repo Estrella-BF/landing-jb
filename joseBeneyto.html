@@ -6,48 +6,94 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/general.css">
-  <link rel="stylesheet" href="./styles/nav-bar.css">
   <link rel="stylesheet" href="./styles/texts.css">
+  <link rel="stylesheet" href="./styles/nav-bar.css">
   <title>Document</title>
 </head>
 <body>
-  <nav class="navbar nav-bar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="nav-bar__content collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lo que hago</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Terapias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Testimoniales</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="menu-sticky">
+    <nav class="navbar nav-bar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-bar__content collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatIDo">Lo que hago</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terapias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimoniales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+    <div class="static">
+      <div class="static__box margin only-mobile">
+        <div class="static__box--logo-small">
+          <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111" target="_blank">
+            <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
+          </a>
+        </div>
+        <div class="static__box--text cursor">
+          Click aquí citas
+          <br />
+          947240692           
+        </div>        
+      </div>
+      <div class="static__box mb-1"> 
+        <div class="static__box--logo-big">
+          <img alt="logo" class="img-fluid" src="./images/logo elegido.png" />
+        </div>   
+      </div>
+      <nav class="menu only-desktop">
+        <ul class="">
+          <li><a href="#">Inicio</a></li><li>
+            <a href="#">Acerca de mi</a></li><li>
+            <a href="#whatIDo">Lo que hago</a></li><li>
+            <a href="#">Terapias</a></li><li>
+            <a href="#">Testimoniales</a></li><li>
+            <a href="#">Blog</a></li><li>
+            <a href="#">Contacto</a></li>
+        </ul>
+        <div class="static__box text-center only-desktop">
+          <div class="static__box--logo-small">
+            <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111" target="_blank">
+              <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
+            </a>
+          </div>
+          <div class="static__box--text cursor">
+            Click aquí citas
+            <br />
+            947240692           
+          </div>        
+        </div>
+      </nav>
+    </div>  
+  </div>
+
+  
 
   <!--Sobre mi-->
   <div class="introduction">
     <div class="container-flex">
       <div class="row px-5 d-block d-sm-none">
-        <div class="col-sm-12">
+        <div class="col-sm-12 p-0">
           <div class="">
             <img alt="Jose andres beneyto" class="img-fluid" src="./images/escritorio.png" />
             <p class="quotes">
@@ -56,53 +102,15 @@
           </div>
         </div>
       </div>
-      <div class="static">
-        <div class="static__box margin only-mobile">
-          <div class="static__box--logo-small">
-            <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
-          </div>
-          <div class="static__box--text">
-            Click aquí citas
-            <br />
-            947240692           
-          </div>        
-        </div>
-        <div class="static__box mb-1"> 
-          <div class="static__box--logo-big">
-            <img alt="logo" class="img-fluid" src="./images/logo elegido.png" />
-          </div>   
-        </div>
-        <nav class="menu only-desktop">
-          <ul class="">
-            <li>Inicio</li><li>
-              Acerca de mi</li><li>
-              Lo que hago</li><li>
-              Terapias</li><li>
-              Testimoniales</li><li>
-              Blog</li><li>
-              Contacto</li>
-          </ul>
-          <div class="static__box text-center only-desktop">
-            <div class="static__box--logo-small">
-              <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
-            </div>
-            <div class="static__box--text">
-              Click aquí citas
-              <br />
-              947240692           
-            </div>        
-          </div>
-        </nav>
-      </div>
       <div class="label-name">
         Acerca de mi
       </div>
       <div class="row px-5">
-        <div class="col-sm-12 col-md-6">
-          <div class="title">
-          José Andrés Beneyto Correa, Psicólogo
-          </div>
+        <div class="col-sm-12 col-md-6 p-0">
           <div class="spacing__text">
+            <div class="title">
+            José Andrés Beneyto Correa, Psicólogo
+            </div>
             <p>Licenciado en psicología con especialidad en clínica, 
               colegiado en el colegio de psicólogos del Perú. </p>
             <p>
@@ -127,7 +135,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6 text-center p-0">
           <div class="">
             <img alt="Jose andres beneyto" class="img-fluid" src="./images/escritorio.png" />
             <p class="quotes">
@@ -139,6 +147,54 @@
     </div>
   </div>
   <!--Sobre mi-->
+
+  <!--Lo que hago-->
+  <section id="whatIDo">
+    <div class="container-flex">
+      <div class="label-name">
+        Lo que hago
+      </div>
+      <div class="row px-5">
+        <div class="col-sm-12 col-md-7 p-0">
+          <div class="spacing__text">
+            <p>Me gusta centrarme en la persona, no en las etiquetas 
+              ni en los diagnósticos rígidos.</p>
+            <p>
+              Trabajo con personas únicas e irrepetibles, 
+              por lo tanto cada uno experimenta de manera diferente sus propias 
+              particularidades: dificultades, mejoras, cambios, deseos y objetivos.
+            </p>
+            <p>
+              Todos tenemos un mundo interno con problemáticas, 
+              necesidades e ilusiones distintas. Partiendo de esa premisa voy a 
+              diseñar contigo una estrategia personalizada para resolver lo urgente: 
+              el motivo que te llevó a la terapia y lo importante: cambios, ajustes, objetivos, 
+              obstáculos, trabajando en una psicología integrada, abarcando 
+              absolutamente todas tus áreas, comenzando desde el presente en el aquí y el ahora, 
+              viviendo un proceso de avance, teniendo un crecimiento sostenido.
+            </p>
+            <p>
+              De está manera contarás con las herramientas y estrategias 
+              necesarias para poder manejar tu vida, solucionar los problemas, 
+              descubrir y potenciar todas tus capacidades y habilidades y así mismo aprender 
+              a vivir en un proceso pleno llegando a tus objetivos.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 text-center p-0">
+          <div class="">
+            <img alt="Jose andres beneyto" class="img-fluid" src="./images/que hago.png" />
+            <p class="quotes">
+              “Vamos a hacerlo mejor... esta vez con amor y decisión”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--Lo que hago-->
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

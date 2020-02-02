@@ -14,7 +14,6 @@
 .nav-bar__content li {
   border-top: 1px solid #eef1f3;
   border-bottom: 1px solid #eef1f3;
-  padding: 0.3rem;
   font-weight: bold;
 }
 
@@ -34,15 +33,19 @@
 }
 
 .menu li {
-  color: #353A3D;
   cursor: pointer;
   border-bottom: 1px solid #353A3D;
   font-weight: bold;
   padding-bottom: 0.5em;
-  padding-right: 1em;    
-  display: inline-block;
+  padding-right: 1em;    display: inline-block;
 }
 
+.menu li a {
+  color: #353A3D;
+}
+.menu li a:hover {
+  text-decoration: none;
+}
 
 .menu li:last-child {
   padding-right: 0;
@@ -53,15 +56,25 @@
   color: #0072BC;
 }
 
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .nav-bar__content {
     background-color: #FFFFFF;
   }
+
+  .nav-bar__content li {
+    padding: 0 2rem;
+  }
 }
 
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .nav-bar__content {
     height: 4rem;
     visibility: hidden;
+  }
+
+  .nav-bar__content li {
+    padding: 0.3rem;
   }
 }
