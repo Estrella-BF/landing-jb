@@ -49,14 +49,6 @@ ul {
   font-weight: bold;
 }
 
-.images--group {
-  margin-top: 1rem;
-}
-
-.images--group p {
-  text-align: center;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .only-desktop {
@@ -74,10 +66,6 @@ ul {
 
   .introduction {
     margin-top: 2em;
-  }
-
-  .images--group p {
-    margin-bottom: 3rem;
   }
 }
 
@@ -99,15 +87,5 @@ ul {
 
   .introduction {
     margin-top: 6em;
-  }
-
-  .images--group {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .images--group p {
-    margin-top: 0.2rem;
-    text-align: center;
   }
 }
