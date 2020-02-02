@@ -1,7 +1,7 @@
 function slideInRight() {
 	setTimeout(() => {
 		const element = document.getElementById('slideInLeft');
-		element.setAttribute('class', 'animated slideInLeft show');
+		element.setAttribute('class', 'animated slideInLeft show  slower');
 		appear();
 	}, 1500)
 }
@@ -9,7 +9,7 @@ function slideInRight() {
 function appear() {
 	setTimeout(() => {
 		const element = document.getElementById('appear');
-		element.setAttribute('class', 'animated fadeIn show');
+		element.setAttribute('class', 'animated fadeIn show slower');
 		disappear();
 	}, 1500)
 }
@@ -23,7 +23,7 @@ function disappear() {
 		appear.setAttribute('class', 'animated fadeOut')
 		slideInRight.setAttribute('class', 'animated fadeOut');
 		redirect()	
-	}, 2000)
+	}, 3000)
 }
 
 function redirect() {
