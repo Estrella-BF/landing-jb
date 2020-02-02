@@ -1,0 +1,52 @@
+.quotes { 
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+.title {
+  color: #0072BC;    
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+
+}
+
+.spacing__text p {
+  margin-bottom: 1.5em;
+}
+
+.label-name {
+  background-color: #98A8B5;
+  color: #FFFFFF;
+  display: inline-block;
+  padding-right: 0.8em;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .title {
+    font-style: italic;   
+  }
+
+  .label-name {
+    font-size: 1.7rem;
+    padding-left: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .label-name {
+    font-size: 2rem;
+    padding-left: 5rem;
+    margin: 2rem 0;
+  }
+}

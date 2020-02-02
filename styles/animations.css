@@ -1,0 +1,33 @@
+.animation {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.animation-left {
+  width: 14em;
+}
+
+@media (max-width: 575.98px) { 
+  .animation-left {
+    width: 20%;  
+  }
+}
+
+.animation-left img {
+    width: 100%;
+}
+
+.animation-right {
+  vertical-align: bottom;
+}
+
+@media (max-width: 575.98px) { 
+  .animation-right {
+    width: 60%;
+    margin-left: 2%;
+  }
+}
+
+.animation-left, .animation-right {
+  display: inline-block;
+}
