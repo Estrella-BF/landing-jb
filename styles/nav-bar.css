@@ -22,6 +22,15 @@
   color: #353A3D !important;
 }
 
+.nav-bar__icons {
+  padding: 1rem 3rem;
+}
+
+.nav-bar__icons--img {
+  display: inline-block;
+  margin: 0 0.7rem;
+}
+
 .menu {
   padding-right: 4em;
   text-align: right;
@@ -42,7 +51,9 @@
 
 .menu li a {
   color: #353A3D;
+  font-size: 1.3rem;
 }
+
 .menu li a:hover {
   color: #0072BC;
   text-decoration: none;

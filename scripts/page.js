@@ -1,9 +1,12 @@
+  // Navigation
+  const navigationTabsName = ['aboutMe', 'whatIDo'];
 
-const arrowLeft = document.getElementById('arrowLeft');
+  const whatIDoButton = document.getElementById('whatIDo');
+  console.log(whatIDoButton)
+  whatIDoButton.addEventListener('click', redirigir, 'whatIDO');
 
-arrowLeft.addEventListener('click', arrowLeftEvent);
+  function redirigir(event, value) {
+    console.log(event)
+    console.log(value)
+  }
 
-function arrowLeftEvent() {
-  console.log('click')
-  console.log(document.getElementById('sliders').children)
-}

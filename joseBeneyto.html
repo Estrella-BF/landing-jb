@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles/texts.css">
   <link rel="stylesheet" href="./styles/images.css">
   <link rel="stylesheet" href="./styles/nav-bar.css">
+  <link rel="stylesheet" href="./assets/icons/my-icons-collection/font/flaticon.css">
   <title>Document</title>
 </head>
 <body>
@@ -43,6 +44,17 @@
           </li>
         </ul>
       </div>
+      <div class="nav-bar__icons">
+        <div class="nav-bar__icons--img">
+          <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-fb.svg"></img>
+        </div>
+        <div class="nav-bar__icons--img">
+          <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-insta.svg"></img>
+        </div>
+        <div class="nav-bar__icons--img">
+          <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-linkedin.svg"></img>
+        </div>
+      </div>
     </nav>  
     <div class="static">
       <div class="static__box margin only-mobile">
@@ -65,7 +77,7 @@
       <nav class="menu only-desktop">
         <ul class="">
           <li><a href="#">Inicio</a></li><li>
-            <a href="#">Acerca de mi</a></li><li>
+            <a href="#">Acerca de mi</a></li><li id="whatIDo">
             <a href="#whatIDo">Lo que hago</a></li><li>
             <a href="#therapy">Terapias</a></li><li>
             <a href="#testimonials">Testimoniales</a></li><li>
@@ -89,9 +101,9 @@
   </div>
 
   <!--About me-->
-  <div class="introduction">
+  <div id="aboutMe" class="introduction">
     <div class="label-name">
-      Acerca de mi
+      Acerca de mi 
     </div>
     <div class="container-fluid">
       <div class="row d-block d-sm-none">
@@ -148,7 +160,7 @@
   <!--End About me-->
 
   <!--What I do-->
-  <section id="whatIDo">
+  <section id="whatIDo" class="hidden">
     <div class="label-name">
       Lo que hago
     </div>
@@ -194,7 +206,7 @@
   <!--End What I do-->
 
   <!--Therapy-->
-  <section id="therapy">
+  <section id="therapy" class="hidden">
     <div class="label-name">
       Terapias
     </div>
