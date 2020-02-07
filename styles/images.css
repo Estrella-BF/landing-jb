@@ -1,18 +1,7 @@
-.slider {
-  display: flex;
-  justify-content: space-around;
-}
-
 .slider__group-images {
+  margin: 0 5rem;
   display: flex;
   justify-content: space-between;
-}
-
-.slider__arrow {
-  margin-right: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .slider__images {
@@ -45,7 +34,18 @@
   color: #0072BC;
 }
 
+.carousel-control-prev {
+  left: 15px !important;
+}
 
+.carousel-control-next {
+  right: 15px !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1 !important;
+  width: 2% !important;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
