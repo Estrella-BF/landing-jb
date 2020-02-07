@@ -5,7 +5,7 @@ function slideInRight() {
 		appear();
 	}, 1500)
 }
-
+ 
 function appear() {
 	setTimeout(() => {
 		const element = document.getElementById('appear');

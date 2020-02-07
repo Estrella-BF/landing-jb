@@ -32,26 +32,36 @@
 }
 
 .menu {
-  padding-right: 4em;
+  width: 100%;
   text-align: right;
-  display: flex;
 }
 
 .menu ul {
   margin-right: 2em;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .menu li {
   cursor: pointer;
   border-bottom: 1px solid #353A3D;
   font-weight: bold;
-  padding-bottom: 0.5em;
-  padding-right: 1em;    display: inline-block;
+  padding: 0 0.5rem;
+  padding-bottom: 0.5em; 
+  display: inline-block;
 }
 
 .menu li a {
   color: #353A3D;
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+
+.menu .active {
+  border-bottom: 3px solid #0072BC;
+}
+
+.menu .active a {
+  color: #0072BC !important;
 }
 
 .menu li a:hover {
@@ -61,6 +71,11 @@
 
 .menu li:last-child {
   padding-right: 0;
+}
+
+.menu li:hover {
+  border-bottom: 3px solid #0072BC;
+  color: #0072BC;
 }
 
 .menu li:hover {

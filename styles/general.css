@@ -80,16 +80,12 @@ ul {
   } 
 
   .static__box--logo-big {
-    width: 70%;
+    width: 100%;
   }
 
   .static {
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;
-  }  
-
-  .introduction {
-    margin-top: 6em;
   }
 }
