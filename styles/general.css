@@ -1,9 +1,7 @@
 body {
   color: #010101;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -112,4 +110,27 @@ ul {
 .page-link:active {
   background-color: #484e54;
   color: white;
+}
+
+.modal {
+  background-color: #98a8b5;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body {
+  padding: 0 4rem;
+}
+
+.subtitle-modal {
+  color: #0072BC;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.7rem;
 }

@@ -2,14 +2,15 @@
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  margin-top: 1em;
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 .title {
   display: inline-block;
   color: #0072BC;    
   font-size: 1.5rem;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .subtitle-text {
@@ -23,14 +24,22 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-left: 4rem;
+  padding-right: 3rem;
 }
 
 .spacing__text p {
   display: inline-block;
   font-size: 1.2rem;
   margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+.only__text p {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  text-align: justify;
 }
 
 .label-name {

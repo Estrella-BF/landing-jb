@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/images.css">
   <link rel="stylesheet" href="./styles/nav-bar.css">
   <link rel="stylesheet" href="./assets/icons/my-icons-collection/font/flaticon.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
   <title>Document</title>
 </head>
@@ -60,7 +61,7 @@
     <div class="static">
       <div class="static__box margin only-mobile">
         <div class="static__box--logo-small">
-          <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111" target="_blank">
+          <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111&text='Mensaje desde el usuario'" target="_blank">
             <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
           </a>
         </div>
@@ -121,7 +122,7 @@
         <div class="col-sm-12 col-md-8">
           <div class="spacing__text">
             <div class="title">
-            José Andrés Beneyto Correa, Psicólogo
+              Psicólogo José Andrés Beneyto Correa
             </div>
             <p>Licenciado en psicología con especialidad en clínica, 
               colegiado en el colegio de psicólogos del Perú. </p>
@@ -441,7 +442,7 @@
   <!--End Testimonials-->
 
   <!--Blog-->
-  <section id="blog" class="">
+  <section id="blog" class="hidden">
     <div class="label-name">
       Blog
     </div>
@@ -457,7 +458,7 @@
         <div class="col-sm-12 col-md-6">
           <div class="spacing__text">
             <ul class="blog__list">
-              <li>1.- ACEPTAR, CAMBIAR Y FLUIR</li>
+              <li  data-toggle="modal" data-target="#exampleModal">1.- ACEPTAR, CAMBIAR Y FLUIR</li >
 
               <li>2.-ANSIEDAD, APRENDIENDO A VIVIR EN PAZ</li> 
             
@@ -511,6 +512,51 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              Aceptar, cambiar y fluir
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Para poder cambiar es necesario aceptar y a partir de ahí estamos listos para que las cosas sucedan.
+                Es importante en este camino tomar buenas decisiones, perseverar y fluir.      
+              </p>
+    
+              <p>
+                La aceptación nunca es conformidad, si no más bien es sabiduría como un punto de partida, para la propia evolución.
+                Después de aceptar quienes somos, donde estamos, entonces decidiremos a donde vamos y ahí comienza el verdadero cambio.
+              </p>
+                
+              <p>Ojo no hay cambio sin aceptación: primero acepto después cambio.</p>
+  
+              <p>La vida se nos abre favorablemente, si hay disposición a la aceptación, 
+              donde luego tendremos el camino despejado para un verdadero cambio.</p> 
+  
+              <p>
+              No existe ni la suerte ni el destino. El camino lo va creando uno mismo. 
+              Así qué todo lo que te ocurra en un porcentaje alto es creación tuya. 
+              </p>
+  
+              <p>El destino no es lo qué te ha llevado hasta donde estás; sino más bien tus decisiones y acciones.</p>
+  
+              <p>Nunca es tarde, sólo existe el ahora y ahora es cuando.</p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
 
   </section>
   <!--End Blog-->
