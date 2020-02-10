@@ -12,6 +12,13 @@
   margin-bottom: 1em;
 }
 
+.subtitle-text {
+  color: #0072BC;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
 .spacing__text {
   height: 100%;
   display: flex;

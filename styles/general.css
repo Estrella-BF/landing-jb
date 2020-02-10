@@ -89,3 +89,27 @@ ul {
     padding: 2rem 3rem;
   }
 }
+
+.blog__list {
+  margin: 1rem 0 3rem 0;
+}
+
+.blog__list li {
+  cursor: pointer;
+  line-height: 2;
+}
+
+.page-link {
+  background-color: #98a8b5;
+  border: 1px solid #484e54;
+  color: #484e54;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-link:active {
+  background-color: #484e54;
+  color: white;
+}
