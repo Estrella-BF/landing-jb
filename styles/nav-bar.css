@@ -87,6 +87,7 @@
 @media (max-width: 575.98px) {
   .nav-bar__content {
     background-color: #FFFFFF;
+    height: 100vh;
   }
 
   .nav-bar__content li {

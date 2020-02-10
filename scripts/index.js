@@ -2,6 +2,9 @@ $('.carousel').carousel({
   interval: 2000
 })
 
+redirect();
+
+/*
 function slideInRight() {
 	setTimeout(() => {
 		const element = document.getElementById('slideInLeft');
@@ -37,3 +40,4 @@ function redirect() {
 }
 
 this.slideInRight();
+*/

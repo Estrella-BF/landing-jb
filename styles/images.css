@@ -34,6 +34,10 @@
   color: #0072BC;
 }
 
+.caousel__menu {
+  margin-top: 2.5rem;
+}
+
 .carousel-control-prev {
   left: 15px !important;
 }
@@ -47,11 +51,35 @@
   width: 2% !important;
 }
 
+.caousel__menu--img {
+  height: 234px;
+  padding: 0 2rem;
+}
+
+.carousel__menu--icon {
+  width: 20px;
+}
+
+.caousel__menu--quotes {
+  position: fixed;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 1rem;    
+  padding: 0 2rem;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .images--group p {
     margin-bottom: 3rem;
   }
+  
+  .carousel-control-prev {
+    left: -7px !important;
+  }
+  
 }
 
 /*  Large devices (desktops, 992px and up) */
