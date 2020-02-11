@@ -5,6 +5,7 @@
     'therapyDesktop', 
     'testimonialsDesktop', 
     'blogDesktop',
+    'contactDesktop'
   ];
 
   const navigationTabsNameMobile = [
@@ -12,10 +13,11 @@
     'whatIDoBtnMobile',
     'therapyMobile',
     'testimonialsMobile',
-    'blogMobile'
+    'blogMobile',
+    'contactMobile'
   ];
 
-  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog'];
+  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog', 'contact'];
 
   const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
   const aboutMeBtnMobile = document.getElementById('aboutMeBtnMobile');
@@ -31,6 +33,9 @@
 
   const blogDesktop = document.getElementById('blogDesktop');
   const blogMobile = document.getElementById('blogMobile');
+
+  const contactDesktop = document.getElementById('contactDesktop');
+  const contactMobile = document.getElementById('contactMobile');
 
 
   aboutMeBtnDesktop.addEventListener('click', () => {
@@ -72,14 +77,19 @@
   blogMobile.addEventListener('click', () => {
     this.activateClassResponsive('blogMobile');
   });
+  
+  contactDesktop.addEventListener('click', () => {
+    this.activateClass('contactDesktop');
+  });
+  
+  contactMobile.addEventListener('click', () => {
+    this.activateClassResponsive('contactMobile');
+  });
 
   function activateClass(value) {
     navigationTabsName.map((item, index) => {
       const button = document.getElementById(item);
       const block = document.getElementById(blocksName[index]);
-      console.log(block)
-      console.log(index)
-
 
       if (item === value) {
         button.setAttribute("class", 'active');
