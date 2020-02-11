@@ -23,6 +23,10 @@ ul {
   display: none;
 }
 
+.show-up {
+  display: inline-block;
+}
+
 .menu-sticky {
   position: sticky;
   top: 0;
@@ -69,6 +73,7 @@ ul {
   .footer__icons {
     display: flex;
     justify-content: center;
+    margin: 5rem 0 2rem;
   }
 
   .footer__icons span {
@@ -106,6 +111,9 @@ ul {
 .blog__list li {
   cursor: pointer;
   line-height: 2;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 .page-link {

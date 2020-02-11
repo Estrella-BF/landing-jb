@@ -18,7 +18,7 @@
   <div class="menu-sticky">
     <nav class="navbar nav-bar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" id="btn-collapse-mobile" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="nav-bar__content collapse navbar-collapse" id="navbarNav">
@@ -27,29 +27,29 @@
             <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="" id="aboutMeButton">Acerca de mi</a>
+            <a class="nav-link" id="aboutMeButton">Acerca de mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#whatIDo">Lo que hago</a>
+            <a class="nav-link">Lo que hago</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#therapy">Terapias</a>
+            <a class="nav-link">Terapias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimoniales</a>
+            <a class="nav-link">Testimoniales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link">Contacto</a>
           </li>
         </ul>
-        <div id="carouselExampleControls" class="carousel slide caousel__menu" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide caousel__menu" data-ride="carousel" data-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="caousel__menu--img">
-                <img alt="Jose andres beneyto" class="img-fluid" src="./images/escritorio.png" />
+                <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
               </div>
               <p class="caousel__menu--quotes">
               "La inteligencia es la capacidad de tomar decisiones y ser perseverante con ellas"
@@ -76,17 +76,21 @@
       </div>
       <div class="nav-bar__icons only-desktop">
         <div class="nav-bar__icons--img">
-          <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-fb.svg"></img>
+          <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+            <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-fb.svg"></img>
+          </a>
         </div>
         <div class="nav-bar__icons--img">
           <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-insta.svg"></img>
         </div>
         <div class="nav-bar__icons--img">
-          <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-linkedin.svg"></img>
+          <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+            <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-linkedin.svg"></img>
+          </a>
         </div>
       </div>
     </nav>  
-    <div class="static">
+    <div class="static" id="mobile-contact">
       <div class="static__box margin only-mobile text-center">
         <div class="static__box--logo-small">
           <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111&text='Mensaje desde el usuario'" target="_blank">
@@ -139,7 +143,7 @@
       <div class="row d-block d-sm-none only-desktop">
         <div class="col-sm-12">
           <div class="">
-            <img alt="Jose andres beneyto" class="img-fluid" src="./images/escritorio.png" />
+            <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
             <p class="quotes">
             "La inteligencia es la capacidad de tomar decisiones y ser perseverante con ellas"
             </p>
@@ -178,7 +182,7 @@
         </div>
         <div class="col-sm-12 col-md-4">
           <div class=" text-right">
-            <img alt="Jose andres beneyto" class="img-fluid" src="./images/escritorio.png" />
+            <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
             <p class="quotes">
               “Psicología pasión y vida”
             </p>
@@ -291,56 +295,66 @@
     <div class="label-name">
       Testimoniales
     </div>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"c>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="slider__group-images">
-            <div class="slider__images">
-              <div class="slider__images--title">
-                <p>Gonzalo</p>
-                <span>(30 años)</span>
-              </div>
-              <div class="slider__images--text">
-                “Gracias al proceso psicoterapéutico que llevé con José Andrés,
-                pu-de reconocer mis fortalezas y adquirí herramientas para lidiar
-                con la ansiedad que experimentaba en todo momento. Aprendí a
-                valorarme mucho más y a encontrar objetivos más claros para mi
-                vida personal y profesional.”
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Gonzalo</p>
+                      <span>(30 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Gracias al proceso psicoterapéutico que llevé con José Andrés,
+                      pu-de reconocer mis fortalezas y adquirí herramientas para lidiar
+                      con la ansiedad que experimentaba en todo momento. Aprendí a
+                      valorarme mucho más y a encontrar objetivos más claros para mi
+                      vida personal y profesional.”
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Maria José</p>
+                      <span>(37 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      José Andrés me ayudó a salir adelante de mis propios problemas,
+                      juntos estamos construyendo un presente con más paz. Es un
+                      psicólogo con el que he llegado rápido a los temas y es un exce-
+                      lente profesional. Las personas a mí alrededor han notado el
+                      cambio en mi.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Francesca</p>
+                      <span>(47 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Mi experiencia con José Andrés fue muy buena. Fui con mi
+                      esposo. Me amplió la visión de como es una relación. Lo que más
+                      me im-pactó de Jose fue que sacó mis sentimientos más
+                      profundos. Me di cuenta de que era lo que sentía. Nos ayudó
+                      bastante como pareja. Nos dio pautas para cambiar nuestro estilo
+                      de vida. A todas las personas que puedo se lo recomiendo.”
+                    </div>
+                  </div> 
+                </div>
               </div>
             </div>
-            <div class="slider__images">
-              <div class="slider__images--title">
-                <p>Maria José</p>
-                <span>(37 años)</span>
-              </div>
-              <div class="slider__images--text">
-                José Andrés me ayudó a salir adelante de mis propios problemas,
-                juntos estamos construyendo un presente con más paz. Es un
-                psicólogo con el que he llegado rápido a los temas y es un exce-
-                lente profesional. Las personas a mí alrededor han notado el
-                cambio en mi.
-              </div>
-            </div>
-            <div class="slider__images">
-              <div class="slider__images--title">
-                <p>Francesca</p>
-                <span>(47 años)</span>
-              </div>
-              <div class="slider__images--text">
-                “Mi experiencia con José Andrés fue muy buena. Fui con mi
-                esposo. Me amplió la visión de como es una relación. Lo que más
-                me im-pactó de Jose fue que sacó mis sentimientos más
-                profundos. Me di cuenta de que era lo que sentía. Nos ayudó
-                bastante como pareja. Nos dio pautas para cambiar nuestro estilo
-                de vida. A todas las personas que puedo se lo recomiendo.”
-              </div>
-            </div> 
           </div>
         </div>
         <div class="carousel-item">
           <div class="slider__group-images">  
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Verónica</p>
                 <span>(51 años)</span>
               </div>
@@ -354,7 +368,7 @@
               </div>
             </div>   
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Alex</p>
                 <span>(27 años)</span>
               </div>
@@ -368,7 +382,7 @@
               </div> 
             </div>
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>María Pía</p>
                 <span>(30 años)</span>
               </div>
@@ -385,7 +399,7 @@
         <div class="carousel-item">
           <div class="slider__group-images">
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Carmen</p>
                 <span>(70 años)</span>
               </div>
@@ -398,7 +412,7 @@
               </div>
             </div>       
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Vanessa</p>
                 <span>(28 años)</span>
               </div>
@@ -412,7 +426,7 @@
               </div>
             </div>         
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Cecilia</p>
                 <span>(46 años)</span>
               </div>
@@ -429,7 +443,7 @@
         <div class="carousel-item">
           <div class="slider__group-images">
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Lucía</p>
                 <span>(69 años)</span>
               </div>
@@ -443,7 +457,7 @@
               </div>
             </div>         
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>André</p>
                 <span>(45 años)</span>
               </div>
@@ -455,7 +469,7 @@
               </div>
             </div>         
             <div class="slider__images">
-              <div class="slider__images--title">
+              <div class="slider__images--title text-center">
                 <p>Francisco</p>
                 <span>(39 años)</span>
               </div>
@@ -489,15 +503,11 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-md-12">
+        <div class="col-sm-12 col-md-6">
           <div class="spacing__text">
             <div class="subtitle-text">
               Artículos
             </div>            
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="spacing__text">
             <ul class="blog__list">
               <li  data-toggle="modal" data-target="#exampleModal">1.- ACEPTAR, CAMBIAR Y FLUIR</li >
 
@@ -525,7 +535,7 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <div class="">
-            <img alt="logo" class="img-fluid" src="./images/nueva foto blog.png" />
+            <img alt="logo" class="img-fluid" src="./images/blog-img.png" />
           </div>
         </div>
         <div class="col-sm-12 col-md-12">

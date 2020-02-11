@@ -47,3 +47,21 @@
     })
   }
 
+  const btnMobile = document.getElementById('btn-collapse-mobile');
+  const collapseContainer = document.getElementById('navbarNav');
+  const aboutMeBlock = document.getElementById('aboutMe');
+  const aboutMeBlockClassNames = aboutMeBlock.getAttribute('class');
+
+  const mobileContact = document.getElementById('mobile-contact');
+  const mobileContactClassNames = mobileContact.getAttribute('class');
+
+  btnMobile.addEventListener('click', function() {
+    const classNames = collapseContainer.getAttribute('class');
+    if (!classNames.includes('show')) {
+      aboutMeBlock.className = 'hidden';
+      mobileContact.className = 'hidden';
+    } else {
+      aboutMeBlock.className = aboutMeBlockClassNames;
+      mobileContact.className = mobileContactClassNames;
+    }
+  })
