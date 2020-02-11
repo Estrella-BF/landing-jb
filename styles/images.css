@@ -84,11 +84,37 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .images--group p {
-    margin-bottom: 3rem;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    margin: 0.5rem 0 5rem;
   }
   
   .carousel-control-prev {
     left: -7px !important;
+  }
+  
+  .slider__group-images {
+    margin: 0 1rem;
+  }
+
+  .slider__images {
+    height: 350px;
+    margin-bottom: 3rem;
+  }
+
+  .slider__images--title p {
+    font-size: 1.6rem;
+  }
+
+  .slider__images--title span {
+    font-size: 1.3rem;
+    margin-left: 0.2rem;
+  }
+
+  .slider__images--text {
+    font-size: 1rem;
   }
   
 }

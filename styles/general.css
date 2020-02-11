@@ -38,10 +38,6 @@ ul {
   background-color: white;
 }
 
-.face-img {
-  width: 42rem;
-}
-
 .static__box {
   display: inline-block;
 }
@@ -59,55 +55,6 @@ ul {
   font-weight: bold;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575.98px) {
-  .only-desktop {
-    display: none !important;
-  }
-
-  .static__box--logo-big {
-    width: 100%;
-  }
-
-  .static {
-    text-align: end;
-    padding: 1rem;
-  }
-
-  .footer__icons {
-    display: flex;
-    justify-content: center;
-    margin: 5rem 0 2rem;
-  }
-
-  .footer__icons span {
-    color: #0072BC;
-  }
-
-  .footer__icons .flaticon-facebook:before, 
-  .footer__icons .flaticon-linkedin:before, 
-  .footer__icons .flaticon-instagram:before {
-    font-size: 2.5rem;
-  }
-}
-
-/*  Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {   
-  .only-mobile {
-    display: none !important;
-  } 
-
-  .static__box--logo-big {
-    width: 100%;
-  }
-
-  .static {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 3rem;
-  }
-}
-
 .blog__list {
   margin: 1rem 0 3rem 0;
 }
@@ -118,6 +65,10 @@ ul {
   font-weight: 600;
   font-style: italic;
   font-size: 1.6rem;
+}
+
+.blog-quote-img {
+  margin-bottom: 3rem;
 }
 
 .page-link {
@@ -161,4 +112,74 @@ ul {
 
 .navigation {
   align-items: center;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .only-desktop {
+    display: none !important;
+  }
+
+  .static__box--logo-big {
+    width: 100%;
+  }
+
+  .static {
+    text-align: end;
+    padding: 1rem;
+  }
+
+  .blog__list li {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .page-link {
+    padding: 0.6rem 1rem !important;
+  }
+
+  .navigation {
+    margin: 1rem 0 2rem 0;
+  }
+  
+
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 2rem;
+  }
+
+  .footer__icons span {
+    color: #0072BC;
+  }
+
+  .footer__icons .flaticon-facebook:before, 
+  .footer__icons .flaticon-linkedin:before, 
+  .footer__icons .flaticon-instagram:before {
+    font-size: 2.5rem;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {   
+  .only-mobile {
+    display: none !important;
+  } 
+
+  .static__box--logo-big {
+    width: 100%;
+  }
+
+  .static {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+  }
+
+  .face-img {
+    width: 42rem;
+  }
 }

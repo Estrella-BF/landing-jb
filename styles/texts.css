@@ -57,6 +57,7 @@
   .title {
     font-style: italic; 
     font-weight: 600;  
+    font-size: 1.4rem;
   }
 
   .label-name {
@@ -91,6 +92,11 @@
     margin-top: 0.5rem;
     font-size: 1.1rem;
   }
+
+  .subtitle-text {
+    font-size: 1.7rem;
+  }
+  
 }
 
 

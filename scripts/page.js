@@ -16,9 +16,6 @@
   ];
 
   const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog'];
-  
-  const aboutMeButton = document.getElementById('aboutMeBtnDesktop');
-  aboutMeButton.setAttribute("class", "active");
 
   const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
   const aboutMeBtnMobile = document.getElementById('aboutMeBtnMobile');
@@ -103,9 +100,9 @@
         block.setAttribute("class", "");
       } else {
         block.setAttribute("class", "hidden");
-        console.log(block)
       }
-    })
+    });
+    buttonMobileMenu();
   }
   
   const btnMobile = document.getElementById('btn-collapse-mobile');
@@ -116,13 +113,13 @@
   const mobileContact = document.getElementById('mobile-contact');
   const mobileContactClassNames = mobileContact.getAttribute('class');
 
-  btnMobile.addEventListener('click', function() {
+  function buttonMobileMenu() {
     const classNames = collapseContainer.getAttribute('class');
-    if (!classNames.includes('show')) {
-      aboutMeBlock.className = 'hidden';
-      mobileContact.className = 'hidden';
+    if (classNames.includes('show')) {
+      // si se cerró
+      collapseContainer.setAttribute("class", "nav-bar__content navbar-collapse collapse");
     } else {
-      aboutMeBlock.className = aboutMeBlockClassNames;
-      mobileContact.className = mobileContactClassNames;
+      collapseContainer.setAttribute("class", "nav-bar__content navbar-collapse collapse show");
     }
-  })
+
+  }
