@@ -113,6 +113,9 @@ ul {
 .navigation {
   align-items: center;
 }
+.contact__background {
+  background-image: linear-gradient(180deg, #ffffff 43%, #bdbdbd 20%);
+}
 
 .contact_info--whatsapp .icon {
   text-align: center;
@@ -129,6 +132,7 @@ ul {
 
 .contact_info--details {
   border: 1px solid #a7a6a6;
+  background-color: white;
   border-radius: 25px;
   padding: 1rem;
   width: 70%;
