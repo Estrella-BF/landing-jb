@@ -38,6 +38,10 @@ ul {
   background-color: white;
 }
 
+.face-img {
+  width: 42rem;
+}
+
 .static__box {
   display: inline-block;
 }
@@ -113,13 +117,14 @@ ul {
   line-height: 2;
   font-weight: 600;
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
 
 .page-link {
   background-color: #98a8b5;
   border: 1px solid #484e54;
   color: #484e54;
+  padding: 1rem 1.5rem !important;
 }
 
 .page-link:focus {
@@ -152,4 +157,8 @@ ul {
   font-style: italic;
   font-weight: 500;
   font-size: 1.7rem;
+}
+
+.navigation {
+  align-items: center;
 }

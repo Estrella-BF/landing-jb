@@ -2,14 +2,14 @@
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  margin-top: 1rem;
-  font-size: 1.4rem;
+  margin-top: 0.3rem;
+  font-size: 1.8rem;
 }
 
 .title {
   display: inline-block;
   color: #0072BC;    
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
 }
 
@@ -17,7 +17,7 @@
   color: #0072BC;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
 }
 
 .spacing__text {
@@ -30,8 +30,8 @@
 
 .spacing__text p {
   display: inline-block;
-  font-size: 1.2rem;
-  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
 
@@ -97,10 +97,11 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .label-name {
-    font-size: 2rem;
-    padding-left: 5rem;
+    font-size: 2.6rem;
+    padding: 0.7rem 3rem 0.5rem 6rem;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    font-weight: 600;
   }
 
   .subtitle {
