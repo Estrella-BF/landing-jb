@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <section id="tarifa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Tarifas</h1>
+          <p>Consulta las tarifas LabCar aqui</p>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="puntoPartida" class="glyphicon glyphicon-record"></label>
+              <input id="puntoPartida" type="text" class="form-control" placeholder="Ingrese su punto de partia">
+            </div>
+            <div class="form-group">
+              <label for="puntoDestino" class="glyphicon glyphicon-send"></label>
+              <input id="puntoDestino" type="text" class="form-control" placeholder="Ingrese su destino">
+            </div>
+            <div class="form-group">
+              <button id= "trazarRuta" type="submit" class="btn btn-default col-md-offset-3">¡Trazar ruta!</button>
+              <div id="calcTarifa" class="col-md-offset-3"></div>
+            </div>
+          </form>
+        </div>
+        <div class="thumbnail col-md-6 hidden-xs">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYezvZfBcThUhrpyzfW_xRVj-aljaRvNw&callback=initMap&libraries=places"
+  type="text/javascript"></script>
+  <script src="./scripts/maps.js"></script>
+</body>
+</html>

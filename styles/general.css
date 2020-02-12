@@ -6,6 +6,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Set the size of the div element that contains the map */
+#map {
+height: 400px;  /* The height is 400 pixels */
+width: 100%;  /* The width is the width of the web page */
+}
+
+input:-moz-read-only { /* For Firefox */
+  background-color: white !important;
+}
+
+input:read-only {
+  background-color: white !important;
+}
+
+.form-group {
+  display: flex;
+  width: 75%;
+}
+
+.form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-color: white;
+  border-left-style: none;
+}
+
+.label-input {
+  border: 1px solid #ced4da;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  border-right-color: white;
+  border-right-style: none;
+  border-right-width: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.label-input img {
+  width: 1.8rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -113,7 +155,9 @@ ul {
 .navigation {
   align-items: center;
 }
+
 .contact__background {
+  padding-bottom: 2rem;
   background-image: linear-gradient(180deg, #ffffff 43%, #bdbdbd 20%);
 }
 
@@ -172,6 +216,10 @@ ul {
   font-weight: 600;
   font-size: 1.2rem;
   margin-top: 0.5rem;
+}
+
+.contact__map {
+  width: 75%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
