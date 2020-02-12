@@ -5,8 +5,9 @@
 }
 
 .slider__images {
+  margin: 0 1rem;
   background-color: #e6f1f8;
-  padding: 1.5em;
+  padding: 1.7em;
   border-radius: 11px;
   height: 600px;
 }

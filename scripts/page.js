@@ -38,6 +38,8 @@
   const contactMobile = document.getElementById('contactMobile');
 
 
+  this.activateClass('aboutMeBtnDesktop');
+  
   aboutMeBtnDesktop.addEventListener('click', () => {
     this.activateClass('aboutMeBtnDesktop');
   });

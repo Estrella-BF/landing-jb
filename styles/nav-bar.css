@@ -29,6 +29,7 @@
 
 .nav-bar__icons--img {
   display: inline-block;
+  margin: 0 0.7rem;
 }
 
 .menu {
@@ -46,18 +47,18 @@
   cursor: pointer;
   border-bottom: 1px solid #353A3D;
   font-weight: bold;
-  padding: 0 0.5rem;
+  padding: 0 1.2rem;
   padding-bottom: 0.5em; 
   display: inline-block;
 }
 
 .menu li a {
   color: #353A3D;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .menu .active {
-  border-bottom: 3px solid #0072BC;
+  border-bottom: 5px solid #0072BC;
 }
 
 .menu .active a {
@@ -74,12 +75,7 @@
 }
 
 .menu li:hover {
-  border-bottom: 3px solid #0072BC;
-  color: #0072BC;
-}
-
-.menu li:hover {
-  border-bottom: 3px solid #0072BC;
+  border-bottom: 5px solid #0072BC;
   color: #0072BC;
 }
 
