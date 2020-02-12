@@ -94,8 +94,13 @@
   
   .carousel-control-prev {
     left: -7px !important;
+    padding-bottom: 4rem;
   }
   
+  .carousel-control-next {
+    padding-bottom: 4rem;
+  }
+
   .slider__group-images {
     margin: 0 1rem;
   }

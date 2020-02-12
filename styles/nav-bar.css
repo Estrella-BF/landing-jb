@@ -83,6 +83,7 @@
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .nav-bar__content {

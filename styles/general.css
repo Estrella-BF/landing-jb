@@ -154,7 +154,32 @@ ul {
 }
 
 .navigation {
-  align-items: center;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.navigation__item {
+  background-color: #98a8b5;
+  border: 1px solid #4c4c4c;
+  display: unset;
+  padding: 2rem 2.5rem;
+}
+
+.navigation__item a, .navigation__item span {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.navigation__item a {
+  color: #4c4c4c;
+}
+
+.disabled-pagination {
+  background-color: #7a8996;
+}
+.disabled-pagination a {
+  color: #4c4c4c;
 }
 
 .contact__background {
