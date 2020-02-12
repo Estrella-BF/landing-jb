@@ -184,7 +184,6 @@ ul {
 
 .contact__background {
   padding-bottom: 2rem;
-  background-image: linear-gradient(180deg, #ffffff 43%, #bdbdbd 20%);
 }
 
 .contact_info--whatsapp .icon {
@@ -205,7 +204,6 @@ ul {
   background-color: white;
   border-radius: 25px;
   padding: 1rem;
-  width: 70%;
   text-align: center;
 }
 
@@ -219,7 +217,6 @@ ul {
   color: #0072BC;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.7rem;
 } 
 
 .contact_info--details-img {
@@ -298,6 +295,42 @@ ul {
   .footer__icons .flaticon-instagram:before {
     font-size: 2.5rem;
   }
+
+  .contact__background {
+    background-color: #cbd2da;
+  }
+
+  .contact_info--details {
+    width: 95%;
+    margin-bottom: 5rem;
+  }
+
+  .contact_info--subtitle-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  } 
+
+  .contact-text--big {
+    font-size: 1.1rem;
+    color: #555555;
+  }
+  .contact-text--small {
+    font-size: 0.9rem;
+    color: #555555;
+  }
+  .label-input {
+    background-color: white;
+  }
+  .form-group, .contact__map {
+    width: 100%;
+  }
+  .contact__map {
+    margin-top: 3rem;
+  }
+  .contact-button {
+    justify-content: center;
+  }
 }
 
 /*  Large devices (desktops, 992px and up) */
@@ -319,4 +352,16 @@ ul {
   .face-img {
     width: 42rem;
   }
+
+  .contact__background {
+    background-image: linear-gradient(180deg, #ffffff 43%, #cbd2da 20%);
+  }
+
+  .contact_info--details {
+    width: 70%;
+  }
+
+  .contact_info--subtitle-text {
+    font-size: 1.7rem;
+  } 
 }
