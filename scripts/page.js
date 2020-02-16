@@ -101,15 +101,20 @@
         block.setAttribute("class", "hidden");
       }
 
-      const whatsApp = document.getElementById('whastapp-desktop');
+      isContactSection(value);
 
-      if (value === 'contactDesktop') {
-        whatsApp.setAttribute("class", "static__box text-center only-desktop img-hidden");
-      } else {
-        whatsApp.setAttribute("class", "static__box text-center only-desktop");
-      }
       window.scrollTo(0, 0)
     })
+  }
+
+  function isContactSection(value) {
+      const whatsApp = document.getElementById('whastapp-desktop');
+
+    if (value === 'contactDesktop') {
+      whatsApp.setAttribute("class", "static__box text-center only-desktop img-hidden");
+    } else {
+      whatsApp.setAttribute("class", "static__box text-center only-desktop");
+    }
   }
 
 

@@ -91,6 +91,11 @@
     font-weight: 600;
     margin: 0.5rem 0 5rem;
   }
+
+  .footer-small {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
   
   .carousel-control-prev {
     left: -7px !important;
@@ -128,6 +133,11 @@
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .footer-small {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
   .images--group p {
     margin-top: 0.2rem;
     text-align: center;
