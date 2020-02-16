@@ -137,6 +137,10 @@ ul {
   margin-right: 15px;
 }
 
+.blog__list li:hover {
+  color: #36aee5;
+}
+
 .blog-quote-img {
   margin-bottom: 3rem;
 }
@@ -177,8 +181,13 @@ ul {
 .subtitle-modal {
   color: #0072BC;
   font-style: italic;
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-transform: lowercase;
+}
+
+.subtitle-modal::first-letter {
+  text-transform: capitalize;
 }
 
 .navigation {
@@ -276,6 +285,10 @@ ul {
 
 .contact__map {
   width: 75%;
+}
+
+.footer {
+  background-color: black;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -387,6 +400,7 @@ ul {
 
   .contact__background {
     background-image: linear-gradient(180deg, #ffffff 43%, #cbd2da 20%);
+    height: 80vh;
   }
 
   .contact_info--details {
