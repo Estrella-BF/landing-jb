@@ -108,7 +108,24 @@ ul {
 }
 
 .blog__list {
+  height: 28%;
   margin: 1rem 0 3rem 0;
+  overflow: -webkit-paged-y;
+  overflow-y: scroll;
+}
+
+.blog__list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.blog__list::-webkit-scrollbar-track {
+  background-color: #cbd2da;
+  border-radius: 10px;
+}
+
+.blog__list::-webkit-scrollbar-thumb {
+  background-color: #36aee5;
+  border-radius: 10px;
 }
 
 .blog__list li {
@@ -117,6 +134,7 @@ ul {
   font-weight: 600;
   font-style: italic;
   font-size: 1.6rem;
+  margin-right: 15px;
 }
 
 .blog-quote-img {
@@ -264,6 +282,10 @@ ul {
 @media (max-width: 575.98px) {
   .only-desktop {
     display: none !important;
+  }
+
+  .blog__list::-webkit-scrollbar {
+    width: 7px;
   }
 
   .static__box--logo-big {
