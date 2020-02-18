@@ -7,13 +7,23 @@
 
 .animation-left {
   width: 14em;
-	-webkit-animation: slide-left 0.5s ease-in-out both;
-	animation: slide-left 0.5s ease-in-out both;
+	-webkit-animation: slide-left 1s ease-in-out both;
+	animation: slide-left 1s ease-in-out both;
+}
+
+.animation-left-style {
+  width: 8em;
+
 }
 
 .animation-right {
   position: absolute;    
   transform: translate(-3rem, -5rem);
+}
+
+.animation-right-up {
+  position: absolute;    
+  transform: translate(-3rem, -12rem);
 }
 
 .animation-left, .animation-right {
