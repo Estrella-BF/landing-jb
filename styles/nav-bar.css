@@ -37,6 +37,10 @@
   text-align: right;
 }
 
+.menu .dropdown-link {
+  padding-bottom: 0;
+}
+
 .menu ul {
   margin-right: 2em;
   display: inline-block;

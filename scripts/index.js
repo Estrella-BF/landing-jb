@@ -2,7 +2,7 @@ $('.carousel').carousel({
   interval: 2000
 })
 
-
+window.location.href = './joseBeneyto.html'
 /* 
 function slideInRight() {
 	setTimeout(() => {
