@@ -116,14 +116,18 @@
           <li><a href="#">Inicio</a></li><li id="aboutMeBtnDesktop">
             <a href="">Acerca de mi</a></li><li id="whatIDoBtnDesktop">
             <a>Lo que hago</a></li><li>
-              <a class="nav-link" 
+              <a class="nav-link dropdown-link" 
               href="#" 
               id="navbarDropdownMenuLink" 
               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Servicios</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Terapias</a>
-                <a class="dropdown-item" href="#">Charlas y Talleres</a>
+                <div id="therapyDesktop">
+                  <a class="dropdown-item">Terapias</a>
+                </div>
+                <div id="workshopsDesktop">
+                  <a class="dropdown-item" href="#">Charlas y Talleres</a>
+                </div>
               </div>
             </li><li id="testimonialsDesktop">
             <a>Testimoniales</a></li><li id="blogDesktop">
@@ -2141,7 +2145,7 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
 
   </section>
   <!--End Blog-->
-
+  
   <!--Contact us-->
   <section id="contact" class="hidden">
     <div class="container-fluid contact__background">
@@ -2228,9 +2232,25 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
   </section>
   <!--End Contact us-->
 
+  <!--Workshop us-->
+  <section id="workshops" class="hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="no-info">
+            Si deseas información sobre las Charlas y Talleres
+            <br>
+            comunícate al +51 936528321
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Workshop us-->
+
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYezvZfBcThUhrpyzfW_xRVj-aljaRvNw&callback=initMap&libraries=places"
   type="text/javascript"></script>
-  <script src="./scripts/maps.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -5,7 +5,8 @@
     'therapyDesktop', 
     'testimonialsDesktop', 
     'blogDesktop',
-    'contactDesktop'
+    'contactDesktop',
+    'workshopsDesktop'
   ];
 
   const navigationTabsNameMobile = [
@@ -14,10 +15,11 @@
     'therapyMobile',
     'testimonialsMobile',
     'blogMobile',
-    'contactMobile'
+    'contactMobile',
+    'workshopsDesktop'
   ];
 
-  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog', 'contact'];
+  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog', 'contact', 'workshops'];
 
   const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
   const aboutMeBtnMobile = document.getElementById('aboutMeBtnMobile');
@@ -37,6 +39,7 @@
   const contactDesktop = document.getElementById('contactDesktop');
   const contactMobile = document.getElementById('contactMobile');
 
+  const workshopsDesktop = document.getElementById('workshopsDesktop');
 
   this.activateClass('aboutMeBtnDesktop');
 
@@ -88,14 +91,23 @@
     this.activateClassResponsive('contactMobile');
   });
 
+  workshopsDesktop.addEventListener('click', () => {
+    this.activateClass('workshopsDesktop');
+  });
+
   function activateClass(value) {
     navigationTabsName.map((item, index) => {
       const button = document.getElementById(item);
       const block = document.getElementById(blocksName[index]);
 
-      if (item === value) {
-        button.setAttribute("class", 'active');
-        block.setAttribute("class", "");
+      if (item === value) {  
+        if (value === 'therapyDesktop' || value === 'workshopsDesktop') {
+          button.setAttribute("class", 'dropdown-active');
+          block.setAttribute("class", "");   
+        } else {
+          button.setAttribute("class", 'active');
+          block.setAttribute("class", "");   
+        }
       } else {
         button.setAttribute("class", "");
         block.setAttribute("class", "hidden");

@@ -20,6 +20,16 @@ input:read-only {
   background-color: white !important;
 }
 
+.no-info {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  color: #6b6d6e;
+  font-style: italic;
+  text-align: center;
+}
+
 .form-group {
   display: flex;
   width: 75%;
