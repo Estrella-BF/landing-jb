@@ -7,13 +7,13 @@
 
 .animation-left {
   width: 14em;
-}
-.animation-left img {
-    width: 100%;
+	-webkit-animation: slide-left 0.5s ease-in-out both;
+	animation: slide-left 0.5s ease-in-out both;
 }
 
 .animation-right {
-  vertical-align: bottom;
+  position: absolute;    
+  transform: translate(-3rem, -5rem);
 }
 
 .animation-left, .animation-right {
@@ -35,5 +35,45 @@
 @media (min-width: 992px) { 
   .animation-left {
     width: 8rem;
+  }
+}
+
+.mover {
+  animation: move 5s ease-in-out;
+}
+
+@keyframes move {
+  from {
+    outline: 5px solid blueviolet;
+  }
+
+  50% {
+    opacity: 0;
+    outline: 5px solid pink;
+  }
+  to  {
+    transform: translate(-100px, 0);
+    outline: 5px solid green;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
 }

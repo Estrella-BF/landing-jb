@@ -5,8 +5,9 @@
 }
 
 .slider__images {
+  margin: 0 1rem;
   background-color: #e6f1f8;
-  padding: 1.5em;
+  padding: 1.7em;
   border-radius: 11px;
   height: 600px;
 }
@@ -90,11 +91,21 @@
     font-weight: 600;
     margin: 0.5rem 0 5rem;
   }
+
+  .footer-small {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
   
   .carousel-control-prev {
     left: -7px !important;
+    padding-bottom: 4rem;
   }
   
+  .carousel-control-next {
+    padding-bottom: 4rem;
+  }
+
   .slider__group-images {
     margin: 0 1rem;
   }
@@ -122,6 +133,11 @@
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .footer-small {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
   .images--group p {
     margin-top: 0.2rem;
     text-align: center;

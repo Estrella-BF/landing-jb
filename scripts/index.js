@@ -3,7 +3,6 @@ $('.carousel').carousel({
 })
 
 window.location.href = './joseBeneyto.html'
-
 /* 
 function slideInRight() {
 	setTimeout(() => {
