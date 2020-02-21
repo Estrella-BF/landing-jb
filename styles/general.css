@@ -12,6 +12,31 @@ height: 400px;  /* The height is 400 pixels */
 width: 100%;  /* The width is the width of the web page */
 }
 
+.menu-item-btn:focus-within {
+  border-bottom: 5px solid #0072BC;
+}
+.menu-item-btn a:focus-within {
+  color: #0072BC !important;
+}
+
+.sub-menu-active a {
+  color: #0072BC !important;
+}
+
+.no-info {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  color: #6b6d6e;
+  font-style: italic;
+  text-align: center;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid grey;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
