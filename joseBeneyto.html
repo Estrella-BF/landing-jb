@@ -32,8 +32,14 @@
           <li class="nav-item" id="whatIDoBtnMobile">
             <a class="nav-link">Lo que hago</a>
           </li>
-          <li class="nav-item" id="therapyMobile">
-            <a class="nav-link">Terapias</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Terapias</a>
+              <a class="dropdown-item" href="#">Charlas y Talleres</a>
+            </div>
           </li>
           <li class="nav-item" id="testimonialsMobile">
             <a class="nav-link">Testimoniales</a>
@@ -115,7 +121,19 @@
           <li><a href="#">Inicio</a></li><li id="aboutMeBtnDesktop">
             <a href="">Acerca de mi</a></li><li id="whatIDoBtnDesktop">
             <a>Lo que hago</a></li><li id="therapyDesktop">
-            <a>Terapias</a></li><li id="testimonialsDesktop">
+            <a a class="nav-link dropdown-link" 
+            href="#" 
+            id="navbarDropdownMenuLink" 
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div id="therapyDesktop">
+                <a class="dropdown-item">Terapias</a>
+              </div>
+              <div id="workshopsDesktop">
+                <a class="dropdown-item" href="#">Charlas y Talleres</a>
+              </div>
+            </div>
+          </li><li id="testimonialsDesktop">
             <a>Testimoniales</a></li><li id="blogDesktop">
             <a>Blog</a></li><li id="contactDesktop">
             <a>Contacto</a></li>

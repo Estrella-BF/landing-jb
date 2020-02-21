@@ -23,6 +23,11 @@
   cursor: pointer;
 }
 
+.nav-bar__content .dropdown-item {
+  padding-left: 5rem;
+  font-weight: 700;
+}
+
 .nav-bar__icons {
   padding: 1rem 3rem;
 }
@@ -30,6 +35,12 @@
 .nav-bar__icons--img {
   display: inline-block;
   margin: 0 0.7rem;
+}
+
+.dropdown-menu {
+  border: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .menu {
