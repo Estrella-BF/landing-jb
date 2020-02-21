@@ -13,6 +13,7 @@
     'aboutMeBtnMobile',
     'whatIDoBtnMobile',
     'therapyMobile',
+    'workshopsMobile',
     'testimonialsMobile',
     'blogMobile',
     'contactMobile'
@@ -30,6 +31,7 @@
   const therapyMobile = document.getElementById('therapyMobile');
 
   const workshopsDesktop = document.getElementById('workshopsDesktop');
+  const workshopsMobile = document.getElementById('workshopsMobile')
 
   const testimonialsDesktop = document.getElementById('testimonialsDesktop');
   const testimonialsMobile = document.getElementById('testimonialsMobile');
@@ -93,6 +95,10 @@
 
   workshopsDesktop.addEventListener('click', () => {
     this.activateClass('workshopsDesktop');
+  });
+
+  workshopsMobile.addEventListener('click', () => {
+    this.activateClassResponsive('workshopsMobile');
   });
 
   function activateClass(value) {
@@ -189,11 +195,62 @@
 
   function activateClassResponsive(value) {
     navigationTabsNameMobile.map((item, index) => {
-      const block = document.getElementById(blocksName[index]);
+
       if (item === value) {
-        block.setAttribute("class", "");
+        switch (value) {    
+          case 'aboutMeBtnMobile':
+            document.getElementById('aboutMe').setAttribute("class", "");
+            break;    
+          case 'whatIDoBtnMobile':  
+            document.getElementById('whatIDo').setAttribute("class", "");
+            break; 
+          case 'therapyMobile':
+            document.getElementById('therapy').setAttribute("class", "");
+            break;        
+          case 'workshopsMobile':
+            document.getElementById('workshop').setAttribute("class", "");
+            break;   
+          case 'testimonialsMobile':
+            document.getElementById('testimonials').setAttribute("class", "");
+            break; 
+          case 'blogMobile':
+            document.getElementById('blog').setAttribute("class", "");
+            break;  
+          case 'contactMobile':
+            document.getElementById('contact').setAttribute("class", "");
+            break;  
+
+          default:
+            break;
+        }
       } else {
-        block.setAttribute("class", "hidden");
+
+        switch (item) {    
+          case 'aboutMeBtnMobile':
+            document.getElementById('aboutMe').setAttribute("class", "hidden");
+            break;    
+          case 'whatIDoBtnMobile':  
+            document.getElementById('whatIDo').setAttribute("class", "hidden");
+            break; 
+          case 'therapyMobile':
+            document.getElementById('therapy').setAttribute("class", "hidden");
+            break;        
+          case 'workshopsMobile':
+            document.getElementById('workshop').setAttribute("class", "hidden");
+            break;   
+          case 'testimonialsMobile':
+            document.getElementById('testimonials').setAttribute("class", "hidden");
+            break; 
+          case 'blogMobile':
+            document.getElementById('blog').setAttribute("class", "hidden");
+            break;  
+          case 'contactMobile':
+            document.getElementById('contact').setAttribute("class", "hidden");
+            break;  
+
+          default:
+            break;
+        }
       }
     });
     window.scrollTo(0, 0)
