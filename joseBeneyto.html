@@ -32,8 +32,14 @@
           <li class="nav-item" id="whatIDoBtnMobile">
             <a class="nav-link">Lo que hago</a>
           </li>
-          <li class="nav-item" id="therapyMobile">
-            <a class="nav-link">Terapias</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="therapyMobile">Terapias</a>
+              <a class="dropdown-item" id="workshopsMobile">Charlas y Talleres</a>
+            </div>
           </li>
           <li class="nav-item" id="testimonialsMobile">
             <a class="nav-link">Testimoniales</a>
@@ -52,9 +58,10 @@
                 <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
               </div>
               <p class="caousel__menu--quotes">
-              "La inteligencia es la capacidad de tomar decisiones y ser perseverante con ellas"
+                “Psicología pasión y vida”
               </p>
             </div>
+
             <div class="carousel-item">
               <div class="caousel__menu--img">
                 <img alt="Jose andres beneyto" class="img-fluid" src="./images/que hago.png" />
@@ -63,6 +70,43 @@
                 Vamos a hacerlo mejor... esta vez con amor y decisión
               </p>
             </div>
+
+            <div class="carousel-item">
+              <div class="caousel__menu--img">
+                <img alt="Jose andres beneyto" class="img-fluid" src="./images/terapia2.png" />
+              </div>
+              <p class="caousel__menu--quotes">
+                Terapia para adultos
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <div class="caousel__menu--img">
+                <img alt="Jose andres beneyto" class="img-fluid" src="./images/adolescente2.png" />
+              </div>
+              <p class="caousel__menu--quotes">
+                Terapia para adolescentes
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <div class="caousel__menu--img">
+                <img alt="Jose andres beneyto" class="img-fluid" src="./images/3parajea.png" />
+              </div>
+              <p class="caousel__menu--quotes">
+                Terapia para parejas
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <div class="caousel__menu--img">
+                <img alt="Jose andres beneyto" class="img-fluid" src="./images/online2.png" />
+              </div>
+              <p class="caousel__menu--quotes">
+                Terapias online
+              </p>
+            </div>
+
           </div>
           <a class="carousel-control-prev" href="#carousel-menu" role="button" data-slide="prev">
             <img class="carousel__menu--icon" src="./images/arrow-left.png">
@@ -112,12 +156,26 @@
       </div>
       <nav class="menu only-desktop">
         <ul class="">
-          <li><a href="#">Inicio</a></li><li id="aboutMeBtnDesktop">
-            <a href="">Acerca de mi</a></li><li id="whatIDoBtnDesktop">
-            <a>Lo que hago</a></li><li id="therapyDesktop">
-            <a>Terapias</a></li><li id="testimonialsDesktop">
-            <a>Testimoniales</a></li><li id="blogDesktop">
-            <a>Blog</a></li><li id="contactDesktop">
+          <li  class="menu-item-btn"><a href="#">Inicio</a></li><li  class="menu-item-btn" id="aboutMeBtnDesktop">
+            <a>Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
+            <a>Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
+            <a class="nav-link dropdown-link" 
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div id="therapyDesktop"> 
+                <div class="border-bottom-grey">
+                  <a class="dropdown-item">Terapias</a>
+                </div>
+              </div>
+              <div id="workshopsDesktop">
+                <a class="dropdown-item">Charlas y Talleres</a>
+              </div>
+            </div>
+          </li><li  class="menu-item-btn" id="testimonialsDesktop">
+            <a>Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
+            <a>Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
             <a>Contacto</a></li>
         </ul>
         <div 
@@ -150,7 +208,7 @@
             <div class="">
               <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
               <p class="quotes">
-              "La inteligencia es la capacidad de tomar decisiones y ser perseverante con ellas"
+                “Psicología pasión y vida”
               </p>
             </div>
           </div>
@@ -193,7 +251,7 @@
           </div>
           <div class="col-sm-12 col-md-4 only-mobile">
             <div class="footer__icons">
-              <div class="">
+              <div class="nav-bar__icons--img">
                 <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
                   <span class="flaticon flaticon-facebook"></span>
                 </a>
@@ -259,7 +317,7 @@
         </div>
         <div class="col-sm-12 col-md-4 only-mobile">
           <div class="footer__icons">
-            <div class="">
+            <div class="nav-bar__icons--img">
               <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
                 <span class="flaticon flaticon-facebook"></span>
               </a>
@@ -314,7 +372,7 @@
         </div>
         <div class="col-sm-12 col-md-4 only-mobile">
           <div class="footer__icons m-0">
-            <div class="">
+            <div class="nav-bar__icons--img">
               <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
                 <span class="flaticon flaticon-facebook"></span>
               </a>
@@ -336,6 +394,21 @@
 
   </section>
   <!--End Therapy-->
+
+  <!--Workshop-->
+  <section id="workshop" class="hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 no-info">
+          Si deseas información sobre las Charlas y Talleres </br>
+          comunícate al +51 936528321
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Workshop-->
+
 
   <!--Testimonials-->
   <section id="testimonials" class="hidden">
@@ -525,7 +598,7 @@
         </div>
         <div class="col-sm-12 col-md-4 only-mobile">
           <div class="footer__icons m-0">
-            <div class="">
+            <div class="nav-bar__icons--img">
               <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
                 <span class="flaticon flaticon-facebook"></span>
               </a>
@@ -792,7 +865,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-7">
-          <div class="spacing__text">
+          <div class="blog-container">
             <div class="subtitle-text">
               Artículos
             </div>            
@@ -2159,7 +2232,7 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
                 </div>
                 <p class="contact-text--big">
                   947240692<br>
-                  01 4362056
+                  936528321
                 </p>
               </div>   
               <div class="contact_info--details-info">
@@ -2167,8 +2240,7 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
                   <img class="img-fluid" src="./images/svg/iconomail.svg">
                 </div>
                 <p class="contact-text--small">
-                  Joseandresbeneyto@psicologia.com<br>
-                  jbeneytopsicologia@hotmail.com                  
+                  Joseandresbeneyto@psicologia.com                
                 </p>
               </div>   
               <div class="contact_info--details-info">

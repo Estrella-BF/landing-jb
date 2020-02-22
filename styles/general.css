@@ -12,6 +12,35 @@ height: 400px;  /* The height is 400 pixels */
 width: 100%;  /* The width is the width of the web page */
 }
 
+.menu-item-btn:focus-within {
+  border-bottom: 5px solid #0072BC;
+}
+.menu-item-btn a:focus-within {
+  color: #0072BC !important;
+}
+
+.sub-menu-active a {
+  color: #0072BC !important;
+}
+
+.no-info {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+  color: #6b6d6e;
+  font-style: italic;
+  text-align: center;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid grey;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
 input:-moz-read-only { /* For Firefox */
   background-color: white !important;
 }
@@ -85,7 +114,7 @@ ul {
 }
 
 .static__box--logo-small {
-  width: 5em;
+  width: 4em;
   display: inline-block;
 }
 
@@ -126,6 +155,11 @@ ul {
 .blog__list::-webkit-scrollbar-thumb {
   background-color: #36aee5;
   border-radius: 10px;
+}
+
+.blog-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .blog__list li {
@@ -239,7 +273,7 @@ ul {
 }
 
 .contact_info--details {
-  border: 1px solid #a7a6a6;
+  border: 1px solid #0072BC;
   background-color: white;
   border-radius: 25px;
   padding: 1rem;
@@ -301,6 +335,27 @@ ul {
 @media (max-width: 575.98px) {
   .only-desktop {
     display: none !important;
+  }
+
+  .subtitle-modal {
+    font-size: 2rem;  
+  }
+
+  .modal .only__text p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .modal-body {
+    padding: 0 2rem;
+  } 
+
+  .modal {
+    padding: 1rem;
+  }
+
+  .face-img{
+    margin-top: 2rem;
   }
 
   .footer {

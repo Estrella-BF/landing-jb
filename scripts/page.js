@@ -3,6 +3,7 @@
     'aboutMeBtnDesktop', 
     'whatIDoBtnDesktop', 
     'therapyDesktop', 
+    'workshopsDesktop',
     'testimonialsDesktop', 
     'blogDesktop',
     'contactDesktop'
@@ -12,12 +13,13 @@
     'aboutMeBtnMobile',
     'whatIDoBtnMobile',
     'therapyMobile',
+    'workshopsMobile',
     'testimonialsMobile',
     'blogMobile',
     'contactMobile'
   ];
 
-  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog', 'contact'];
+  const blocksName = ['aboutMe', 'whatIDo', 'therapy', 'testimonials', 'blog', 'contact', 'workshop'];
 
   const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
   const aboutMeBtnMobile = document.getElementById('aboutMeBtnMobile');
@@ -27,6 +29,9 @@
 
   const therapyDesktop = document.getElementById('therapyDesktop');
   const therapyMobile = document.getElementById('therapyMobile');
+
+  const workshopsDesktop = document.getElementById('workshopsDesktop');
+  const workshopsMobile = document.getElementById('workshopsMobile')
 
   const testimonialsDesktop = document.getElementById('testimonialsDesktop');
   const testimonialsMobile = document.getElementById('testimonialsMobile');
@@ -88,17 +93,87 @@
     this.activateClassResponsive('contactMobile');
   });
 
+  workshopsDesktop.addEventListener('click', () => {
+    this.activateClass('workshopsDesktop');
+  });
+
+  workshopsMobile.addEventListener('click', () => {
+    this.activateClassResponsive('workshopsMobile');
+  });
+
   function activateClass(value) {
     navigationTabsName.map((item, index) => {
       const button = document.getElementById(item);
-      const block = document.getElementById(blocksName[index]);
+      if (item === value) {    
 
-      if (item === value) {
-        button.setAttribute("class", 'active');
-        block.setAttribute("class", "");
+        switch (value) {    
+          case 'aboutMeBtnDesktop':
+            document.getElementById('aboutMe').setAttribute("class", "");
+            button.setAttribute("class", 'active');
+            break;    
+          case 'whatIDoBtnDesktop':  
+            document.getElementById('whatIDo').setAttribute("class", "");
+            button.setAttribute("class", 'active');
+            break; 
+          case 'therapyDesktop':
+            button.setAttribute("class", 'sub-menu-active');
+            document.getElementById('therapy').setAttribute("class", "");
+            break;        
+          case 'workshopsDesktop':
+            button.setAttribute("class", 'sub-menu-active');
+            document.getElementById('workshop').setAttribute("class", "");
+            break;   
+          case 'testimonialsDesktop':
+            document.getElementById('testimonials').setAttribute("class", "");
+            button.setAttribute("class", 'active');
+            break; 
+          case 'blogDesktop':
+            document.getElementById('blog').setAttribute("class", "");
+            button.setAttribute("class", 'active');
+            break;  
+          case 'contactDesktop':
+            document.getElementById('contact').setAttribute("class", "");
+            button.setAttribute("class", 'active');
+            break;  
+
+          default:
+            break;
+        }
       } else {
-        button.setAttribute("class", "");
-        block.setAttribute("class", "hidden");
+        switch (item) {    
+          case 'aboutMeBtnDesktop':
+            document.getElementById('aboutMe').setAttribute("class", "hidden");
+            button.setAttribute("class", '');
+            break;    
+          case 'whatIDoBtnDesktop':
+            document.getElementById('whatIDo').setAttribute("class", "hidden");
+            button.setAttribute("class", '');
+            break; 
+          case 'therapyDesktop':
+            button.setAttribute("class", '');
+            document.getElementById('therapy').setAttribute("class", "hidden");
+            break;        
+          case 'workshopsDesktop':
+            button.setAttribute("class", '');
+            document.getElementById('workshop').setAttribute("class", "hidden");
+            break;   
+          case 'testimonialsDesktop':
+            document.getElementById('testimonials').setAttribute("class", "hidden");
+            button.setAttribute("class", '');
+            break; 
+          case 'blogDesktop':
+            document.getElementById('blog').setAttribute("class", "hidden");
+            button.setAttribute("class", '');
+            break;  
+          case 'contactDesktop':
+            document.getElementById('contact').setAttribute("class", "hidden");
+            button.setAttribute("class", '');
+            break;  
+
+          default:
+            break;
+        }
+
       }
 
       isContactSection(value);
@@ -120,11 +195,62 @@
 
   function activateClassResponsive(value) {
     navigationTabsNameMobile.map((item, index) => {
-      const block = document.getElementById(blocksName[index]);
+
       if (item === value) {
-        block.setAttribute("class", "");
+        switch (value) {    
+          case 'aboutMeBtnMobile':
+            document.getElementById('aboutMe').setAttribute("class", "");
+            break;    
+          case 'whatIDoBtnMobile':  
+            document.getElementById('whatIDo').setAttribute("class", "");
+            break; 
+          case 'therapyMobile':
+            document.getElementById('therapy').setAttribute("class", "");
+            break;        
+          case 'workshopsMobile':
+            document.getElementById('workshop').setAttribute("class", "");
+            break;   
+          case 'testimonialsMobile':
+            document.getElementById('testimonials').setAttribute("class", "");
+            break; 
+          case 'blogMobile':
+            document.getElementById('blog').setAttribute("class", "");
+            break;  
+          case 'contactMobile':
+            document.getElementById('contact').setAttribute("class", "");
+            break;  
+
+          default:
+            break;
+        }
       } else {
-        block.setAttribute("class", "hidden");
+
+        switch (item) {    
+          case 'aboutMeBtnMobile':
+            document.getElementById('aboutMe').setAttribute("class", "hidden");
+            break;    
+          case 'whatIDoBtnMobile':  
+            document.getElementById('whatIDo').setAttribute("class", "hidden");
+            break; 
+          case 'therapyMobile':
+            document.getElementById('therapy').setAttribute("class", "hidden");
+            break;        
+          case 'workshopsMobile':
+            document.getElementById('workshop').setAttribute("class", "hidden");
+            break;   
+          case 'testimonialsMobile':
+            document.getElementById('testimonials').setAttribute("class", "hidden");
+            break; 
+          case 'blogMobile':
+            document.getElementById('blog').setAttribute("class", "hidden");
+            break;  
+          case 'contactMobile':
+            document.getElementById('contact').setAttribute("class", "hidden");
+            break;  
+
+          default:
+            break;
+        }
       }
     });
     window.scrollTo(0, 0)

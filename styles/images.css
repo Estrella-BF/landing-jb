@@ -49,6 +49,7 @@
 
 .caousel__menu {
   margin-top: 2.5rem;
+  margin-bottom: 9rem;
 }
 
 .carousel-control-prev {
@@ -84,6 +85,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+  .caousel__menu--quotes {
+    font-weight: normal;
+  }
+  
   .images--group p {
     font-style: italic;
     font-size: 1.3rem;
@@ -111,7 +116,7 @@
   }
 
   .slider__images {
-    height: 350px;
+    height: 380px;
     margin-bottom: 3rem;
   }
 

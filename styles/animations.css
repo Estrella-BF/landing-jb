@@ -23,11 +23,17 @@
 
 .animation-right-up {
   position: absolute;    
-  transform: translate(-3rem, -12rem);
+  transform: translate(1rem, -4rem);
 }
 
 .animation-left, .animation-right {
   display: inline-block;
+}
+
+.profession {
+  top: -2rem;
+  position: absolute;
+  left: 1.5rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -49,22 +55,25 @@
 }
 
 .mover {
-  animation: move 5s ease-in-out;
+  animation: move 2s ease-in-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes move {
-  from {
+  /*from {
     outline: 5px solid blueviolet;
+  }*/
+  100% {
+    transform: translate(0, -5rem);
   }
-
-  50% {
-    opacity: 0;
-    outline: 5px solid pink;
+  0% {
   }
+  /*
   to  {
-    transform: translate(-100px, 0);
+    transform: translate(0, -8rem);
     outline: 5px solid green;
-  }
+  }*/
 }
 
 @-webkit-keyframes slide-left {
