@@ -41,6 +41,12 @@
   text-align: justify;
 }
 
+.terapy-text {
+  padding: 0 3.8rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
 .label-name {
   background-color: #98A8B5;
   color: #FFFFFF;
@@ -53,6 +59,14 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+
+  .terapy-text {
+    padding: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 5rem;
+  }
+
   .title {
     font-style: italic; 
     font-weight: 600;  
