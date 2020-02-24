@@ -2,16 +2,51 @@ $('.carousel').carousel({
   interval: 2000
 })
 
-window.location.href = './joseBeneyto.html'
-/* 
-function slideInRight() {
+function letters() {
 	setTimeout(() => {
-		const element = document.getElementById('slideInLeft');
-		element.setAttribute('class', 'animated slideInLeft show  slower');
-		appear();
+		const element = document.getElementById('letters');
+		element.setAttribute('class', 'animated fadeIn show  slower');
+		faces();
 	}, 1500)
 }
 
+letters();
+
+function faces() {
+	setTimeout(() => { console.log('faces')
+		const element = document.getElementById('faces');
+		element.setAttribute('class', 'animation-left-style animated fadeOut show slow');
+		lettersUp();
+	}, 1000)
+}
+
+function letters() {
+	setTimeout(() => {
+		const element = document.getElementById('letters');
+		element.setAttribute('class', 'animated fadeIn');
+		faces();
+	}, 1500)
+}
+
+function lettersUp() {
+	setTimeout(() => {
+		const element = document.getElementById('letters');
+		element.setAttribute('class', 'mover');
+		profession();
+	}, 1500)
+}
+
+function profession() {
+	setTimeout(() => {
+		const element = document.getElementById('profession');
+		element.setAttribute('class', 'show-up animated fadeInLeft slow profession');
+		faces();
+	}, 2000)
+
+}
+
+
+/* 
 function appear() {
 	setTimeout(() => {
 		const element = document.getElementById('appear');
