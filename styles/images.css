@@ -47,40 +47,45 @@
   font-size: 1.9rem;
 }
 
-.caousel__menu {
-  margin-top: 2.5rem;
-  margin-bottom: 9rem;
-}
-
-.carousel-control-prev {
-  left: 15px !important;
-}
-
-.carousel-control-next {
-  right: 15px !important;
-}
-
 .carousel-control-next, .carousel-control-prev {
   opacity: 1 !important;
   width: 2% !important;
-}
-
-.caousel__menu--img {
-  height: 234px;
-  padding: 0 2rem;
 }
 
 .carousel__menu--icon {
   width: 20px;
 }
 
-.caousel__menu--quotes {
+.carousel__menu--img {
+  height: 290px !important;
+  outline: 1px solid red;
+}
+
+.carousel__menu--img img {
+  height: 100% !important;
+}
+
+.carousel-item {
+  height: 290px;
+}
+.carousel-indicators li {
+  background-color: transparent !important;
+}
+
+.carousel-caption {
+  background-color: #5656562e;
+  padding: 0.5rem 0 0rem !important;
+}
+
+.nav-bar__content li {
+  border: none !important;
+}
+
+.carousel__menu--quotes {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  margin-top: 1rem;
   font-size: 1rem;    
-  padding: 0 2rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -105,10 +110,13 @@
   .carousel-control-prev {
     left: -7px !important;
     padding-bottom: 4rem;
+    top: 4rem;
   }
   
   .carousel-control-next {
     padding-bottom: 4rem;
+    right: 1rem !important;
+    top: 4rem;
   }
 
   .slider__group-images {

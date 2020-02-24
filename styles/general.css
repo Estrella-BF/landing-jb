@@ -136,26 +136,7 @@ ul {
   font-weight: bold;
 }
 
-.blog__list {
-  height: 28%;
-  margin: 1rem 0 3rem 0;
-  overflow: -webkit-paged-y;
-  overflow-y: scroll;
-}
 
-.blog__list::-webkit-scrollbar {
-  width: 12px;
-}
-
-.blog__list::-webkit-scrollbar-track {
-  background-color: #cbd2da;
-  border-radius: 10px;
-}
-
-.blog__list::-webkit-scrollbar-thumb {
-  background-color: #36aee5;
-  border-radius: 10px;
-}
 
 .blog-container {
   padding-left: 1rem;
@@ -446,6 +427,27 @@ ul {
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
+
+  .blog__list {
+    height: 28%;
+    margin: 1rem 0 3rem 0;
+    overflow: -webkit-paged-y;
+    overflow-y: scroll;
+  }
+  
+  .blog__list::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .blog__list::-webkit-scrollbar-track {
+    background-color: #cbd2da;
+    border-radius: 10px;
+  }
+  
+  .blog__list::-webkit-scrollbar-thumb {
+    background-color: #36aee5;
+    border-radius: 10px;
+  }
   .only-mobile {
     display: none !important;
   } 

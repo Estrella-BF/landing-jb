@@ -2,6 +2,8 @@ $('.carousel').carousel({
   interval: 2000
 })
 
+window.location.href = './joseBeneyto.html'
+
 function letters() {
 	setTimeout(() => {
 		const element = document.getElementById('letters');
@@ -10,7 +12,7 @@ function letters() {
 	}, 1500)
 }
 
-letters();
+// letters();
 
 function faces() {
 	setTimeout(() => { console.log('faces')

@@ -42,6 +42,10 @@
   const contactDesktop = document.getElementById('contactDesktop');
   const contactMobile = document.getElementById('contactMobile');
 
+  const buttonMobile = document.getElementById('btn-collapse-mobile');
+  buttonMobile.addEventListener('click', () =>  {
+    window.scrollTo(0, 0)
+  })
 
   this.activateClass('aboutMeBtnDesktop');
 
