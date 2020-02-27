@@ -5,70 +5,2336 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="./styles/general.css">
-  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/texts.css">
+  <link rel="stylesheet" href="./styles/images.css">
+  <link rel="stylesheet" href="./styles/nav-bar.css">
+  <link rel="stylesheet" href="./assets/icons/my-icons-collection/font/flaticon.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
   <title>Document</title>
 </head>
 <body>
+  <div class="menu-sticky">
+    <nav class="navbar nav-bar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" id="btn-collapse-mobile" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-bar__content collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="aboutMeBtnMobile">
+            <a class="nav-link">Acerca de mi</a>
+          </li>
+          <li class="nav-item" id="whatIDoBtnMobile">
+            <a class="nav-link">Lo que hago</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="therapyMobile">Terapias</a>
+              <a class="dropdown-item" id="workshopsMobile">Charlas y Talleres</a>
+            </div>
+          </li>
+          <li class="nav-item" id="testimonialsMobile">
+            <a class="nav-link">Testimoniales</a>
+          </li>
+          <li class="nav-item" id="blogMobile">
+            <a class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item" id="contactMobile">
+            <a class="nav-link">Contacto</a>
+          </li>
+        </ul>
 
-  <div class="animation">
-    <div>
-      <div class="animation-left">
-        <img class="img-fluid" id="faces" src="./images/caras.png">
-      </div>
-      <div class="animation-right">
-        <div class="img-hidden" id="letters">
-          <img class="img-fluid" src="./images/joseandresbeneyto.png">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/acerca-de-mi-1.png" class="d-block w-100" alt="..">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">“Psicología pasión y vida”</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/que hago.png" class="d-block w-100" alt="..">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">Vamos a hacerlo mejor... esta vez con amor y decisión</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/terapia2.png" class="d-block w-100" alt="..">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">Terapia para adultos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/adolescente2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">Terapia para adolescentes </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/3parajea.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">Terapia para parejas </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/online2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <p class="carousel__menu--quotes">Terapia online </p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <img class="carousel__menu--icon" src="./images/arrow-left.png">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <img class="carousel__menu--icon" src="./images/arrow-right.png">
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div id="profession" class="img-hidden">
-          <img class="img-fluid" src="./images/psicologopsicoterapeuta.png">
+ 
+      </div>
+      <div class="nav-bar__icons only-desktop">
+        <div class="nav-bar__icons--img">
+          <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+            <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-fb.svg"></img>
+          </a>
+        </div>
+        <div class="nav-bar__icons--img">
+          <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+            <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-insta.svg"></img>
+          </a>
+        </div>
+        <div class="nav-bar__icons--img">
+          <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+            <img alt="whatsapp" class="img-fluid" src="./assets/icons/icon-linkedin.svg"></img>
+          </a>
+        </div>
+      </div>
+    </nav>  
+    <div class="static" id="mobile-contact">
+      <div class="static__box margin only-mobile text-center">
+        <div class="static__box--logo-small">
+          <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111&text='Mensaje desde el usuario'" target="_blank">
+            <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
+          </a>
+        </div>
+        <div class="static__box--text cursor">
+          Click aquí citas
+          <br />
+          947240692           
+        </div>        
+      </div>
+      <div class="static__box face-img"> 
+        <div class="static__box--logo-big">
+          <img alt="logo" class="img-fluid" src="./images/logo elegido.png" />
+        </div>   
+      </div>
+      <nav class="menu only-desktop">
+        <ul class="">
+          <li  class="menu-item-btn"><a href="#">Inicio</a></li><li  class="menu-item-btn" id="aboutMeBtnDesktop">
+            <a>Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
+            <a>Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
+            <a class="nav-link dropdown-link" 
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div id="therapyDesktop"> 
+                <div class="border-bottom-grey">
+                  <a class="dropdown-item">Terapias</a>
+                </div>
+              </div>
+              <div id="workshopsDesktop">
+                <a class="dropdown-item">Charlas y Talleres</a>
+              </div>
+            </div>
+          </li><li  class="menu-item-btn" id="testimonialsDesktop">
+            <a>Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
+            <a>Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
+            <a>Contacto</a></li>
+        </ul>
+        <div 
+        class="static__box text-center only-desktop"
+        id="whastapp-desktop"
+        >
+          <div class="static__box--logo-small">
+            <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111" target="_blank">
+              <img alt="whatsapp" class="img-fluid" src="./images/svg/whatsapp.svg"></img>
+            </a>
+          </div>
+          <div class="static__box--text cursor">
+            Click aquí citas
+            <span>947240692</span>          
+          </div>        
+        </div>
+      </nav>
+    </div>  
+  </div>
+
+  <!--About me-->
+  <section id="aboutMe" class="">
+    <div class="introduction">
+      <div class="label-name">
+        Acerca de mi 
+      </div>
+      <div class="container-fluid">
+        <div class="row d-block d-sm-none only-desktop">
+          <div class="col-sm-12">
+            <div class="">
+              <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
+              <p class="quotes">
+                “Psicología pasión y vida”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <div class="spacing__text">
+              <div class="title">
+                José Andrés Beneyto Correa
+              </div>
+              <p>Licenciado en psicología con especialidad en clínica, 
+                colegiado en el colegio de psicólogos del Perú. <br>
+                Trabajó en el área de psicología en el hospital Larco 
+                Herrera, en el hospital de policía y en Inabif.</p>
+              <p>
+              Su formación principal dentro de la terapia 
+              psicológica es la cognitiva conductual, la humanista, 
+              la psicología positiva y herramientas funcionales del psicoanálisis.
+              </p>
+              <p>
+              Especialista en psicoterapia de adultos, adolescentes y de pareja. 
+              Ha escrito varios artículos concernientes al mundo de la psicología, 
+              siendo un investigador de la misma, estando a la vanguardia en todas 
+              las dimensiones de la psicología y aportando positivamente a esta ciencia.
+              </p>
+              <p>
+              Además dicta charlas y talleres en diferentes 
+              instituciones donde el objetivo es que todos aprendan de la psicología, 
+              sacándole el máximo provecho y beneficio para sus propias vidas.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 text-center">
+            <div class="">
+              <img alt="Jose andres beneyto" class="img-fluid" src="./images/acerca-de-mi-1.png" />
+              <p class="quotes">
+                “Psicología pasión y vida”
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 only-mobile">
+            <div class="footer__icons">
+              <div class="nav-bar__icons--img">
+                <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+                  <span class="flaticon flaticon-facebook"></span>
+                </a>
+              </div>
+              <div class="nav-bar__icons--img">
+                <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+                  <span class="flaticon flaticon-linkedin"></span>
+                </a>
+              </div>
+              <div class="nav-bar__icons--img">
+                <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                  <span class="flaticon flaticon-instagram"></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!--End About me-->
+
+  <!--What I do-->
+  <section id="whatIDo" class="hidden">
+    <div class="label-name">
+      Lo que hago
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-7 ">
+          <div class="spacing__text">
+            <p>Me gusta centrarme en la persona, no en las etiquetas 
+              ni en los diagnósticos rígidos.</p>
+            <p>
+              Trabajo con personas únicas e irrepetibles, 
+              por lo tanto cada uno experimenta de manera diferente sus propias 
+              particularidades: dificultades, mejoras, cambios, deseos y objetivos.
+            </p>
+            <p>
+              Todos tenemos un mundo interno con problemáticas, 
+              necesidades e ilusiones distintas. Partiendo de esa premisa voy a 
+              diseñar contigo una estrategia personalizada para resolver lo urgente: 
+              el motivo que te llevó a la terapia y lo importante: cambios, ajustes, objetivos, 
+              obstáculos, trabajando en una psicología integrada, abarcando 
+              absolutamente todas tus áreas, comenzando desde el presente en el aquí y el ahora, 
+              viviendo un proceso de avance, teniendo un crecimiento sostenido.
+            </p>
+            <p>
+              De está manera contarás con las herramientas y estrategias 
+              necesarias para poder manejar tu vida, solucionar los problemas, 
+              descubrir y potenciar todas tus capacidades y habilidades y así mismo aprender 
+              a vivir en un proceso pleno llegando a tus objetivos.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 text-center ">
+          <div class="">
+            <img alt="Jose andres beneyto" class="img-fluid" src="./images/que hago.png" />
+            <p class="quotes">
+              Vamos a hacerlo mejor... esta vez con amor y decisión
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 only-mobile">
+          <div class="footer__icons">
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+                <span class="flaticon flaticon-facebook"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+                <span class="flaticon flaticon-linkedin"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                <span class="flaticon flaticon-instagram"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End What I do-->
+
+  <!--Therapy-->
+  <section id="therapy" class="hidden">
+    <div class="label-name">
+      Terapias
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="images--group">
+            <img alt="logo" class="img-fluid" src="./images/terapia2.png" />
+            <p class="">Terapias para adultos</p>
+            <div class="terapy-text">
+              Vamos a diseñar una estrategia personalizada para resolver lo urgente: el
+              motivo que te llevó a la terapia y lo importante: cambios, ajustes, objetivos
+              y obstáculos. Trabajando en una psicología integrada, abarcando
+              absolutamente todas tus áreas, que te permitan tener una vida estable,
+              plena y aprender a ser feliz como estado. 
+              <br><br>
+              De esta manera contarás con las herramientas necesarias para aprender a
+              manejar tu vida, solucionar problemas, descubrir y potenciar tus
+              capacidades para lograr objetivos.
+              <br><br>
+              El paciente desde el primer día tiene que sentirse mejor y así mismo ir
+              comprobando con cada sesión un crecimiento progresivo y consistente en
+              su vida.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="images--group">
+            <img alt="logo" class="img-fluid" src="./images/adolescente2.png" />
+            <p class="">Terapias para adolescentes</p>
+            <div  class="terapy-text">
+              La etapa de adolescencia es una etapa clave y corta, donde se
+              experimentan muchos cambios emocionales, corporales, hormonales y
+              adaptativos, pasando por muchas interrogantes, sensaciones,
+              sensibilidades y desconciertos, donde el adolescente comienza a buscar y
+              formar su identidad a partir de nuevos cambios y experiencias. Entrando
+              muchas veces en vacíos y confusiones existen-ciales.
+              <br><br>
+              Es aquí donde la labor del psicólogo es fundamental para encaminar,
+              empoderar y ayudar en esa búsqueda de encuentro consigo mismo, su
+              entorno y las relaciones interpersonales.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="images--group">
+            <img alt="logo" class="img-fluid" src="./images/3parajea.png" />
+            <p class="">Terapias para parejas</p>
+            <div  class="terapy-text">
+              Se trata de ir viendo toda la problemática en relación a la pareja, donde
+              ambas partes durante el proceso terapéutico vayan adquiriendo
+              consciencia, registrando las fallas, donde podrían mejorar y qué desearían
+              de su pareja. Aprendiendo nuevas herramientas en equipo para que la
+              relación se pueda sostener en el tiempo.
+              <br><br>
+              El terapeuta no es un árbitro, sino un puente entre uno y el otro, donde su
+              labor es conectar a la pareja, para que salga adelante con nuevas
+              estrategias, acuerdos, herramientas y compromisos entre ambos, donde
+              habrá un trabajo a desarrollar personal y en equipo.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="images--group">
+            <img alt="logo" class="img-fluid" src="./images/online2.png" />
+            <p class="">Terapia online</p>
+            <div  class="terapy-text">
+              Muchas veces las personas no acuden al psicólogo que les gustaría ir, ya
+              sea por la distancia, el tiempo y/o diferentes motivos que les dificultan
+              llegar a la terapia.
+              <br><br>
+              Es aquí cuando la opción online es una buena alternativa.
+              <br><br>
+              La terapia online la realizaremos previa coordinación, vía cámara del celular
+              del whatsapp, desde la comodidad de tu hogar, oficina o en el lugar que
+              más te acomode.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 only-mobile">
+          <div class="footer__icons m-0">
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+                <span class="flaticon flaticon-facebook"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+                <span class="flaticon flaticon-linkedin"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                <span class="flaticon flaticon-instagram"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--End Therapy-->
+
+  <!--Workshop-->
+  <section id="workshop" class="hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 no-info">
+          Si deseas información sobre las Charlas y Talleres </br>
+          comunícate al <br>+51 936528321
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Workshop-->
+
+
+  <!--Testimonials-->
+  <section id="testimonials" class="hidden">
+    <div class="label-name">
+      Testimoniales
+    </div>
+    <div class="container-fluid only-mobile">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Gonzalo</p>
+              <span>(30 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Gracias al proceso psicoterapéutico que llevé con José Andrés,
+              pude reconocer mis fortalezas y adquirí herramientas para lidiar
+              con la ansiedad que experimentaba en todo momento. Aprendí a
+              valorarme mucho más y a encontrar objetivos más claros para mi
+              vida personal y profesional.”
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Maria José</p>
+              <span>(37 años)</span>
+            </div>
+            <div class="slider__images--text">
+              José Andrés me ayudó a salir adelante de mis propios problemas,
+              juntos estamos construyendo un presente con más paz. Es un
+              psicólogo con el que he llegado rápido a los temas y es un excelente profesional. 
+              Las personas a mí alrededor han notado el cambio en mi.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Francesca</p>
+              <span>(47 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Mi experiencia con José Andrés fue muy buena. Fui con mi
+              esposo. Me amplió la visión de como es una relación. Lo que más
+              me impactó de Jose fue que sacó mis sentimientos más
+              profundos. Me di cuenta de que era lo que sentía. Nos ayudó
+              bastante como pareja. Nos dio pautas para cambiar nuestro estilo
+              de vida. A todas las personas que puedo se lo recomiendo.”
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Verónica</p>
+              <span>(51 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Jose es un gran profesional y sobre todo un magnífico ser humano, 
+              dispuesto a ayudar y escuchar con atención. 
+              Sus palabras, consejos y estrategias fueron de mucha ayuda. 
+              Me dio pautas y aprendí mucho. 
+              Siempre promoviendo a alcanzar superación, metas, y sobre todo encontrarme y amarme. 
+              Doy gracias a Dios haberlo puesto en mi camino.”
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Alex</p>
+              <span>(27 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Jose es un psicólogo y un guía que te escucha. 
+              Trata de ir a lo más profundo de la conversación o lo que le estés contando para entenderte. 
+              Con su conocimiento me ha ayudado bastante con el tema de la ansiedad, 
+              me ha guiado muy bien. A parte es muy buena persona. 
+              Es muy bueno, me quito el sombrero, es el único psicólogo que en realidad me ha ayudado verdaderamente.”
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>María Pía</p> 
+              <span>(30 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Mi terapia con Jose ha sido un éxito desde el primer día, 
+              me ayudó a recuperar mi autoestima y la seguridad en mi que había perdido hacía muchos años. 
+              Sin la ayuda de Jose y su punto de vista, siempre muy objetivo, 
+              no hubiera podido superar muchos obstáculos en todos los aspectos de mi vida.”
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Carmen</p>
+              <span>(70 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “José Andrés es una gran persona y un magnifico profesional. 
+              Él me ayudó mucho a poder manejar temas para mi complicados y 
+              con la terapia fui entendiendo como sobrellevar esto que me tenia muy nerviosa. 
+              Ahora puedo manejar todo con mucha más tranquilidad. Es un excelente psicólogo.”
+            </div>
+          </div>   
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Vanessa</p>
+              <span>(28 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Lo que más me gustó de José Andrés es que no solo te escucha, 
+              sino que interviene desde un primer momento. 
+              Me ayudó desde otra perspectiva, de una manera más objetiva. 
+              Siento que he tenido un gran progreso, ahora estoy concentrada en mí misma, 
+              en mejorar mi autoestima, seguridad, ser más independiente y crear una mejor versión de mi.”
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Cecilia</p>
+              <span>(46 años)</span>
+            </div>
+            <div class="slider__images--text">
+              desde que llegué a su consultorio. 
+              Realmente me ha cambiado la vida. 
+              Me ayudó con mi autoestima, con mis objetivos en la vida y sobre todo a sacar 
+              la mejor versión de mi. Siempre que puedo lo recomiendo.”
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Lucía</p>
+              <span>(69 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Lo que más me gustó de José Andrés, 
+              es lo comprometido que es con la terapia. 
+              Súper didáctico de manera que sales con mucha información 
+              valiosa y que te ayuda en tu crecimiento personal. 
+              Él me ofreció un espacio de acompañamiento para emprender juntos un aprendizaje, 
+              que me ha ayudado a poder manejar temas que creí que nunca podría resolver.”
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>André</p>
+              <span>(45 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “José Andrés te analiza y te dice directamente lo que tienes y de 
+              una manera inteligente te hace ver tu problema desde otro punto de vista, 
+              para buscar una solución razonable al conflicto interno que te aqueja, 
+              siendo realista y objetivo de lo que puedes dar.”
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4">      
+          <div class="slider__images">
+            <div class="slider__images--title text-center">
+              <p>Francisco</p>
+              <span>(39 años)</span>
+            </div>
+            <div class="slider__images--text">
+              “Llegué con mucha ansiedad, pasé por varios psicólogos, 
+              sin muchos resultados. 
+              Con José Andrés desde el primer día me sentí mejor, y entendí mi problemática y 
+              en pocas terapias ya me sentía mucho más tranquilo. 
+              Ya hace un año que me dió de alta y he aprendido a manejar la ansiedad. 
+              Es un gran psicólogo y lo recomiendo a donde voy.”    
+            </div>
+          </div> 
+        </div>
+        <div class="col-sm-12 col-md-4 only-mobile">
+          <div class="footer__icons m-0">
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+                <span class="flaticon flaticon-facebook"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+                <span class="flaticon flaticon-linkedin"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                <span class="flaticon flaticon-instagram"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselTestimonials" class="carousel slide only-desktop" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="slider__group-images">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Gonzalo</p>
+                      <span>(30 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Gracias al proceso psicoterapéutico que llevé con José Andrés,
+                      pude reconocer mis fortalezas y adquirí herramientas para lidiar
+                      con la ansiedad que experimentaba en todo momento. Aprendí a
+                      valorarme mucho más y a encontrar objetivos más claros para mi
+                      vida personal y profesional.”
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Maria José</p>
+                      <span>(37 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      José Andrés me ayudó a salir adelante de mis propios problemas,
+                      juntos estamos construyendo un presente con más paz. Es un
+                      psicólogo con el que he llegado rápido a los temas y es un excelente profesional. 
+                      Las personas a mí alrededor han notado el cambio en mi.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Francesca</p>
+                      <span>(47 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Mi experiencia con José Andrés fue muy buena. Fui con mi
+                      esposo. Me amplió la visión de como es una relación. Lo que más
+                      me impactó de Jose fue que sacó mis sentimientos más
+                      profundos. Me di cuenta de que era lo que sentía. Nos ayudó
+                      bastante como pareja. Nos dio pautas para cambiar nuestro estilo
+                      de vida. A todas las personas que puedo se lo recomiendo.”
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider__group-images">  
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Verónica</p>
+                      <span>(51 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Jose es un gran profesional y sobre todo un magnífico ser humano, 
+                      dispuesto a ayudar y escuchar con atención. Sus palabras,
+                      consejos y estrategias fueron de mucha ayuda. Me dio pautas y
+                      aprendí mucho. Siempre promoviendo a alcanzar superación,
+                      metas, y sobre todo encontrarme y amarme. Doy gracias a Dios
+                      haberlo puesto en mi camino.”
+                    </div>
+                  </div>   
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Alex</p>
+                      <span>(27 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Jose es un psicólogo y un guía que te escucha. Trata de ir a lo más
+                      profundo de la conversación o lo que le estés contando para
+                      entenderte. Con su conocimiento me ha ayudado bastante con el
+                      tema de la ansiedad, me ha guiado muy bien. A parte es muy
+                      buena persona. Es muy bueno, me quito el sombrero, es el único
+                      psicólogo que en realidad me ha ayudado verdaderamente.”
+                    </div> 
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>María Pía</p>
+                      <span>(30 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Mi terapia con Jose ha sido un éxito desde el primer día, me
+                      ayudó a recuperar mi autoestima y la seguridad en mi que había
+                      perdido hacía muchos años. Sin la ayuda de Jose y su punto de
+                      vista, siempre muy objetivo, no hubiera podido superar muchos
+                      obstáculos en todos los aspectos de mi vida.”
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider__group-images">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Carmen</p>
+                      <span>(70 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “José Andrés es una gran persona y un magnifico profesional. Él
+                      me ayudó mucho a poder manejar temas para mi complicados y
+                      con la terapia fui entendiendo como sobrellevar esto que me tenia
+                      muy nerviosa. Ahora puedo manejar todo con mucha más
+                      tranquilidad. Es un excelente psicólogo.”
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Vanessa</p>
+                      <span>(28 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Lo que más me gustó de José Andrés es que no solo te escucha,
+                      sino que interviene desde un primer momento. Me ayudó desde
+                      otra perspectiva, de una manera más objetiva. Siento que he
+                      tenido un gran progreso, ahora estoy concentrada en mí misma,
+                      en mejorar mi autoestima, seguridad, ser más independiente y
+                      crear una mejor versión de mi.”
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-md-4">      
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Cecilia</p>
+                      <span>(46 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Jose es un excelente profesional. Me ha ayudado muchísimo
+                      desde que llegué a su consultorio. Realmente me ha cambiado la
+                      vida. Me ayudó con mi autoestima, con mis objetivos en la vida y
+                      sobre todo a sacar la mejor versión de mi. Siempre que puedo lo
+                      recomiendo.”
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider__group-images">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Lucía</p>
+                      <span>(69 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “Lo que más me gustó de José Andrés, es lo comprometido que es
+                      con la terapia. Súper didáctico de manera que sales con mucha
+                      información valiosa y que te ayuda en tu crecimiento personal. Él
+                      me ofreció un espacio de acompañamiento para emprender
+                      juntos un aprendizaje, que me ha ayudado a poder manejar
+                      temas que creí que nunca podría resolver.”
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-md-4"> 
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>André</p>
+                      <span>(45 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “José Andrés te analiza y te dice directamente lo que tienes y de
+                      una manera inteligente te hace ver tu problema desde otro punto
+                      de vista, para buscar una solución razonable al conflicto interno
+                      que te aqueja, siendo realista y objetivo de lo que puedes dar.”
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">        
+                  <div class="slider__images">
+                    <div class="slider__images--title text-center">
+                      <p>Francisco</p>
+                      <span>(39 años)</span>
+                    </div>
+                    <div class="slider__images--text">
+                      “José Andrés te analiza y te dice directamente lo que tienes y de
+                      una manera inteligente te hace ver tu problema desde otro punto
+                      de vista, para buscar una solución razonable al conflicto interno
+                      que te aqueja, siendo realista y objetivo de lo que puedes dar.”
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>       
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+        <img class="img-fluid" src="./images/arrow-left.png">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+        <img class="img-fluid" src="./images/arrow-right.png">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  
+  </section>
+  <!--End Testimonials-->
+
+  <!--Blog-->
+  <section id="blog" class="hidden">
+    <div class="label-name">
+      Blog
+    </div>
+    <div class="container-fluid only-mobile blog-quote-img">
+      <div class="row">
+        <div class="col-sm-12">
+          <img class="img-fluid" src="./images/blog-img.png">
+          <p class="quotes">
+            “En el aquí y el ahora, siempre es hoy”
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-7">
+          <div class="blog-container">
+            <div class="subtitle-text">
+              Artículos
+            </div>            
+            <ul class="blog__list" id="listingTable">
+              <li data-toggle="modal" data-target="#modal-1">1.- ACEPTAR, CAMBIAR Y FLUIR</li>
+              <li data-toggle="modal" data-target="#modal-2">2.- ANSIEDAD, APRENDIENDO A VIVIR EN PAZ</li data-toggle="modal" data-target="#modal-1">
+              <li data-toggle="modal" data-target="#modal-3">3.- APRENDIENDO LA COMPASIÓN PARA LA LIBERACIÓN</li>
+              <li data-toggle="modal" data-target="#modal-4">4.- BORDERLINE: TRASTORNO NARCISISTA DE LA PERSONALIDAD</li>
+              <li data-toggle="modal" data-target="#modal-5">5.- CAMBIAMOS SI ACEPTAMOS</li>
+              <li data-toggle="modal" data-target="#modal-6">6.- CONECTANDO CON LAS EMOCIONES "NEGATIVAS"</li>
+              <li data-toggle="modal" data-target="#modal-7">7.- DEPENDENCIA EMOCIONAL HACIA LA PAREJA</li>
+              <li data-toggle="modal" data-target="#modal-8">8.- DEPRESIÓN, SALIENDO DE LA TRISTEZA PROFUNDA</li>
+              <li data-toggle="modal" data-target="#modal-9">9.- DISMORFIA: CUANDO TE VES FEO SIN SERLO</li>
+              <li data-toggle="modal" data-target="#modal-10">10.- EL ARTE DE LA PSICOTERAPIA</li>
+              <li data-toggle="modal" data-target="#modal-11">11.- EMPATÍA, CONECTANDO CON EL OTRO </li>
+              <li data-toggle="modal" data-target="#modal-12">12.- ÉTICA Y PROFESIONALISMO DEL PSICÓLOGO </li>
+              <li data-toggle="modal" data-target="#modal-13">13.- HÁBITOS DE VIDA, DESDE LA PSICOLOGÍA</li>
+              <li data-toggle="modal" data-target="#modal-14">14.- HACER CONSCIENTE LO INCONSCIENTE ES PARTE DEL PROCESO TERAPÉUTICO</li>
+              <li data-toggle="modal" data-target="#modal-15">15.- HAZTE LA PREGUNTA PARA QUÉ Y NO POR QUÉ</li>
+              <li data-toggle="modal" data-target="#modal-16">16.- LA TECNOLOGÍA Y LAS RELACIONES INTERPERSONALES</li>
+              <li data-toggle="modal" data-target="#modal-17">17.- LOS TRASTORNOS MENTALES MEJORAN Y SE CURAN</li>
+              <li data-toggle="modal" data-target="#modal-18">18.- NADA PERSONAL</li>
+              <li data-toggle="modal" data-target="#modal-19">19.- NO TE COMPARES CON LOS DEMÁS</li>
+              <li data-toggle="modal" data-target="#modal-20">20.- PARA LOS QUE NO ENCAJAMOS DEL TODO Y DE VEZ EN CUANDO NOS LLAMAN LOCOS</li>
+              <li data-toggle="modal" data-target="#modal-21">21.- PARA SER PSICÓLOGO CLÍNICO ES CLAVE HABER SIDO PACIENTE</li>
+              <li data-toggle="modal" data-target="#modal-22">22.- PERDONAR NO ES OLVIDAR</li>
+              <li data-toggle="modal" data-target="#modal-23">23.- ¿PODEMOS CAMBIAR?</li>
+              <li data-toggle="modal" data-target="#modal-24">24.- QUIERO TENER Y MANTENER UNA RELACIÓN DE PAREJA PERO…</li>
+              <li data-toggle="modal" data-target="#modal-25">25.- REESTRUCTURANDO PENSAMIENTOS, REGULANDO EMOCIONES</li>
+              <li data-toggle="modal" data-target="#modal-26">26.- RELACIÓN DE PAREJA, COMO PODRÍA FUNCIONAR</li>
+              <li data-toggle="modal" data-target="#modal-27">27.- RESILIENCIA, CONVIRTIENDO LA ADVERSIDAD EN UNA OPORTUNIDAD</li>
+              <li data-toggle="modal" data-target="#modal-28">28.- SÉ EL ARQUITECTO DE TU VIDA </li>
+              <li data-toggle="modal" data-target="#modal-29">29.- SILENCIA LA MENTE </li>
+              <li data-toggle="modal" data-target="#modal-30">30.- SI QUIERES UNA RELACIÓN DE PAREJA ESTABLE NO TE ACUESTES TAN RÁPIDO</li>
+              <li data-toggle="modal" data-target="#modal-31">31.- TRASCENDIENDO A LA CONSCIENCIA </li>
+              <li data-toggle="modal" data-target="#modal-32">32.- TRASTORNO NARCISISTA DE LA PERSONALIDAD</li>
+              <li data-toggle="modal" data-target="#modal-33">33.- TRASTORNO HISTRIÓNICO DE LA PERSONALIDAD</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 only-desktop">
+          <div class="text-center">
+            <img alt="logo" class="img-fluid" src="./images/blog-img.JPG" />
+            <p class="quotes">
+              “En el aquí y el ahora, siempre es hoy”
+            </p>
+          </div>
+        </div>
+        <!--
+        <div class="col-sm-12 col-md-6">
+          <div class="navigation">
+            <div class="navigation__item">
+              <a href="javascript:prevPage()" id="btn_prev"><</a>
+            </div>
+            <div class="navigation__item">
+              <span id="page"></span>
+            </div> 
+            <div class="navigation__item">
+              <a href="javascript:nextPage()" id="btn_next">></a>
+            </div>
+          </div>
+        </div>
+        -->
+        <div class="col-sm-12 col-md-4 only-mobile">
+          <div class="footer__icons m-0">
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.facebook.com/joseandres.beneytocorrea">
+                <span class="flaticon flaticon-facebook"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.linkedin.com/in/psjosebeneyto/">
+                <span class="flaticon flaticon-linkedin"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a target="_blank" href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                <span class="flaticon flaticon-instagram"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              Aceptar, cambiar y fluir
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Para poder cambiar es necesario aceptar y a partir de ahí estamos listos para que las cosas sucedan.
+                Es importante en este camino tomar buenas decisiones, perseverar y fluir.      
+              </p>
+    
+              <p>
+                La aceptación nunca es conformidad, si no más bien es sabiduría como un punto de partida, para la propia evolución.
+                Después de aceptar quienes somos, donde estamos, entonces decidiremos a donde vamos y ahí comienza el verdadero cambio.
+              </p>
+                
+              <p>Ojo no hay cambio sin aceptación: primero acepto después cambio.</p>
+  
+              <p>La vida se nos abre favorablemente, si hay disposición a la aceptación, 
+              donde luego tendremos el camino despejado para un verdadero cambio.</p> 
+  
+              <p>
+              No existe ni la suerte ni el destino. El camino lo va creando uno mismo. 
+              Así qué todo lo que te ocurra en un porcentaje alto es creación tuya. 
+              </p>
+  
+              <p>El destino no es lo qué te ha llevado hasta donde estás; sino más bien tus decisiones y acciones.</p>
+  
+              <p>Nunca es tarde, sólo existe el ahora y ahora es cuando.</p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              ANSIEDAD, APRENDIENDO A VIVIR EN PAZ 
+            </div>
+            <br>
+            <div class="only__text">
+            <p>
+              CONCEPTO:
+              La ansiedad es una respuesta natural y adaptativa que tiene como función principal activarnos para poder realizar acciones que contribuyan a nuestro propio bienestar e ir movilizándonos para ir resolviendo obstáculos y así mismo poder llegar a objetivos. 
+            </p>
+            <p>
+              PROBLEMÁTICA:
+              El problema se da cuando esta emoción avanza y comenzamos a generar más ansiedad de la que necesitamos. Experimentado malestar ante diversas situaciones específicas, sintiéndonos nerviosos, tensionados y con momentos de angustia, haciéndonos la vida cuesta arriba, con poco goce de presente y afectando nuestras áreas de vida. 
+            </p>
+            <p>
+              SOLUCIÓN:
+              La ansiedad se puede desencadenar por dos motivos: genético y aprendido. En ambos casos se pueden disminuir hasta que no nos afecte la vida y más bien nos favorezca como combustible para solucionar y alcanzar nuestros planes, reaprendiendo para tener una vida funcional con paz y goce de presente. 
+              Si la tratamos adecuadamente y con la ayuda de un profesional, podemos aprender a canalizarla correctamente, convirtiéndola en una emoción natural y ligera, sin que nos perjudique y donde podamos ir resolviendo situaciones de manera tranquila, sin desgaste,  reaccionando adecuadamente, pudiendo tener paz y disfrute de vida.
+            </p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              APRENDIENDO LA COMPASIÓN PARA LA LIBERACIÓN 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                La compasión es la capacidad de comprensión profunda que podemos desarrollar desde el amor a nosotros mismos y a los demás. 
+
+Compasión no es pena, ni justificación ni resignación, es sólo entendimiento sin juicio.
+
+Una de las herramientas más poderosas de la compasión es el perdón, donde se inicia un efecto muy liberador. Con la compasión perdonas y te perdonas.
+
+Todos tenemos alguna tara, trauma, etc, cosas por resolver (el que diga que no, está mintiendo o no es consciente) que se evidencia de muchas maneras, donde sale un ego confuso a relucir, imponiéndose sobre nuestro verdadero yo, mostrando lo qué no somos, por los daños que nos hicieron, nos hicimos, donde juzgamos sin compasión y de seguro también nos sentimos juzgados.
+
+Tengamos cuidado con esos juicios y peor aún con esos prejuicios. Ya que así como juzgas serás juzgado y no te podrás escapar, porque el juicio vendrá de ti.
+
+El aprendizaje de la compasión se da a cada instante, en cada momento, todos los días. 
+No es fácil, tampoco es difícil; pero sí que vale la pena. 
+
+ Finalmente, cuando vamos desarrollando esta cualidad, estamos sanando y creciendo.
+
+              </p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              BORDERLINE: TRASTORNO LÍMITE DE LA PERSONALIDAD
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Cuando el impulso nos desborda, la inestabilidad nos persigue, el conflicto es el pan de cada día, cuando sentimos un vacío muy profundo evitando a toda costa el abandono, cuando pasamos de la idealización a la devaluación, cuando somos agresivos pasando del ataque a la culpa con un profundo arrepentimiento, cuando sentimos que al más mínimo comentario nos hieren tocando nuestras fibras de sensibilidad más profundas, reaccionando de manera desproporcionada, cuando en las relaciones interpersonales sobre todo las más íntimas se nos hace cuesta arriba con mucha intensidad  y poca durabilidad... entonces estamos hablando del borderline o el trastorno límite de la personalidad.
+                <br><br>
+                CARACTERÍSTICAS:
+                1) Inestabilidad que dificultan las relaciones interpersonales.
+                2) Impulsividad en las relaciones interpersonales.
+                3) Ira inapropiada: Conflictos y discusiones frecuentes desbordados que suelen durar horas y raras veces días. 
+                4) Culpabilidad: Sentimiento de culpa después de un comportamiento hiriente 
+                5) Hipersensibilidad: Casi todo tipo de comentario o broma tienden a herir su susceptibilidad generando una reacción desproporcionada. 
+                6) Dependencia sobre todo a la pareja: con mucha intensidad y pensamientos de miedo al  abandono.
+                7) Idealización y devaluación a las personas: Pasan de endiosar a devaluar por algún hecho que se sintieron afectados. 
+                8) Terminan una relación e inmediatamente comienzan otra, no soportan la soledad. 
+                9) Ansiedad: una alta ansiedad que suele manifestarse en distintas áreas. 
+                10) Depresión: Sentimiento de vacío, soledad, culpa e inestabilidad emocional. 
+                <br><br>
+                TRATAMIENTO Y SOLUCIÓN 
+                El tratamiento más efectivo es la terapia cognitivo conductual, donde se deben de trabajar reestructuración de pensamientos, modificación de conducta, estrategias en regulación y manejo emocional, control y canalización de impulsos, construcción de autoestima, desensibilización de hipersensibilidad y solución de situaciones del pasado no resueltas que generan malestar en el presente, entre otros. 
+                <br><br>
+                Este desorden de la personalidad, es reversible y tiene cura sí se trata adecuadamente con un profesional de la salud mental. 
+                <br><br>
+                Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes trastornos de la personalidad; sin que ello signifique que necesariamente tengamos el trastorno de la personalidad como tal.
+                Debemos tener cuidado con autodiagnosticarnos o diagnosticar a los demás. Eso sólo lo puede hacer el profesional de la salud mental, así como el debido tratamiento.
+                
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              5-CAMBIAMOS SI ACEPTAMOS 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Aceptar la realidad en nosotros mismos, nos acerca a una grandeza que puede ser infinita y fascinante, dándonos una nueva oportunidad, con un nuevo punto de partida para tener una vida plena.
+<br><br>
+No hay cambio sin aceptación y llegar a este estado de consciencia para el cambio, no siempre es fácil; pero créeme que vale la pena, ya que a partir de ahí sentiremos que nos cambió la vida y que fuimos nosotros quienes lo hicimos, comprendiendo y aceptando desde una perspectiva más amplia que la realidad externa cambia, sí primero cambiamos la interna.
+<br><br>
+No esperes que el mundo cambie, cambia tú, la verdadera revolución comienza por uno.
+<br><br>
+Casi el 100% de nuestra mejora dependerá de los cambios que hagamos, las decisiones que tomemos y lo perseverantes que seamos.
+
+              </p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              CONECTANDO CON LAS EMOCIONES "NEGATIVAS" 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Estamos inmersos en una cultura occidental donde nos exigen muchas veces "la felicidad de Disney", teniendo que exportar "alegría" todo el tiempo, no pudiendo sentir dolor o tristeza, reprimiendo emociones qué son adaptativas.
+<br><br>
+Ver la vida de manera positiva implica también aceptar la tristeza, sentir el dolor, tener ansiedad y otras emociones mal llamadas negativas. Qué nos ayudan a adaptarnos, a darnos cuenta hasta donde podemos llegar, poner límites y tomar decisiones que nos permitan vivir con funcionalidad.
+<br><br>
+Estas emociones son parte de la vida y necesarias para poder resolver problemas.
+<br><br>
+Por ello para conectar con uno mismo es necesario dejar fluir estas emociones, no resistirse y menos salir "corriendo" buscando estímulos "salvadores" externos, qué te podrían engañar con una aparente salvación de momento; pero no solucionar realmente el problema. 
+<br><br>
+Hay que dejar qué estas emociones hagan su trabajo, sigan su curso, limpien la zona y luego salgan.
+<br><br>
+Esto no significa que fomente las emociones "negativas"; sino qué son necesarias aceptarlas y gestionarlas para sanar.
+
+              </p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              DEPENDENCIA EMOCIONAL HACIA LA PAREJA
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Hay muchas personas que sufren muchísimo en las relaciones de pareja por no resolver el problema de dependencia y a medida que pasa el tiempo es peor. 
+                Trataré de explicar de una manera resumida de que trata y qué podríamos hacer.
+                <br><br>
+                La dependencia emocional hacia la pareja en un estado de sufrimiento psicológico donde se forma un apego obsesivo hacia otra persona, colocándola por encima de nosotros mismos y de nuestros propios intereses, perdiendo perspectiva y discernimiento de lo tóxico de nuestra relación, donde creemos irracionalmente que necesitamos a la otra persona para vivir y por ende todo gira al rededor de esta. Creando un comportamiento de sumisión y/o control. 
+                <br><br>
+                El problema de la dependencia emocional es que si no se corrige, quien lo sufre se vuelve cada vez más inestable, teniendo algunas de las siguientes características: 
+                <br><br>
+                Dificultades para tomar decisiones, necesidad que otras personas se responsabilicen de su vida o responsabilizarse de la otra persona, necesidad de control y dominio, o deseo exagerado de protección, dificultades para expresar desacuerdos o imponerlos, sensación de incomodidad cuando están solos, preocupación no realista al abandono, cuando terminan una relación buscan urgentemente otra repitiendo el mismo patrón. 
+                <br><br>
+                En la mayoría de las veces culpamos a la pareja y no asumimos responsabilidades.
+                <br><br>
+                La solución no es ir al extremo de ya no tener pareja, sino de aprender a tener una relación sana, pudiendo desarrollar nuestro propio crecimiento de manera individual y en conjunto.
+                <br><br>
+                La cura de la dependencia emocional comienza por reconocer el problema haciéndose responsable, trabajando el autoestima, creencias irracionales por racionales, aprendiendo estrategias adecuadas para vincularse con los demás, cambiando las palabras "te necesito" por "te elijo", "te deseo" o "puedo ser feliz contigo o sin ti", trabajando y entrenando  la autonomía, no negociando la dignidad, estando bien primero consigo mismo para poder estar fuerte emocionalmente y así tener una relación sana entre otras recomendaciones.
+                <br><br>
+                La dependencia emocional a medida que va avanzando, se va convirtiendo en una adicción como la que se le tiene a la droga, haciéndose muy difícil en el día a día, entrando en un laberinto agotador sin salida, sufriendo innecesariamente más de la cuenta. Entonces es aquí cuando debemos recurrir a un profesional para que nos ayude y podamos realizar un trabajo en conjunto para poder construir relaciones valiosas y duraderas comenzando por uno mismo.
+                <br><br>
+                Aprendamos a ser dueños de nuestras vidas, sin tener dependencias tóxicas, desarrollando el desapego, la autonomía y de esta manera gozar de una preciada libertad, para así vincularnos de manera sana con nuestra pareja y estar en paz con nosotros mismos.
+                
+              </p>
+  
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              DEPRESIÓN, SALIENDO DE LA TRISTEZA PROFUNDA
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Sentir tristeza es una emoción natural que se puede originar por distintas situaciones de la vida, donde conectamos con nosotros mismos, siendo hasta una emoción adaptativa. El problema se origina si esta emoción permanece mucho tiempo, volviéndose crónica, profunda y nos cuesta salir de ella. Ahí ya estamos hablando de una depresión que muchas veces no nos damos cuenta.
+<br><br>
+La depresión es un estado mental de tristeza profunda, sin goce del presente, que puede comenzar a cualquier edad y se va agudizando en el tiempo si no se hace nada al respecto. Las razones pueden ser genéticas o ambientales, donde comenzamos a ver la vida "en blanco y negro" haciéndonos sufrir más de la cuenta.
+<br><br>
+La depresión se caracteriza por la presencia de una tristeza profunda y crónica, originando pérdida de interés y placer por el presente, nostalgia por el pasado, falta de ilusión y esperanza por el futuro, baja autoestima, pensamientos irracionales como sentimientos de culpa y vergüenza, sensación de cansancio ( falta de energía), abandono de sí mismo, falta de atención y concentración, frustración e irritabilidad, sintiendo que nadie nos entiende, afectando nuestro funcionamiento normal y actividades diarias, dificultándonos las relaciones intrapersonales(con nosotros mismos ) e interpersonales (con los demás), con grandes limitaciones para hacer una vida como nos merecemos entre sus principales síntomas.
+<br><br>
+La buena noticia es que sí se puede salir de ese estado limitante, cuando tomamos consciencia de ello y realizamos acciones, ya sea por cuenta propia o pidiendo ayuda profesional, donde se trabajan hábitos, conductas, pensamientos, creencias e ideas irracionales por racionales, entrenando la voluntad con estrategias adaptativas, partiendo de la base que si se puede salir de ella si ponemos de nuestra parte.
+<br><br>
+La idea es revertir esta situación sin prolongar el sufrimiento, tomando medidas y acciones al respecto, para así vivir con plenitud, con goce de presente, teniendo ilusiones y comenzar a sentirnos bien desde ahora.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              DISMORFIA: CUANDO TE VES FEO SIN SERLO
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                
+Hablamos del trastorno dismórfico cuando sentimos que no podemos dejar de pensar en uno o más "defectos" de nuestro físico, siendo estos inexistentes o imperceptibles a los ojos de los demás; pero no para nuestros ojos.
+<br><br>
+En otras palabras llegamos a sentirnos feos sin serlo. 
+<br><br>
+La causa de este problema en la mayoría de los casos empieza en la adolescencia por distintas situaciones que afectaron nuestra autoestima, donde a partir de ahí se construyó una visión distorsionada de nuestro físico. 
+ <br><br>
+Cuando tenemos dismorfia aunque nos digan que estamos bien, no alcanza para que nos las creamos, trayendo como consecuencia ansiedad, depresión y aislamiento. 
+<br><br>
+Todos tenemos nuestras imperfecciones, aprendemos a vivir con ellas y si se puede se corrige. El problema aquí es que se convierte en una obsesión dedicándole mucho tiempo en el espejo y una vez arreglado el "defecto" pasamos a otro.
+<br><br>
+La dismorfia le suele dar a muchas más personas de lo que imaginamos, donde en la mayoría que lo padecen, cumplen o superan los estándares de belleza culturales.
+<br><br>
+Lo recomendable para tratar la dismorfia, es trabajar en terapia con un profesional hasta que podamos vernos como realmente somos.
+<br><br>
+Acuérdate que todo cambia, mejora y se supera sí es que no los proponemos.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              EL ARTE DE LA PSICOTERAPIA   
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                El arte de la terapia consiste en el talento de sumergirse con el paciente "buceando" hasta lo más profundo de su ser, con un entendimiento amplio y fino en todo el recorrido de bajada y subida para luego ayudarlo a salir a flote, con respuestas y soluciones claras, trabajando en los paralelos de lo urgente y lo importante. 
+                <br><br>
+La empatía, la escucha activa, el dar mensajes claros, el compromiso, el ir verificando progresos y el trabajo en equipo son parte del proceso terapéutico.
+
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              EMPATÍA, CONECTANDO CON EL OTRO  
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Cuando hablamos de empatía, estamos hablando posiblemente de uno de los sentimientos más potentes de conexión entre dos personas. 
+<br><br>
+La empatía es la capacidad de ponernos en el lugar del otro, comprendiendo sus problemas, necesidades y deseos, así no te haya pasado lo mismo, bajo un entendimiento de interés genuino.
+<br><br>
+Se trata de ir aproximándonos a los sentimientos y emociones de los demás, sin sentir necesariamente lo mismo; pero sí intentando experimentar de forma objetiva, racional y emocional lo que siente la otra persona, poniéndonos en sus "zapatos".
+<br><br>
+Cuando tenemos empatía vamos desarrollando la comprensión, la compasión y entrando al mundo interno de los demás. Es muy importante comunicar dicho entendimiento.
+<br><br>
+La empatía es una herramienta muy potente de amor. Donde a partir de ahí podremos entendernos, construyendo puentes de conexión sanos y funcionales.
+<br><br>
+Uno puede practicar la empatía todos los días con personas conocidas y desconocidas, sólo hay que tomar la decisión.
+<br><br>
+Si desarrollas la empatía estás listo para conectar con los demás en cualquier tipo de relación.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              ÉTICA Y PROFESIONALISMO DEL PSICÓLOGO 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Soy un apasionado de mi carrera, que intenta día a día dar lo mejor, sin sentirse superior a nadie.
+Compito sólo conmigo, para ser mejor del que era antes en todo el sentido de la palabra y con mis imperfecciones busco la evolución permanente y de mis pacientes. 
+<br><br>
+Soy un convencido de los cambios positivos de la ciencia de la psicología en las personas y por lo mismo me fascina mi profesión, porque siento que contribuyo a ello.
+<br><br>
+También soy un convencido de la ética, de los principios, valores y el correcto ejercicio que debe de seguir nuestra carrera: la psicología.
+<br><br>
+El título no te hace; pero si es importante contar con todos los requisitos que requiere esta profesión de tanto cuidado y sensibilidad para las personas que confían en nosotros.
+<br><br>
+Por ello y para hacerla corta: Si eres una persona que acude a un psicólogo (un profesional de la salud mental, emocional y conductual) asegúrate qué realmente lo sea, desde la licenciatura hasta la colegiatura. Y para mis colegas psicólogos que están ejerciendo, asegúrense de estar debidamente colegiados y habilitados para dignificar la profesión. 
+No es rigidez, es profesionalismo.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              HÁBITOS DE VIDA, DESDE LA PSICOLOGÍA 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                1) SUEÑO: Dormir un mínimo de 6 a 8 horas es lo ideal. Ya que un sueño reparador es como darle alimento a nuestro cerebro. Al dormir regeneramos todas nuestras células y funciones cerebrales.
+<br><br>
+2) ALIMENTACIÓN: Comer sano y rico. Influye directamente en nuestros neurotransmisores y neuronas, aportando grandes beneficios a la zona intelectual y emocional. 
+<br><br>
+3) DEPORTE: El que tu elijas, un mínimo de tres veces por semana y no menos de 30 minutos... traerá grandes beneficios, como la segregación de endorfinas y serotonina: ansiolíticos y antidepresivos naturales.
+<br><br>
+4) RESPIRACIÓN: Aprender a respirar lento y profundo es un hábito que sí lo prácticas a diario, al menos 5 minutos, te comenzará a cambiar la vida, aprendiendo a gestionar tus emociones. 
+<br><br>
+5) EVITAR NOTICIAS EN LA TV: Si bien es importante estar informado, los noticieros de la  tv son tóxicos, dejando una sensación desagradable de intranquilidad, que entra tanto al inconsciente como al consciente. Así que te recomiendo informarte por otros medios.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              HACER CONSCIENTE LO INCONSCIENTE ES PARTE DEL PROCESO TERAPÉUTICO
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Una de las funciones principales del psicólogo es hacer consciente lo inconsciente en el paciente, lo que no nos damos cuenta, es decir lo que hemos aprendido o adquirido por experiencias (creencias y conductas) donde muchas veces nos cuesta adaptarnos a la vida, haciéndonos el camino cuesta arriba.
+                <br><br>
+                Cuando empezamos el proceso de auto-conocimiento vamos entendiendo que es lo que nos pasa y comenzamos a tomar conciencia. Es ahí cuando nos acercamos al cambio. 
+                A veces pensamos que la otra persona es la que tiene el problema y pocas veces nosotros, el resultado es el mismo: nos vamos quedando solos con nuestra razón (puro ego), perdiendo oportunidades valiosas para poder ser feliz.
+                <br><br>
+                No siempre es fácil adquirir esa conciencia y realizar el cambio, ya que creamos resistencias para lo nuevo, porque nos cuesta darnos cuenta y reconocer lo que nos pasa, quedándonos en la zona de sufrimiento. Ya que estamos acostumbrados muchas veces a actuar y a reaccionar de la misma manera, repitiendo los mismos patrones, obteniendo los mismos resultados donde sentimos que en algo estamos fallando sin saber en qué exactamente, sintiéndonos frustrados nuevamente sin avanzar. 
+                <br><br>
+                Es aquí donde el psicólogo hace su trabajo: hacernos consciente de lo inconsciente. En otras palabras hacer que nos demos cuenta y trabajar con nosotros sobre ello para poder alcanzar lo que necesitamos.
+                <br><br>
+                Entonces cuando llegamos a tomar consciencia ya tenemos el 50% resuelto del camino y el otro 50% de la solución consiste en tomar las decisiones correctas.
+                 Aquí es cuando trascendemos, vamos creciendo y lo que no se daba se empieza a dar.
+                <br><br>
+                Para adquirir consciencia y hacer el cambio se requiere básicamente valentía y perseverancia.
+                
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              HAZTE LA PREGUNTA PARA QUÉ Y NO POR QUÉ
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Cuando te pase una dificultad de esas que duelen y quieras salir de ella, pregúntate: 
+                ¿para qué? y NO ¿por qué?.
+                <br><br>
+                 El para qué te sacará del "hoyo", encontrarás una oportunidad de aprendizaje y la misma situación negativa la podrás convertir en positiva si es que te concentras en lo que puedes hacer.
+                 Cuando caes en el por qué, te victimizarás, le darás vuelta a lo mismo y seguramente culparás a los demás sin aprender nada, repitiendo los mismos patrones. 
+                <br><br>
+                Entonces aplica la pregunta para qué, hazte cargo, aprende y sigue adelante.                
+                
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              LA TECNOLOGÍA Y LAS RELACIONES INTER-PERSONALES 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                La tecnología es una buena herramienta de información, trabajo y comunicación si es bien utilizada. La cual te permite estar conectado a tiempo real con todo el mundo. También te da la oportunidad de contribuir, recibir información y de comunicarte con personas que están lejos o cerca.
+<br><br>
+                PERO:
+                <br><br>
+                El problema es el uso exagerado y enfermizo que le estamos dando; como en las redes sociales.  Creándonos una vida irreal, donde la tecnología, está reemplazando la realidad.
+                Nos estamos robotizando, ya que se está perdiendo contacto con la vida, aislándonos cada vez más...e irónicamente vas tendiendo la sensación ficticia de estar acompañado, cuando realmente no lo estás..., estás sólo: Tú y la computadora.
+                <br><br>
+                  También se dan muchos mal entendidos, que pueden acabar con una relación. Donde la otra persona puede entender lo que le dices diametralmente opuesto a lo que le estas queriendo decir, por falta de entonación, gestos, etc, es decir falta de realidad. 
+                <br><br>
+                Creo que cada uno elije su camino...decide que escribir, que exponer de su vida, etc; pero cuidado, que estos medios, mal usados, son cada día más peligrosos, extinguiendo la verdadera esencia y espontaneidad de la persona.
+                <br><br>
+                Pon atención a ello y la idea es que Tu manejes a la tecnología; no que ella te maneje a Ti. No te quedes pegado mucho rato en esto, que la vida va pasando y Tu te la vas perdiendo.
+                Hay que aprender a discernir y por lo mismo busquemos un equilibrio.
+                
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              LOS TRASTORNOS MENTALES MEJORAN Y SE CURAN
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Cuantas veces hemos escuchado decir que ningún trastorno o desorden mental se cura, "qué sólo se controla…y” es más quienes lo dicen son algunos colegas de la salud mental, que no son pocos, expresándolo con una contundencia que realmente preocupa que en pleno siglo 21 sigan diciendo lo mismo.
+<br><br>
+                La ciencia avanza y la psicología no se queda atrás y hoy en día se sabe que los trastornos mentales en su mayoría tienen cura, y digo en su mayoría porque en el peor de los casos mejoran significativamente y en el mejor de los casos se revierten curando al punto que lo que tenias ya no lo tendrás, pudiendo hacer una vida estable y funcional.
+                <br><br>
+                Claro está que para que eso ocurra la persona que lo padece debe de poner de su parte, siendo constante y yendo a un profesional que no sea "tibio", el cual se comprometa con el paciente a “cruzar el río", en un proceso terapéutico duro y parejo. 
+                <br><br>
+                Voy a comenzar a escribir de casi todos los trastornos mentales, los que mejoran (todos) y los que se curan (la mayoría). 
+                
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><br><br>
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              NADA PERSONAL 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                No tengo nada en contra de los coaching que entrenan y motivan a personas para llegar a objetivos en distintas áreas de la vida. Hasta ahí de acuerdo.
+<br><br>
+                Lo que sí estoy en desacuerdo es que algunos aborden temas de la salud mental con pacientes, interviniendo en "terapias o consultas psicológicas", ya que dicha intervención puede ser contraproducente para el paciente por falta de preparación. 
+               <br><br>
+               El ejercicio profesional de la salud mental en consulta, sólo puede ser ejercido por psicólogos, psiquiatras y neurólogos debidamente licenciados y colegiados.
+               <br><br>
+               Todos tenemos la capacidad de dar consejos y ayudar al prójimo, pero cuando hablamos de temas más complejos y profundos a nivel psicológico, como un trastorno, una depresión o ansiedad, etc, debemos de ser abordados por un profesional de la salud mental. 
+               <br><br>
+               Nada personal, pero es bueno saber las cosas como son y a partir de ahí cada uno decide.
+               
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              NO TE COMPARES CON LOS DEMÁS 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Si te comparas con los demás siempre perderás, porque tu comparación no será objetiva, ni medible. Ya que uno puede ser mejor que la otra persona en determinada área; pero no en todas y más temprano que tarde te fijaras en el que está mejor que tú y entonces "perderás".
+                <br><br>
+Somos seres sui géneris (únicos en nuestra especie) y la única y verdadera medición es con nosotros mismos, como estábamos antes y como estamos ahora y el de ahora es lo importante.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              PARA LOS QUE NO ENCAJAMOS DEL TODO Y DE VEZ EN CUANDO NOS LLAMAN LOCOS
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                El mundo está lleno de estadísticas, que te dicen que así va hacer.... te dicen también que el mundo ya está hecho y que el que pretenda cambiarlo está loco.
+<br><br>
+Entonces si NO crees en ello y quieres crear un mejor mundo en el tuyo...esto es para ti:
+<br><br>
+Sé un loco genial, un loco a mucha honra, un loco orgulloso de ti, de esos que rompen las estadísticas y las superan.
+<br><br>
+ De esos que no sólo vienen al planeta a respirar y punto, sino de esos locos que están dispuestos a darlo todo, a abrazar al mundo...fallen o no fallen hasta que acierten.
+<br><br>
+De esos que luchan por sus ideales y que saben que la mayoría no siempre tienen la razón.
+<br><br>
+Sé un loco de esos que no escuchan a los pesimistas disfrazados de realistas y que más bien escuchan sus ilusiones y van por ellas.
+<br><br>
+De esos locos que dicen lo que piensan, sin darle tanta vuelta y que sus hechos hablan más que sus palabras. 
+<br><br>
+Sé un loco libre del que dirán, de esos que valoran su libertad y le dan un contenido  a su vida.
+<br><br>
+De esos que se ven duros y sensibles a la vez... que vienen a aprender,  a dar lo mejor de sí y creen en el cambio.
+<br><br>
+Así que sí eres un loco de aquellos, ¡bienvenido al club!, no estás sólo y sí lo estás que no te importe, tú sigue no más, total estás "loco".
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              PARA SER PSICÓLOGO CLÍNICO ES CLAVE HABER SIDO PACIENTE 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                No quiero caer en el egocentrismo de hablar de mí, creo que no lo suelo hacer, sino más bien suelo escribir y hablar de la psicología y todo lo concerniente a esta ciencia, para mi una de las más importantes de todas.
+                <br><br>
+                A algunos aburriré y a otros ayudaré. De igual manera esto va para todos los que les gusta y no les gusta lo que escribo.
+                <br><br>
+                Sólo decir lo importante que fue y sigue siendo la psicología en mi vida a todo nivel:
+                Espiritual, emocional, afectivo, cognitivo, laboral, social, familiar, etcétera, llegando a una psicología integral, abarcando todas las áreas personales y sus dimensiones más profundas y así mismo aplicando las mismas con mis pacientes. 
+                <br><br>
+                Entendí lo que significa tener calidad de vida de manera integral y equilibrada, aprendiendo que la felicidad no son momentos, sino un estado de vida incluido problemas y tristeza, donde hay que agradecer todos los días. 
+                <br><br>
+                Aprendí también y cada vez que puedo lo digo con mucha humildad... que la comparación es con uno mismo... de como estabas antes y como estás ahora y el de ahora es lo importante.
+                <br><br>
+                Entendí antes de ser psicólogo que no nos debe de dar vergüenza pedir ayuda, mostrar a la persona correcta nuestra vulnerabilidad y comenzar a concretar nuestro propio crecimiento.
+                Cada uno elige su camino y sí el fin es ser mejor persona contigo y con los demás, entonces "obsesiónate" en tu camino y no pares en tu crecimiento personal.
+                <br><br>
+                Yo tuve momentos muy duros en mi vida y no era muy feliz que digamos... para mi la felicidad eran sólo momentos, creía que era así. 
+                <br><br>
+                Ahora y ya hace un tiempo, gracias a esos momentos duros y todo un nuevo recorrido, entiendo la felicidad como un estado y estilo de vida y la alegría como un estado de presentes positivos con principio y fin.
+                <br><br>
+                Una está dentro de la otra, es decir las alegrías están dentro de la felicidad y tienen corta duración, siendo estás muy necesarias, pero no se sienten todo el tiempo. A diferencia de la felicidad que es un estado prolongado y una vez que prende la llama es difícil que se apague. Sólo hay que saber prenderla y mantenerla.
+                <br><br>
+                En otras palabras la felicidad es un estado prolongado con características muy claras las cuales son: 
+                Paz, libertad, afectos sanos, alegrías positivas, objetivos y realizaciones en un 50% a más en cada una de ellas y por otro lado entender que felicidad no significa ausencia de problemas, tristezas, etc. Eso también es parte de la felicidad. 
+                Esto último lo he comprobado de manera científica. 
+                <br><br>
+                Recuerden hagan su propio camino de crecimiento personal, el que quieran, mientras sea bueno adelante... ¡ sólo sean felices !
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              PERDONAR NO ES OLVIDAR 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Perdonar no es necesariamente olvidar. El verdadero perdón se trata de qué cuando te acuerdes de lo que te hicieron en el pasado ya no te duela en el presente.
+<br><br>
+Para poder perdonar y hacerlo de manera genuina, se debe perdonar a la persona, comprendiendo sus limitaciones y falta de consciencia; pero no necesariamente se perdona la acción de lo que te causo el dolor. Eso ya no es realista y nos confunde con el verdadero perdón. 
+<br><br>
+Perdonar tampoco implica necesariamente continuar con la persona. Puedes perdonar siguiendo con o sin la persona. Incluso puedes perdonar a la persona, sin que esta lo sepa. 
+<br><br>
+El perdón no siempre es de la noche a la mañana... a veces toma tiempo, ya que es un proceso. Lo importante es llegar a él. 
+<br><br>
+Cuando perdonamos sanamos, nos liberamos y soltamos.
+<br><br>
+Perdona por ti y para ti.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              ¿PODEMOS CAMBIAR?
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                "La gente no cambia sólo mejora"... cuantas veces hemos escuchado o hasta lo hemos dicho... afirmando y condenando a los demás y por ende a nosotros mismos de manera categórica que no cambiamos... "que va a cambiar si ya tiene 30, 40, 50 ó 70 años"...
+<br><br>
+Está probado científicamente que una persona puede cambiar realista y positivamente y que nunca es tarde. Sólo tienes que proponértelo y entender que no es por arte de magia. Se trata de atreverte a tomar una determinación, tal vez la más importante de tu vida y trabajar en ello.
+<br><br>
+El cambio es la oportunidad de crecimiento en la evolución del ser y esta oportunidad la tenemos todos los días, siempre se puede crecer más. 
+<br><br>
+Para lograr el cambio, hay que proponérselo, darte un crédito de confianza y apostar por ti. Sólo pon de tu parte y observarte un poco.
+<br><br>
+El que cree y sobre todo quiere cambiar, cambia. Para ser más preciso me refiero a lo que no te gusta de ti, en lo que sientes que te hace sufrir y sobre todo en lo que te quieres convertir. 
+<br><br>
+Si trabajas en ti poniendo atención, siendo perseverante, mejorarás en muchos aspectos, luego mirarás hacia atrás y verás una distancia grande de lo que fuiste y de lo que eres, confirmando que el cambio existe, modificando pensamientos, emociones y conducta. 
+<br><br>
+Ojo no hablo de ir en contra de tu propio yo o anularte como persona; porque no todo lo tienes que cambiar. Yo me refiero de lo que te gustaría cambiar, no te deja estar en paz o ser feliz.
+<br><br>
+Puedes desaprender, volver aprender y ser quien tu quieras ser.
+<br><br>
+Cuando vas cambiando te vas realizando, ya no extrañarás el pasado, te centras en el presente, proyectando futuro. 
+<br><br>
+La revolución y conquista comienza por uno mismo; no por los demás.
+La vida es como la tierra, siempre está en movimiento y ese movimiento es justamente la oportunidad de cambio que uno puede ejercer.
+<br><br>
+La evolución nunca termina, sólo tiene que haber un punto de partida y eso depende de ti.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              QUIERO TENER Y MANTENER UNA RELACIÓN DE PAREJA PERO....
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Muchas personas vienen a mi consulta por el tema de la pareja: ya sea por querer tener, conservar o incluso terminar una relación. Y el camino se va despejando, cuando se va trabajando en el proceso hasta llegar al objetivo.
+<br><br>
+Para que funcione una relación de pareja no hay una fórmula mágica; pero sí aproximaciones que sería bueno tomarlas en cuenta desde el principio. Aquí algunas:
+<br><br>
+Nunca pongas a tú futura o ya pareja en un pedestal, nunca te pongas tú en un pedestal. Eso siempre aleja, estar en el mismo nivel es fundamental. 
+Cuando no estamos en el mismo nivel nos alejamos y nos perdemos del otro. Ya que uno se cansa de mirar hacia arriba o hacia abajo todo el tiempo. Esto no quiere decir que no haya admiración que es muy importante; pero nunca subordinación. La mirada tiene qué ser horizontal. 
+<br><br>
+Para qué resulte tienen que estar en la misma plataforma los dos, sin egos, sin miedos y poder comunicar lo qué realmente les gustaria. 
+<br><br>
+Básico saber escuchar, observar, tener empatía, iniciativa y reciprocidad. 
+<br><br>
+Cuando te interese alguien por conocer no esperes que el otr@ siempre lo haga todo. Así seas mujer, puedes dar la primera señal, esto no es cuestión de género, arriesga un poco más. 
+No sé pierde nada, sólo se gana, lo importante es que te vayas entrenando en atreverte independientemente del resultado. 
+<br><br>
+Ojo no hay edad para una relación de pareja, ni tampoco distancia y el qué no arriesga no gana.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              REESTRUCTURANDO PENSAMIENTOS, REGULANDO EMOCIONES
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                1) Primero vamos tomando conciencia e identificando la emoción que nos perturba o incomoda. Esta siempre está ligada a un pensamiento o idea irracional que no nos damos cuenta. 
+                <br><br>
+2) Una vez detectada la emoción que nos molesta, vamos al pensamiento que es la raíz de dicha emoción, modificándolo por un pensamiento más objetivo. Esto es clave.
+<br><br>
+3) Al ir modificando el pensamiento, aproximándonos a la mayor objetividad posible, entraremos a regular la emoción, sintiéndonos mejor. 
+<br><br>
+4) Finalmente al ir siendo conscientes con observación y reflexión de nuestras emociones, iremos modificando el pensamiento o ideas irracionales por pensamientos realistas y por ende sintiéndonos mejor de manera objetiva. 
+<br><br>
+Todo ello es un proceso de menos a más que te hará sentir bien desde el primer momento en que lo practiques.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              RELACIÓN DE PAREJA, COMO PODRÍA FUNCIONAR 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                El verdadero amor de pareja parte del deseo, no de la necesidad. Es la elección libre de darle exclusividad a la otra persona con la cual podrás compartir un proyecto de vida, donde lo recomendable es un crecimiento individual y en conjunto.
+                <br><br>
+El amor es mucho más que una emoción (la emoción sóla nunca se sostiene en el tiempo).
+<br><br>
+El amor de pareja es una decisión racional de compromiso, con sentimientos y emociones que requiere esfuerzo, perseverancia y dedicación. 
+<br><br>
+La relación es de a dos, terceros afuera, sí traes la mochila del pasado de tus ex, créeme no funcionará. Sí sólo le pones emoción tampoco.
+<br><br>
+ Por ello siempre insisto en alinear la razón con la emoción, esa fusión creará una relación estable.
+ <br><br>
+Si se va desarrollando la confianza, el respeto, la comunicación, la admiración, la lealtad, el amor, la pasión, de menos a más, no de más a menos, entonces prenderá el fuego y se sostendrá en el tiempo. 
+<br><br>
+En toda relación de pareja hay problemas y a veces por más amor que haya no es suficiente para que funcione. Por ello hay que ser maduros y perseverantes, creando estrategias, acuerdos, toma de decisiones y lo más importante llevarlo a la práctica para que funcione. 
+<br><br>
+Cuando en la relación hay sólo idealización y devaluación y no matices, es decir picos de subidas y bajadas con pura intensidad, será una relación inestable y tormentosa que en cualquier momento "explotará" y no funcionará.
+<br><br>
+Es muy importante la estabilidad de pareja y para eso los dos tienen que trabajar para si mismos y como equipo. 
+<br><br>
+No es bueno ventilar los problemas de la relación con los demás. "Los trapitos se lavan en casa". Ya que después se indispone a la otra persona y uno mismo da derecho a que el resto opine, debilitando el vínculo de pareja. 
+<br><br>
+Es importante señalar que sí la relación no funcionó y quieren darle una nueva oportunidad, tiene que haber un nuevo plan, nuevas estrategias y compromisos, de lo contrario va hacer más de lo mismo. 
+<br><br>
+Las relaciones de pareja tienen sentido y se llega a buen puerto cuando los dos ponen de su parte, no basta con uno sólo.
+<br><br>
+Hay que dejar los egos afuera, el culparse y comenzar hacerse cargo buscando soluciones en equipo.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              RESILIENCIA: CONVIRTIENDO LA ADVERSIDAD EN UNA OPORTUNIDAD
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                La resiliencia es la capacidad que tenemos para sobreponernos, después de haber sufrido  adversidades que se nos presentan en la vida y que nos hacen mucho más fuertes para cualquier otra situación posterior. 
+                <br><br>
+Donde al principio nos podíamos sentir débiles, no veíamos la salida y la vida se nos hacía cuesta arriba. Después nos damos cuenta que se puede salir de cualquier situación por más difícil que parezca. 
+<br><br>
+En la resilencia aprendemos a tomar decisiones y ser perseverantes, entendiendo que ninguna situación por más extrema que sea, es para siempre. 
+<br><br>
+Mientras más fuerte es la situación, más fuerte nos volvemos. Aquí más importante que lo vivido es lo aprendido, ya que ahora entendemos que estas dificultades son para aprender, entrenarnos y saber que podemos lograr lo que nos propongamos. 
+<br><br>
+En otras palabras los que son resilientes, aprovechan las situaciones difíciles, asumen las crisis como oportunidades de cambio y crecimiento, entendiendo que esos momentos complicados no serán eternos y que su futuro dependerá de la manera en cómo vayan resolviendo estas situaciones difíciles.
+<br><br>
+Cuando nos enfrentamos a una adversidad ya no nos quejamos, no culpamos a los demás (eso es pérdida de tiempo y energía), nos responsabilizamos haciéndonos cargo de nuestra vida, enfocándonos en las soluciones.
+<br><br>
+Si la situación adversa está fuera de nuestro control, nos preguntamos: ¿Qué puedo aprender de lo qué sucede o sucedió? ¿Para qué me sucede? ya no nos preguntamos por qué, sino sólo para qué, entendiendo que detrás de cualquier dificultad hay un propósito, un aprendizaje, una misión y un entrenamiento que hará que todo lo vivido tenga sentido. 
+Después del suceso volteamos la página, seguimos para adelante, más fuertes y seguros, sabiendo que somos capaces y confiando cada día más en nosotros, pudiendo llegar a donde queramos.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              SÉ EL ARQUITECTO DE TU VIDA
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Uno es el arquitecto de su vida, por ende eres tú quien decide. 
+El destino no está escrito; uno lo va construyendo. Así que no culpes a nadie, tampoco a ti, no te victimices. Sólo hazte cargo.
+<br><br>
+Hazte responsable de ti mismo(a), la vida es corta para desperdiciarla.
+<br><br>
+Suelta el pasado en lo bueno y lo malo, sólo enfócate en hacer tú propio camino a partir de ahora.
+<br><br>
+Tú no eres lo que fuiste, eres presente.
+<br><br>
+Olvídate del resto, del que dirán, de que opinarán. 
+No andes preguntando como para que los demás te aprueben o desaprueben (no le des ese poder a nadie). Eso es distraerse, perder el tiempo y convertirte en un dependiente social.
+<br><br>
+Aléjate de lo tóxico, acércate a lo bueno y construye tu vida. 
+<br><br>
+Sé perseverante tomando buenas decisiones en todas las áreas de tu vida. Si no puedes sólo (qué es normal) busca la ayuda indicada; pero no te quedes por nada del mundo en una zona de resignación, el tiempo pasa y no vuelve. 
+<br><br>
+Finalmente quiérete, cree en ti y sé el arquitecto de tu vida.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              SILENCIA LA MENTE 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                No supongas, no especules, no juzgues, no te juzgues, no te bases en conjeturas. No sufras por lo qué no ha pasado o por lo qué pasó. 
+                <br><br>
+Silencia la mente, sólo respira de más a menos, lento y profundo, siente paz, siente libertad, siente.
+<br><br>
+No controles pensamientos, qué fluyan sin resistencia, entrando y saliendo y gradualmente vuelve a respirar lento y profundo.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              SI QUIERES UNA RELACIÓN DE PAREJA ESTABLE NO TE ACUESTES TAN RÁPIDO 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Muchos de mis pacientes cuando les hago la recomendación del título de mi artículo me responden: "pero y sí se va" o "se aburre" y "sí ya no me vuelve a llamar".... mirándome como diciendo en que época vives.... y yo les respondo si la persona quiere una relación estable como la que tu quieres, esperará y sí se va es que posiblemente no quería una relación de pareja o no sabe lo que quiere y eso no es lo que tu estás buscando. 
+                <br><br>
+Está claro que un área muy importante en la relación de pareja es la sexualidad. Qué es la pasión, unas de las conexiones más íntimas y de máxima exclusividad que se da en una relación; pero créeme para una relación estable es muy importante; pero no es lo más importante y te explico porqué:
+Según las investigaciones para que hayan mayores posibilidades de éxito en una relación de pareja, lo recomendable es conocer a la futura pareja antes de acostarse con ella, tomándose su tiempo e ir viendo que tan funcional podría ser, luego ir estableciendo una conexión emocional que eso irá fluyendo, después ir viendo si hay gustos, valores y costumbres en común para que funcione. 
+En otras palabras ir conociendo a la persona a través del tiempo y en diferentes situaciones. 
+<br><br>
+Si al poco tiempo de haber conocido a la persona tienes relaciones, es muy probable que comience una dinámica al rededor del sexo, que posiblemente impedirá que se desarrolle la conexión emocional, perdiendo un conocimiento objetivo hacia la persona y posiblemente mucho girará en torno al sexo y probablemente eso hará incompatible una relación de pareja estable. 
+<br><br>
+En otras palabras primero conoce a la persona y cuando sientas que la has conocido, vuélvela a conocer y cuando veas que las estás conociendo más y se ha desarrollado la suficiente confianza, entonces avanza poco a poco a otro nivel.
+<br><br>
+Las diferencias entre el hombre y la mujer han ido variando y en el último tiempo se ha ido asemejando el comportamiento sexual.
+Es decir las personas tienen relaciones sexuales casi sin conocerse, incluso en muchas relaciones se ponen el título de enamorados y no ha pasado ni un mes y ya están "en todas", al poco tiempo terminan y luego se preguntan porque no funcionó. 
+<br><br>
+La respuesta es clara: entregaste la parte más íntima de ti a un desconocido que estabas conociendo, quemando etapas y posiblemente la otra persona no lo valoró porque no le diste valor a unos de los puntos más sagrados e íntimos que tienes y quién lo recibió lo manejó en un esquema carnal, de sólo placer sin poder conectar emocionalmente y esta persona no se va a comprometer con alguien que entrega lo más íntimo tan rápido.  
+Siempre habrán excepciones; pero no son la mayoría. 
+<br><br>
+Entonces hagámosle caso a la ciencia y a la propia experiencia sin quemar etapas, conociéndonos más, para aproximarnos a una relación de pareja estable sí es eso lo que buscas.
+<br><br>
+Ahora si buscas el placer, por el placer lo cual es válido mientras haya un mutuo acuerdo, este artículo no aplica para ti.
+<br><br>
+Ojo, lo que escribo no va por un tema rígido, ni moral, ni religioso, etc... va por un tema funcional para que tu relación a futuro tenga mayores posibilidades.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              TRASCENDIENDO A LA CONSCIENCIA 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                A veces pensamos que la otra persona es la que tiene el problema, que los demás están mal y que ellos son los que tienen que cambiar: comportándose, pensando y acomodándose a nuestras necesidades. El resultado es el mismo: nos vamos quedando sólos con nuestra razón (puro ego), culpando al resto, perdiendo oportunidades para ser feliz, teniendo pensamientos tan irracionales como por ejemplo: "Todos los hombres son iguales, lo mismo con las mujeres". Sin asumir responsabilidades, señalando al otro.
+                <br><br>
+                Percibimos que en algo estamos fallando, sin saber en qué exactamente, sintiéndonos frustrados nuevamente sin avanzar como quisiéramos. 
+                <br><br>
+                Es aquí donde el psicólogo hace su trabajo: hacernos consciente de lo inconsciente. En otras palabras hacer que nos demos cuenta y trabajar con nosotros sobre ello para poder alcanzar lo que tanto anhelamos.
+                <br><br>
+                Son tres pasos fundamentales para que podamos dar el salto que tanto necesitamos y que nos podría cambiar la vida positivamente.
+                <br><br>
+                 El primer paso es la comprensión: Entiendo y acepto que tengo un problema, el segundo paso es la acción: Me hago cargo y lo trabajo y el tercero paso es la sanación: Comienzo a curarme obteniendo resultados sostenidos en el tiempo, sintiéndome realizado(a).
+                 <br><br>
+                Aquí es cuando trascendemos, vamos creciendo y lo que no se daba se empieza a dar.
+                <br><br>
+                Es un proceso de entrenamiento que nos abre la puerta para buenos y nuevos caminos.
+                 
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              TRASTORNO NARCISISTA DE LA PERSONALIDAD 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Tengamos cuidado con ir devaluando a las personas para sentirnos superiores. Ya que eso demuestra que algo dentro de nosotros no anda bien y que en realidad queremos llenar nuestros vacíos de inferioridad, construyendo una personalidad endiosada y perturbada donde podríamos estar cayendo en un desorden de la personalidad llamada el trastorno narcisista.
+                <br><br>
+El trastorno narcisista consiste en sentirse superior en comparación al resto por un sentimiento de inferioridad encubierto, careciendo de empatía, buscando reconocimiento y ser halago de manera permanente. 
+<br><br>
+CARACTERÍSTICAS:
+<br><br>
+1) Carecen de empatía, buscando ser halagados de manera permanente. 
+2)Viven pendientes del resto, aunque digan o quieran demostrar lo contrario. 
+3) No pueden mirarse hacia adentro porque están desconectados emocionalmente de sí mismos, todo gira hacia afuera, en función de los "aplausos" de los demás.
+4) Exageran permanentemente el más mínimo logro: Dinero, fama, poder, belleza, inteligencia, posiciones, estatus, etcétera. 
+5) Se sienten especiales creyendo que lo merecen todo y que los demás no están a su altura.
+6) No soportan críticas y cuando no son halagados sienten un vacío existencial produciéndoles mucha incomodidad.
+7) Cuando ven a otra persona con ciertos logros se puede sentir amenazados y casi en automático comienzan a buscar cualquier tipo de "defecto" en el otro para volver a sentirse superiores.
+8) Se ponen en un pedestal y no se bajan porque sienten que para sobrevivir tienen que estar por encima de los demás. 
+9) Tienden a envidiar y creen que son envidiados. 
+10) Casi todo el tiempo son arrogantes y soberbios, despreciando a los demás, aunque pueden ser agradables sí consideran importante a la persona que tienen al frente. 
+11) Para que ellos estén "arriba" necesitan que los demás estén abajo, nunca iguales.
+<br><br>
+TRATAMIENTO Y SOLUCIÓN:
+<br><br>
+El tratamiento más efectivo es el cognitivo conductual, reaprendiendo conductas, pensamientos y emociones. Entrando en diálogos de introspección, aprendiendo a valorarse y a valorar a las demás, entendiendo sus emociones, fortalezas y debilidades, desarrollando la empatía, habilidades interpersonales, trabajando el autoestima, resolviendo conflictos del pasado, con un crecimiento personal sostenido en distintas  áreas.
+<br><br>
+Este desorden de la personalidad es reversible y tiene cura si se trata adecuadamente con un profesional de la salud mental. 
+<br><br>
+Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes trastornos de la personalidad; sin que ello signifique que tengamos el trastorno de la personalidad como tal. Debemos tener cuidado con autodiagnosticarnos o diagnosticar a los demás. Eso sólo lo puede hacer el profesional de la salud mental, así como el debido tratamiento.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="subtitle-modal">
+              TRASTORNO HISTRIÓNICO DE LA PERSONALIDAD 
+            </div>
+            <br>
+            <div class="only__text">
+              <p>
+                Cuando buscamos llamar la atención a toda costa, cuando necesitamos estar al centro para sentirnos "seguros", cuando buscamos excesivo y permanente reconocimiento de los demás, cuando expresamos una emotividad intensa con comportamientos casi actorales de dramatismo, comicidad, seducción, cuando el egocentrismo nos gana y no podemos dejar de hablar de nosotros como que sí fuéramos el centro de la tierra... posiblemente estamos hablando del trastorno histriónico de la personalidad.
+<br><br>
+CARACTERÍSTICAS:
+1) Necesidad de ser el centro de atención. 
+2) Demanda excesiva de reconocimiento.
+3) Incomodidad cuando no son el centro de atención. 
+4) Comunicación emocional superficial y cambiante.
+5) Dramatización, teatralidad e intensidad emocional en la forma de expresarse y comportarse. 
+6) Egocentrismo permanente sin poder dejar de llamar la atención y hablar de sí mismos. 
+7) Forma de hablar subjetiva y carente de matices. Casi siempre en los polos extremos. 
+8) Considera sus relaciones interpersonales más íntimas de lo que son realmente. 
+9) Influenciable y sugestionable por las circunstancias y las demás personas.
+<br><br>
+Este desorden de la personalidad es reversible y tiene cura, sí se trata adecuadamente por un profesional de la salud mental. 
+<br><br>
+Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes desórdenes de la personalidad; sin que ello signifique que necesariamente tengamos el trastorno de la personalidad como tal. Debemos tener cuidado con autodiagnosticarnos o diagnosticar a los demás. Eso sólo lo puede hacer el profesional de la salud mental, así como el debido tratamiento.
+
+              </p>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+
+  </section>
+  <!--End Blog-->
+
+  <!--Contact us-->
+  <section id="contact" class="hidden">
+    <div class="container-fluid contact__background">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contact_info--whatsapp text-center only-desktop">
+            <div class="icon">
+              <a class="cursor" href="https://api.whatsapp.com/send?phone=51971313111&text='Mensaje desde el usuario'" target="_blank">
+                <img class="img-fluid" src="./images/svg/whatsapp.svg">
+              </a>
+            </div>
+            <div class="contact_info--whatsapp-number cursor">
+              Click aquí citas
+              <br />
+              947240692           
+            </div> 
+          </div>
+          <div class="contact_info--details-box">
+            <div class="contact_info--details">
+              <div class="contact_info--subtitle-text">
+                Contacto
+              </div>       
+              <div class="contact_info--details-info">
+                <div class="contact_info--details-img">
+                  <img class="img-fluid" src="./images/svg/celular-icono.svg">
+                </div>
+                <p class="contact-text--big">
+                  947240692<br>
+                  936528321
+                </p>
+              </div>   
+              <div class="contact_info--details-info">
+                <div class="contact_info--details-img">
+                  <img class="img-fluid" src="./images/svg/iconomail.svg">
+                </div>
+                <p class="contact-text--small">
+                  Joseandresbeneyto@psicologia.com                
+                </p>
+              </div>   
+              <div class="contact_info--details-info">
+                <div class="contact_info--details-img">
+                  <img class="img-fluid" src="./images/svg/location-icono.svg">
+                </div>
+                <p class="contact-text--small">
+                  Av. Lima Polo 361/consultorio 304, <br>
+                  Monterrico, Santiago de Surco
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="puntoPartida" class="glyphicon glyphicon-record"></label>
+              <div class="label-input">Desde: </div><input id="puntoPartida" type="text" class="form-control" placeholder="poner aquí su ubicación">
+            </div>
+            <div class="form-group">
+              <label for="puntoDestino" class="glyphicon glyphicon-send"></label>
+              <div class="label-input">
+                <img src="./images/marker.png">
+              </div>
+              <input readonly="true" id="puntoDestino" type="text" class="form-control" value="Av. Lima Polo 361 Monterrico, Santiago de Surco">
+            </div>
+            <div class="form-group contact-button">
+              <button id= "trazarRuta" type="submit" class="btn contact__button col-md-offset-3">Cómo llegar</button>
+              <div id="calcTarifa" class="col-md-offset-3"></div>
+            </div>
+          </form>
+          <div class="contact__map">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="only-desktop">Diseñado por Patricia Solimano Salom | Desarrollado por Redsco perú</div>
+      <div class="only-mobile">
+        Diseñado por Patricia Solimano Salom </br> Desarrollado por Redsco Perú
+      </div>
+      <div class="footer-small">2020 Lima - Perú</div>
+    </div>
+
+  </section>
+  <!--End Contact us-->
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYezvZfBcThUhrpyzfW_xRVj-aljaRvNw&callback=initMap&libraries=places"
+  type="text/javascript"></script>
+  <script src="./scripts/maps.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/page.js"></script>
 </body>
 </html>
-
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="./images/acerca-de-mi-1.png" class="d-block w-100" alt="..">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">“Psicología pasión y vida”</p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="./images/que hago.png" class="d-block w-100" alt="..">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">Vamos a hacerlo mejor... esta vez con amor y decisión</p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="./images/terapia2.png" class="d-block w-100" alt="..">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">Terapia para adultos</p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="./images/adolescente2.png" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">Terapia para adolescentes </p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="./images/3parajea.png" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">Terapia para parejas </p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="./images/online2.png" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="carousel__menu--quotes">Terapia online </p>
-    </div>
-  </div>
-</div>
