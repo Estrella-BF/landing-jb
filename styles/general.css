@@ -321,6 +321,10 @@ ul {
     margin-bottom: 1rem;
   }
 
+  .carousel-mobile-menu {
+    margin: 1.5rem;
+  }
+
   .navbar-dark .navbar-toggler {
     border-color: transparent;
   }

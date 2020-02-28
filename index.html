@@ -25,39 +25,43 @@
         <div class="label-name mobile-label">Contenido</div>
         <ul class="navbar-nav">
           <li class="nav-item" id="aboutMeBtnMobile">
-            <a class="nav-link">Acerca de mi</a>
+            <a class="nav-link" href="#aboutMe">Acerca de mi</a>
           </li>
           <li class="nav-item" id="whatIDoBtnMobile">
-            <a class="nav-link">Lo que hago</a>
+            <a class="nav-link" href="#whatIDo">Lo que hago</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a 
+            class="nav-link dropdown-toggle" 
+            id="navbarDropdownMenuLink" role="button" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            >
               Servicios
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" id="therapyMobile">Terapias</a>
-              <a class="dropdown-item" id="workshopsMobile">Charlas y Talleres</a>
+              <a class="dropdown-item" id="therapyMobile" href="#therapy">Terapias</a>
+              <a class="dropdown-item" id="workshopsMobile" href="#workshop">Charlas y Talleres</a>
             </div>
           </li>
           <li class="nav-item" id="testimonialsMobile">
-            <a class="nav-link">Testimoniales</a>
+            <a class="nav-link" href="#testimonials">Testimoniales</a>
           </li>
           <li class="nav-item" id="blogMobile">
-            <a class="nav-link">Blog/Publicaciones</a>
+            <a class="nav-link" href="#blog">Blog/Publicaciones</a>
           </li>
           <li class="nav-item" id="contactMobile">
-            <a class="nav-link">Contacto</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-mobile-menu" data-ride="carousel" data-interval="false">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item">
+            <div class="carousel-item active">
               <img src="./images/terapia2.png" class="d-block w-100" alt="..">
               <div class="carousel-caption">
                 <p class="carousel__menu--quotes">Terapia para adultos</p>
@@ -132,8 +136,8 @@
       <nav class="menu only-desktop">
         <ul class="">
           <li  class="menu-item-btn" id="aboutMeBtnDesktop">
-            <a>Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
-            <a>Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
+            <a href="#aboutMe">Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
+            <a href="#whatIDo">Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
             <a class="nav-link dropdown-link" 
             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Servicios
@@ -141,17 +145,17 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <div id="therapyDesktop"> 
                 <div class="border-bottom-grey">
-                  <a class="dropdown-item">Terapias</a>
+                  <a class="dropdown-item" href="#therapy">Terapias</a>
                 </div>
               </div>
               <div id="workshopsDesktop">
-                <a class="dropdown-item">Charlas y Talleres</a>
+                <a class="dropdown-item" href="#workshop">Charlas y Talleres</a>
               </div>
             </div>
           </li><li  class="menu-item-btn" id="testimonialsDesktop">
-            <a>Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
-            <a>Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
-            <a>Contacto</a></li>
+            <a href="#testimonials">Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
+            <a href="#blog">Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
+            <a href="#contact">Contacto</a></li>
         </ul>
         <div 
         class="static__box text-center only-desktop"
