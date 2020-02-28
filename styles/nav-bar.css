@@ -103,7 +103,12 @@
     padding-bottom: 13rem;
   }
 
-  .nav-bar__content li {
+  .nav-bar__content .nav-item:first-of-type {
+    border-top: 1px solid #979797 !important;
+  }
+
+  .nav-bar__content .nav-item {
+    border-bottom: 1px solid #979797 !important;
     padding: 0 2rem;
   }
 }
