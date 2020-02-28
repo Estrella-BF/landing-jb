@@ -318,6 +318,13 @@ ul {
     display: none !important;
   }
 
+  .testimonials__sub-label {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+    padding: 1.7rem 1.7rem 4rem;
+  }
+
   .subtitle-modal {
     font-size: 2rem;  
   }
@@ -427,6 +434,16 @@ ul {
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
+  .testimonials-label {
+    margin-bottom: 0 !important;
+  }
+
+  .testimonials__sub-label {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 600;
+    padding: 3rem 7rem;
+  }
 
   .blog__list {
     height: 28%;
