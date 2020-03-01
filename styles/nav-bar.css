@@ -72,11 +72,11 @@
   border-bottom: 5px solid #0072BC;
 }
 
-.menu .active a {
+.menu .active .menu-nav {
   color: #0072BC !important;
 }
 
-.menu li a:hover {
+.menu li .menu-nav:hover {
   color: #0072BC;
   text-decoration: none;
 }

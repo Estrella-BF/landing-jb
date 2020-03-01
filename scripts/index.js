@@ -6,48 +6,71 @@ $('.carousel').each(function(){
 
 const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
 const whatIDoBtnDesktop = document.getElementById('whatIDoBtnDesktop');
+const serviciosDesktop = document.getElementById('serviciosDesktop');
 const therapyDesktop = document.getElementById('therapyDesktop');
 const workshopsDesktop = document.getElementById('workshopsDesktop');
 const testimonialsDesktop = document.getElementById('testimonialsDesktop');
 const blogDesktop = document.getElementById('blogDesktop');
 const contactDesktop = document.getElementById('contactDesktop');
 
+const navigationsDesktop = [
+  aboutMeBtnDesktop, whatIDoBtnDesktop, therapyDesktop, workshopsDesktop, testimonialsDesktop, blogDesktop, contactDesktop, serviciosDesktop
+];
+
 // Sections
 const workshop = document.getElementById('workshop');
 
 aboutMeBtnDesktop.addEventListener('click', () => { 
+  setFocusNavigation(aboutMeBtnDesktop);
   redirect(122);
 });
 
 whatIDoBtnDesktop.addEventListener('click', () => { 
+  setFocusNavigation(whatIDoBtnDesktop);
   redirect(1060);
 });
 
 therapyDesktop.addEventListener('click', () => { 
+  setFocusNavigation(serviciosDesktop);
+  serviciosDesktop.setAttribute('class', 'active pb-0');
+  document.getElementById('navigationDesktop-submenu').setAttribute('class', 'dropdown-menu');
   redirect(2050);
 });
 
 testimonialsDesktop.addEventListener('click', () => { 
+  setFocusNavigation(testimonialsDesktop);
   redirect(3494);
 });
 
 blogDesktop.addEventListener('click', () => { 
+  setFocusNavigation(blogDesktop);
   redirect(4454);
 });
 
 contactDesktop.addEventListener('click', () => { 
+  setFocusNavigation(contactDesktop);
   redirect(5270);
 });
 
-function redirect(scrolly) {/*
-  console.log(window.location.href)
-  window.location.href = url;
-  console.log(window.location.href)
-  console.log(window.screenY)
-  const screenY = window.screenY;*/
-  //window.scrollTo(0, screenY-10);
-  //console.log(window.screenY)
-    console.log(scrolly)
-    //const scrollY = window.scrollY;
-    window.scrollTo(0, scrolly);
+function setFocusNavigation(element) {
+  navigationsDesktop.forEach(item => {
+    if (item === element) {
+      item.setAttribute('class', 'active');
+    } else { console.log(item)
+      if (item === serviciosDesktop) {
+        console.log(item)
+        item.setAttribute('class', 'nav-link dropdown-link menu-nav pb-0');
+        document.getElementById('navigationDesktop-submenu').setAttribute('class', 'dropdown-menu');
+        console.log(document.getElementById('navigationDesktop-submenu'))
+      } else {
+        item.removeAttribute('class')
+      }
+
+    }
+  })
+
+}
+
+function redirect(scrolly) {
+  window.scrollTo(0, scrolly);
 }

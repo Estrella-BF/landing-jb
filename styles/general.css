@@ -16,18 +16,6 @@ width: 100%;  /* The width is the width of the web page */
   color: white;
 }
 
-.menu-item-btn:focus {
-  outline: 5px solid blueviolet;
-}
-
-.menu-item-btn:focus-within {
-  border-bottom: 5px solid #0072BC;
-}
-
-.menu-item-btn a:focus-within {
-  color: #0072BC !important;
-}
-
 .sub-menu-active a {
   color: #0072BC !important;
 }
