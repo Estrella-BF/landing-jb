@@ -2,78 +2,50 @@ $('.carousel').carousel({
   interval: 2000
 })
 
-window.location.href = './joseBeneyto.html'
+const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
+const whatIDoBtnDesktop = document.getElementById('whatIDoBtnDesktop');
+const therapyDesktop = document.getElementById('therapyDesktop');
+const workshopsDesktop = document.getElementById('workshopsDesktop');
+const testimonialsDesktop = document.getElementById('testimonialsDesktop');
+const blogDesktop = document.getElementById('blogDesktop');
+const contactDesktop = document.getElementById('contactDesktop');
 
-function letters() {
-	setTimeout(() => {
-		const element = document.getElementById('letters');
-		element.setAttribute('class', 'animated fadeIn show  slower');
-		faces();
-	}, 1500)
+// Sections
+const workshop = document.getElementById('workshop');
+
+aboutMeBtnDesktop.addEventListener('click', () => { 
+  redirect(122);
+});
+
+whatIDoBtnDesktop.addEventListener('click', () => { 
+  redirect(1060);
+});
+
+therapyDesktop.addEventListener('click', () => { 
+  redirect(2050);
+});
+
+testimonialsDesktop.addEventListener('click', () => { 
+  redirect(3494);
+});
+
+blogDesktop.addEventListener('click', () => { 
+  redirect(4454);
+});
+
+contactDesktop.addEventListener('click', () => { 
+  redirect(5270);
+});
+
+function redirect(scrolly) {/*
+  console.log(window.location.href)
+  window.location.href = url;
+  console.log(window.location.href)
+  console.log(window.screenY)
+  const screenY = window.screenY;*/
+  //window.scrollTo(0, screenY-10);
+  //console.log(window.screenY)
+    console.log(scrolly)
+    //const scrollY = window.scrollY;
+    window.scrollTo(0, scrolly);
 }
-
-// letters();
-
-function faces() {
-	setTimeout(() => { console.log('faces')
-		const element = document.getElementById('faces');
-		element.setAttribute('class', 'animation-left-style animated fadeOut show slow');
-		lettersUp();
-	}, 1000)
-}
-
-function letters() {
-	setTimeout(() => {
-		const element = document.getElementById('letters');
-		element.setAttribute('class', 'animated fadeIn');
-		faces();
-	}, 1500)
-}
-
-function lettersUp() {
-	setTimeout(() => {
-		const element = document.getElementById('letters');
-		element.setAttribute('class', 'mover');
-		profession();
-	}, 1500)
-}
-
-function profession() {
-	setTimeout(() => {
-		const element = document.getElementById('profession');
-		element.setAttribute('class', 'show-up animated fadeInLeft slow profession');
-		faces();
-	}, 2000)
-
-}
-
-
-/* 
-function appear() {
-	setTimeout(() => {
-		const element = document.getElementById('appear');
-		element.setAttribute('class', 'animated fadeIn show slower');
-		disappear();
-	}, 1500)
-}
-
-function disappear() {
-	setTimeout(() => {
-		const slideInLeft = document.getElementById('slideInLeft');
-		const appear = document.getElementById('appear');
-		const slideInRight = document.getElementById('slideInRight');
-		slideInLeft.setAttribute('class', 'animated fadeOut')
-		appear.setAttribute('class', 'animated fadeOut')
-		slideInRight.setAttribute('class', 'animated fadeOut');
-		redirect()	
-	}, 3000)
-}
-
-function redirect() {
-	setTimeout(() => {
-		window.location.href = './joseBeneyto.html'
-	}, 1000)
-}
-
-this.slideInRight();
-*/

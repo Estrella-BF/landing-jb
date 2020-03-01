@@ -133,29 +133,29 @@
           <img alt="logo" class="img-fluid" src="./images/logo elegido.png" />
         </div>   
       </div>
-      <nav class="menu only-desktop">
+      <nav class="menu only-desktop" id="navigationDesktop">
         <ul class="">
           <li  class="menu-item-btn" id="aboutMeBtnDesktop">
-            <a href="#aboutMe">Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
-            <a href="#whatIDo">Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
+            <a>Acerca de mi</a></li><li class="menu-item-btn" id="whatIDoBtnDesktop">
+            <a>Lo que hago</a></li><li id="serviciosDesktop" class="pb-0 menu-item-btn">
             <a class="nav-link dropdown-link" 
             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Servicios
-          </a>
+            </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <div id="therapyDesktop"> 
                 <div class="border-bottom-grey">
-                  <a class="dropdown-item" href="#therapy">Terapias</a>
+                  <a class="dropdown-item">Terapias</a>
                 </div>
               </div>
               <div id="workshopsDesktop">
-                <a class="dropdown-item" href="#workshop">Charlas y Talleres</a>
+                <a data-toggle="modal" data-target="#modal-workshop" class="dropdown-item">Charlas y Talleres</a>
               </div>
             </div>
           </li><li  class="menu-item-btn" id="testimonialsDesktop">
-            <a href="#testimonials">Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
-            <a href="#blog">Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
-            <a href="#contact">Contacto</a></li>
+            <a>Testimoniales</a></li><li  class="menu-item-btn" id="blogDesktop">
+            <a>Blog</a></li><li  class="menu-item-btn" id="contactDesktop">
+            <a>Contacto</atabindex="1"></li>
         </ul>
         <div 
         class="static__box text-center only-desktop"
@@ -425,17 +425,26 @@
   <!--End Therapy-->
 
   <!--Workshop-->
-  <section id="workshop" class="hidden">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 no-info">
-          Si deseas información sobre las Charlas y Talleres </br>
-          comunícate al <br>+51 947240692
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-workshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="no-info">
+              Si deseas información sobre las Charlas y Talleres </br>
+              comunícate al +51 947240692
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
   <!--End Workshop-->
 
 
@@ -2289,6 +2298,6 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="./scripts/page.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
