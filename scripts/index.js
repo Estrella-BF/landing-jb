@@ -1,6 +1,8 @@
-$('.carousel').carousel({
-  interval: 2000
-})
+$('.carousel').each(function(){
+  $(this).carousel({
+      interval: false
+  });
+});
 
 const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
 const whatIDoBtnDesktop = document.getElementById('whatIDoBtnDesktop');
