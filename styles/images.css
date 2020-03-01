@@ -50,6 +50,7 @@
 .carousel-control-next, .carousel-control-prev {
   opacity: 1 !important;
   width: 2% !important;
+  z-index: initial;
 }
 
 .carousel__menu--icon {

@@ -12,9 +12,14 @@ height: 400px;  /* The height is 400 pixels */
 width: 100%;  /* The width is the width of the web page */
 }
 
+.footer a {
+  color: white;
+}
+
 .menu-item-btn:focus-within {
   border-bottom: 5px solid #0072BC;
 }
+
 .menu-item-btn a:focus-within {
   color: #0072BC !important;
 }
@@ -453,6 +458,18 @@ ul {
     margin-bottom: 0 !important;
   }
 
+  section {
+    margin-top: 7rem;
+  }
+
+  #carouselTestimonials {
+    overflow: -webkit-paged-y;
+  }
+
+  #carouselTestimonials .carousel-inner {
+    overflow: initial;
+  }
+
   .testimonials__sub-label {
     font-size: 1.6rem;
     font-style: italic;
@@ -461,7 +478,7 @@ ul {
   }
 
   .blog__list {
-    height: 28%;
+    height: 500px;
     margin: 1rem 0 3rem 0;
     overflow: -webkit-paged-y;
     overflow-y: scroll;
