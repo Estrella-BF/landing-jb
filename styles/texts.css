@@ -61,10 +61,10 @@
 @media (max-width: 575.98px) {
 
   .terapy-text {
-    padding: 0;
+    padding: 0; 
     text-align: justify;
-    font-size: 1.2rem;
     margin: 0.5rem 0 5rem;
+    font-size: 1rem;
   }
 
   .title {
