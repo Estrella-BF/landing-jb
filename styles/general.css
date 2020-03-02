@@ -312,6 +312,11 @@ ul {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
 
+  .navbar-dark .navbar-toggler {
+    border-color: transparent;
+    width: 18%;
+  }
+
   .img-padding {
     padding-left: 1rem;
     padding-right: 1rem;
