@@ -38,10 +38,15 @@ const navigationsMobile = [
 const workshop = document.getElementById('workshop');
 
 const state = {
-  navigationDesktop: [],
   navigationMobile: []
 };
 
+regresar.addEventListener('click', () => {
+  const lastNavigationIndex = state.navigationMobile.length -1;
+  const lastNavigation = state.navigationMobile[lastNavigationIndex -1];
+  redirectMobile(lastNavigation.getAttribute('id'));
+
+})
 
 // Navigations desktop
 
@@ -82,37 +87,37 @@ contactDesktop.addEventListener('click', () => {
 aboutMeBtnMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(aboutMeBtnMobile);
-  redirect(0);
+  redirectMobile(aboutMeBtnMobile.getAttribute('id'));
 });
 
 whatIDoBtnMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(whatIDoBtnMobile);
-  redirect(1325);
+  redirectMobile(whatIDoBtnMobile.getAttribute('id'));
 });
 
 therapyMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(therapyMobile);
-  redirect(2656);
+  redirectMobile(therapyMobile.getAttribute('id'));
 });
 
 testimonialsMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(testimonialsMobile);
-  redirect(6847);
+  redirectMobile(testimonialsMobile.getAttribute('id'));
 });
 
 blogMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(blogMobile);
-  redirect(12264);
+  redirectMobile(blogMobile.getAttribute('id'));
 });
 
 contactMobile.addEventListener('click', () => { 
   navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
   setFocusNavigationMobile(contactMobile);
-  redirect(14302);
+  redirectMobile(contactMobile.getAttribute('id'));
 });
 
 
@@ -132,6 +137,7 @@ function setFocusNavigation(element) {
 }
 
 function setFocusNavigationMobile(element) {    
+  state.navigationMobile.push(element);
   navigationsMobile.forEach(item => {
     if (item === element) {
       if (item.getAttribute('id') === therapyMobile.getAttribute('id')) {
@@ -143,7 +149,7 @@ function setFocusNavigationMobile(element) {
       }
     } else { 
       if (item.getAttribute('id') === therapyMobile.getAttribute('id')) {
-        item.setAttribute('class', 'dropdown-item sub-menu-item active');
+        item.setAttribute('class', 'dropdown-item sub-menu-item');
       } else if (item.getAttribute('id') === workshopsMobile.getAttribute('id')) {
         item.setAttribute('class', 'dropdown-item sub-menu-item');
       } else {
@@ -155,4 +161,35 @@ function setFocusNavigationMobile(element) {
 
 function redirect(scrolly) {
   window.scrollTo(0, scrolly);
+}
+
+function redirectMobile(navItem) {
+  switch (navItem) {
+    case 'aboutMeBtnMobile':
+      window.scrollTo(0, 0);
+      break;
+
+    case 'whatIDoBtnMobile':
+      window.scrollTo(0, 1325);
+      break;
+
+    case 'therapyMobile':
+      window.scrollTo(0, 2656);
+      break;
+
+    case 'testimonialsMobile':
+      window.scrollTo(0, 6847);
+      break;
+
+    case 'blogMobile':
+      window.scrollTo(0, 12264);
+      break;
+
+    case 'contactMobile':
+      window.scrollTo(0, 14302);
+      break;
+
+    default:
+      break;
+  }
 }
