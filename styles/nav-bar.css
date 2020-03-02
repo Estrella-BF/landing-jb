@@ -54,6 +54,16 @@
   vertical-align: top;
 }
 
+.first-row-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-row-menu-mobile--text {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .menu li {
   cursor: pointer;
   border-bottom: 1px solid #353A3D;

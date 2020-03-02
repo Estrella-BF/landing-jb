@@ -4,6 +4,8 @@ $('.carousel').each(function(){
   });
 });
 
+const regresar = document.getElementById('regresar');
+
 const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
 const whatIDoBtnDesktop = document.getElementById('whatIDoBtnDesktop');
 const serviciosDesktop = document.getElementById('serviciosDesktop');
@@ -34,6 +36,12 @@ const navigationsMobile = [
 
 // Sections
 const workshop = document.getElementById('workshop');
+
+const state = {
+  navigationDesktop: [],
+  navigationMobile: []
+};
+
 
 // Navigations desktop
 

@@ -115,7 +115,7 @@ ul {
 }
 
 .static__box--logo-small {
-  width: 4em;
+  width: 3.5rem;
   display: inline-block;
 }
 
@@ -132,11 +132,6 @@ ul {
 .static__box--logo-big {
   display: inline-block;
 }
-
-.static__box--text {
-  font-weight: bold;
-}
-
 
 
 .blog-container {
@@ -316,6 +311,13 @@ ul {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+
+  .static__box--text .letter {
+    font-size: 0.8rem !important;
+  }
+  .static__box--text .letter {
+    font-size: 0.9rem !important;
+  }
 
   .mobile-label {
     padding-left: 2rem !important;
