@@ -29,7 +29,7 @@ const navigationsDesktop = [
 ];
 
 const navigationsMobile = [
-  aboutMeBtnMobile, whatIDoBtnMobile, therapyMobile, workshopsMobile, testimonialsMobile, blogMobile, contactMobile, serviciosMobile
+  aboutMeBtnMobile, whatIDoBtnMobile, therapyMobile, workshopsMobile, testimonialsMobile, blogMobile, contactMobile
 ];
 
 // Sections
@@ -126,17 +126,18 @@ function setFocusNavigation(element) {
 function setFocusNavigationMobile(element) {    
   navigationsMobile.forEach(item => {
     if (item === element) {
-      if (item === therapyMobile) {
-        serviciosMobile.firstElementChild.setAttribute('class', 'nav-link dropdown-toggle active');
+      if (item.getAttribute('id') === therapyMobile.getAttribute('id')) {
+        therapyMobile.setAttribute('class', 'dropdown-item sub-menu-item active');
+        document.getElementById('navbarDropdownMenuLinkMobile').setAttribute('class', 'nav-link active');
       } else {
+      document.getElementById('navbarDropdownMenuLinkMobile').setAttribute('class', 'nav-link');
         item.firstElementChild.setAttribute('class', 'nav-link active');
       }
-    } else {
-      if (item === therapyMobile) {
-        item.setAttribute('class', 'nav-link dropdown-toggle active');
-        document.getElementById('navigationDesktop-submenu').setAttribute('class', 'dropdown-item');
-      } else if (item === workshopsMobile) {
-        item.setAttribute('class', 'dropdown-item');
+    } else { 
+      if (item.getAttribute('id') === therapyMobile.getAttribute('id')) {
+        item.setAttribute('class', 'dropdown-item sub-menu-item active');
+      } else if (item.getAttribute('id') === workshopsMobile.getAttribute('id')) {
+        item.setAttribute('class', 'dropdown-item sub-menu-item');
       } else {
         item.firstElementChild.setAttribute('class', 'nav-link');
       }

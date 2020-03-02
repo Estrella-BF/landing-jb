@@ -30,7 +30,7 @@ width: 100%;  /* The width is the width of the web page */
   text-align: center;
 }
 
-.dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
   background-color: transparent;
 }
 
