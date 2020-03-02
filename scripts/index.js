@@ -13,12 +13,29 @@ const testimonialsDesktop = document.getElementById('testimonialsDesktop');
 const blogDesktop = document.getElementById('blogDesktop');
 const contactDesktop = document.getElementById('contactDesktop');
 
+const aboutMeBtnMobile = document.getElementById('aboutMeBtnMobile');
+const whatIDoBtnMobile = document.getElementById('whatIDoBtnMobile');
+const serviciosMobile = document.getElementById('serviciosMobile');
+const therapyMobile = document.getElementById('therapyMobile');
+const workshopsMobile = document.getElementById('workshopsMobile');
+const testimonialsMobile = document.getElementById('testimonialsMobile');
+const blogMobile = document.getElementById('blogMobile');
+const contactMobile = document.getElementById('contactMobile');
+
+const navbarMobile = document.getElementById('navbarNav');
+
 const navigationsDesktop = [
   aboutMeBtnDesktop, whatIDoBtnDesktop, therapyDesktop, workshopsDesktop, testimonialsDesktop, blogDesktop, contactDesktop, serviciosDesktop
 ];
 
+const navigationsMobile = [
+  aboutMeBtnMobile, whatIDoBtnMobile, therapyMobile, workshopsMobile, testimonialsMobile, blogMobile, contactMobile, serviciosMobile
+];
+
 // Sections
 const workshop = document.getElementById('workshop');
+
+// Navigations desktop
 
 aboutMeBtnDesktop.addEventListener('click', () => { 
   setFocusNavigation(aboutMeBtnDesktop);
@@ -44,7 +61,7 @@ testimonialsDesktop.addEventListener('click', () => {
 
 blogDesktop.addEventListener('click', () => { 
   setFocusNavigation(blogDesktop);
-  redirect(4454);
+  redirect(4458);
 });
 
 contactDesktop.addEventListener('click', () => { 
@@ -52,23 +69,79 @@ contactDesktop.addEventListener('click', () => {
   redirect(5270);
 });
 
+// Navigation mobile
+
+aboutMeBtnMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(aboutMeBtnMobile);
+  redirect(0);
+});
+
+whatIDoBtnMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(whatIDoBtnMobile);
+  redirect(1325);
+});
+
+therapyMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(therapyMobile);
+  redirect(2656);
+});
+
+testimonialsMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(testimonialsMobile);
+  redirect(6847);
+});
+
+blogMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(blogMobile);
+  redirect(12264);
+});
+
+contactMobile.addEventListener('click', () => { 
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  setFocusNavigationMobile(contactMobile);
+  redirect(14302);
+});
+
+
 function setFocusNavigation(element) {
   navigationsDesktop.forEach(item => {
     if (item === element) {
       item.setAttribute('class', 'active');
     } else { console.log(item)
       if (item === serviciosDesktop) {
-        console.log(item)
         item.setAttribute('class', 'nav-link dropdown-link menu-nav pb-0');
         document.getElementById('navigationDesktop-submenu').setAttribute('class', 'dropdown-menu');
-        console.log(document.getElementById('navigationDesktop-submenu'))
       } else {
         item.removeAttribute('class')
       }
-
     }
   })
+}
 
+function setFocusNavigationMobile(element) {    
+  navigationsMobile.forEach(item => {
+    if (item === element) {
+      if (item === therapyMobile) {
+        serviciosMobile.firstElementChild.setAttribute('class', 'nav-link dropdown-toggle active');
+      } else {
+        item.firstElementChild.setAttribute('class', 'nav-link active');
+      }
+    } else {
+      if (item === therapyMobile) {
+        item.setAttribute('class', 'nav-link dropdown-toggle active');
+        document.getElementById('navigationDesktop-submenu').setAttribute('class', 'dropdown-item');
+      } else if (item === workshopsMobile) {
+        item.setAttribute('class', 'dropdown-item');
+      } else {
+        item.firstElementChild.setAttribute('class', 'nav-link');
+      }
+    }
+  })
 }
 
 function redirect(scrolly) {
