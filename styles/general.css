@@ -328,10 +328,6 @@ ul {
     margin: 1.5rem;
   }
 
-  .navbar-dark .navbar-toggler {
-    border-color: transparent;
-  }
-
   .only-desktop {
     display: none !important;
   }
@@ -361,7 +357,8 @@ ul {
   }
 
   .face-img{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    text-align: left;
   }
 
   .footer {
@@ -374,7 +371,7 @@ ul {
   }
 
   .static__box--logo-big {
-    width: 100%;
+    width: 80%;
   }
 
   .static {
