@@ -133,13 +133,13 @@ ul {
   display: inline-block;
 }
 
-.blog .subtitle-text {
-  margin-bottom: 1rem;
-}
-
 .blog-container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.blog-container .subtitle-text {
+  margin-bottom: 1rem;
 }
 
 .blog__list li {
