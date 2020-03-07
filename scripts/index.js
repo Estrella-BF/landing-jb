@@ -24,6 +24,8 @@ const contactMobile = document.getElementById('contactMobile');
 
 const navbarMobile = document.getElementById('navbarNav');
 
+const arrowUp = document.getElementById('arrowUp');
+
 const navigationsDesktop = [
   aboutMeBtnDesktop, whatIDoBtnDesktop, therapyDesktop, workshopsDesktop, testimonialsDesktop, blogDesktop, contactDesktop, serviciosDesktop
 ];
@@ -184,3 +186,9 @@ function redirectMobile(navItem) {
       break;
   }
 }
+
+arrowUp.addEventListener('click', () => {
+  console.log(window.scrollY)
+  const scrollY = window.scrollY;
+  window.scrollTo(0, scrollY - 1000);
+})

@@ -314,6 +314,12 @@ ul {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+  .img-arrow {
+    width: 10%;
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+  }
 
   .navbar-dark .navbar-toggler {
     border-color: transparent;
@@ -480,7 +486,7 @@ ul {
   }
 
   .testimonials__sub-label {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     font-style: italic;
     font-weight: 600;
     padding: 3rem 7rem;
