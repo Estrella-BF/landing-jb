@@ -54,11 +54,6 @@
   vertical-align: top;
 }
 
-.first-row-menu-mobile {
-  display: flex;
-  justify-content: space-between;
-}
-
 .menu li {
   cursor: pointer;
   border-bottom: 1px solid #353A3D;
