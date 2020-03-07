@@ -472,7 +472,7 @@ ul {
   }
 
   #carouselTestimonials {
-    overflow: -webkit-paged-y;
+    height: 600px;
   }
 
   #carouselTestimonials .carousel-inner {
