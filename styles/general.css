@@ -133,6 +133,9 @@ ul {
   display: inline-block;
 }
 
+.blog .subtitle-text {
+  margin-bottom: 1rem;
+}
 
 .blog-container {
   padding-left: 1rem;
@@ -351,7 +354,7 @@ ul {
   }
 
   .subtitle-modal {
-    font-size: 2rem;  
+    font-size: 1.6rem;  
   }
 
   .modal .only__text p {
