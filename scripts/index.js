@@ -4,8 +4,6 @@ $('.carousel').each(function(){
   });
 });
 
-const regresar = document.getElementById('regresar');
-
 const aboutMeBtnDesktop = document.getElementById('aboutMeBtnDesktop');
 const whatIDoBtnDesktop = document.getElementById('whatIDoBtnDesktop');
 const serviciosDesktop = document.getElementById('serviciosDesktop');
@@ -40,13 +38,6 @@ const workshop = document.getElementById('workshop');
 const state = {
   navigationMobile: []
 };
-
-regresar.addEventListener('click', () => {
-  const lastNavigationIndex = state.navigationMobile.length -1;
-  const lastNavigation = state.navigationMobile[lastNavigationIndex -1];
-  redirectMobile(lastNavigation.getAttribute('id'));
-
-})
 
 // Navigations desktop
 
