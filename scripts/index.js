@@ -187,8 +187,7 @@ function redirectMobile(navItem) {
   }
 }
 
-arrowUp.addEventListener('click', () => {
-  console.log(window.scrollY)
+$('#arrowUp').bind('click mousedown', function(){
   const scrollY = window.scrollY;
   window.scrollTo(0, scrollY - 1000);
-})
+});

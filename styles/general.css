@@ -6,6 +6,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a:hover {
+  color: transparent;
+  text-decoration: none;
+}
+
 /* Set the size of the div element that contains the map */
 #map {
 height: 400px;  /* The height is 400 pixels */
@@ -315,10 +320,23 @@ ul {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .img-arrow {
-    width: 10%;
-    position: fixed;
+    background-color: white;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-color: #dfdfdf;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
     bottom: 4rem;
-    right: 1rem;
+    right: 0rem;
+    position: fixed;
+    padding: 0.6rem 1.2rem;
+    width: 18%;
   }
 
   .navbar-dark .navbar-toggler {
