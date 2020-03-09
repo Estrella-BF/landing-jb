@@ -188,6 +188,5 @@ function redirectMobile(navItem) {
 }
 
 $('#arrowUp').bind('click mousedown', function(){
-  const scrollY = window.scrollY;
-  window.scrollTo(0, scrollY - 1000);
+  window.scrollTo(0, 0);
 });
