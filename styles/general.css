@@ -336,6 +336,7 @@ ul {
     right: 0rem;
     position: fixed;
     padding: 0.6rem 1.2rem;
+    z-index: 1;
     width: 18%;
   }
 

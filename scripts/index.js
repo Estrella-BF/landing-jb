@@ -78,37 +78,37 @@ contactDesktop.addEventListener('click', () => {
 // Navigation mobile
 
 aboutMeBtnMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(aboutMeBtnMobile);
   redirectMobile(aboutMeBtnMobile.getAttribute('id'));
 });
 
 whatIDoBtnMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(whatIDoBtnMobile);
   redirectMobile(whatIDoBtnMobile.getAttribute('id'));
 });
 
 therapyMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(therapyMobile);
   redirectMobile(therapyMobile.getAttribute('id'));
 });
 
 testimonialsMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(testimonialsMobile);
   redirectMobile(testimonialsMobile.getAttribute('id'));
 });
 
 blogMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(blogMobile);
   redirectMobile(blogMobile.getAttribute('id'));
 });
 
 contactMobile.addEventListener('click', () => { 
-  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse')
+  navbarMobile.setAttribute('class', 'nav-bar__content navbar-collapse collapse');
   setFocusNavigationMobile(contactMobile);
   redirectMobile(contactMobile.getAttribute('id'));
 });
@@ -189,4 +189,6 @@ function redirectMobile(navItem) {
 
 $('#arrowUp').bind('click mousedown', function(){
   window.scrollTo(0, 0);
+  setFocusNavigationMobile(aboutMeBtnMobile);
+  $('#navbarNav').addClass('nav-bar__content navbar-collapse collapse show')
 });
