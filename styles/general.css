@@ -329,9 +329,9 @@ ul {
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-left-width: 1px;
-    border-bottom-color: #dfdfdf;
-    border-top-color: #dfdfdf;
-    border-left-color: #dfdfdf;
+    border-bottom-color: #000000;
+    border-top-color: #000000;
+    border-left-color: #000000;
     bottom: 4rem;
     right: 0rem;
     position: fixed;
