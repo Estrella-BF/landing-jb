@@ -497,6 +497,18 @@ ul {
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
+
+  .contact_info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .map { 
+    text-align: center;
+  }
+
   .testimonials-label {
     margin-bottom: 0 !important;
   }
@@ -561,7 +573,6 @@ ul {
   .contact__background {
     background-image: linear-gradient(180deg, #ffffff 43%, #cbd2da 20%);
     padding-bottom: 4rem;
-    height: 720px;
   }
 
   .contact_info--details {
