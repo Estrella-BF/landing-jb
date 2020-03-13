@@ -2244,30 +2244,35 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="puntoPartida" class="glyphicon glyphicon-record"></label>
-              <div class="label-input">Desde: </div><input id="puntoPartida" type="text" class="form-control" placeholder="poner aquí su ubicación">
-            </div>
-            <div class="form-group">
-              <label for="puntoDestino" class="glyphicon glyphicon-send"></label>
-              <div class="label-input">
-                <img src="./images/marker.png">
-              </div>
-              <input readonly="true" id="puntoDestino" type="text" class="form-control" value="Av. Lima Polo 361 Monterrico, Santiago de Surco">
-            </div>
-            <div class="form-group contact-button">
-              <button id= "trazarRuta" type="submit" class="btn contact__button col-md-offset-3">Cómo llegar</button>
-              <div id="calcTarifa" class="col-md-offset-3"></div>
-            </div>
-          </form>
-          <div class="contact__map">
-            <div id="map"></div>
-          </div>
+        <div class="map">
+          <img src="./images/mapa.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 only-mobile">
+          <div class="footer__icons white-footer">
+            <div class="nav-bar__icons--img">
+              <a href="https://www.facebook.com/joseandres.beneytocorrea">
+                <span class="flaticon flaticon-facebook"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a href="https://www.linkedin.com/in/psjosebeneyto/">
+                <span class="flaticon flaticon-linkedin"></span>
+              </a>
+            </div>
+            <div class="nav-bar__icons--img">
+              <a href="https://www.instagram.com/joseandresbeneyto.psicologo/?hl=es-la">
+                <span class="flaticon flaticon-instagram"></span>
+              </a>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+ 
     <!--
     <div class="footer">
       <div class="only-desktop">Diseñado por Patricia Solimano Salom | Desarrollado por 
@@ -2289,9 +2294,10 @@ Nota: Cabe señalar que todos podemos tener uno o más rasgos de los diferentes 
   </div>
   <!--End Floating Arrow-->
 
+  <!--
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEn5eynBDoZoOPK6h5RdWI8en6F8t2vAw&callback=initMap&libraries=places"
   type="text/javascript"></script>
-  <script src="./scripts/maps.js"></script>
+  <script src="./scripts/maps.js"></script>-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -267,7 +267,7 @@ ul {
 
 .contact_info--details-box {
   display: flex;
-  margin-top: 1rem;
+  margin: 3rem 0;
   justify-content: center;
 }
 
@@ -319,6 +319,10 @@ ul {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+  .map { 
+    margin-bottom: 3rem;
+  }
+
   .img-arrow {
     background-color: white;
     border-bottom-left-radius: 13px;
@@ -449,13 +453,18 @@ ul {
     font-size: 2.5rem;
   }
 
+  .white-footer {
+    background-color: white;
+    margin: 0;
+    margin: 2rem !important;
+  }
+
   .contact__background {
     background-color: #cbd2da;
   }
 
   .contact_info--details {
     width: 95%;
-    margin-bottom: 5rem;
   }
 
   .contact_info--subtitle-text {
