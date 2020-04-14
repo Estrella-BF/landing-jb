@@ -120,18 +120,8 @@ ul {
 }
 
 .static__box--logo-small {
-  width: 3.5rem;
+  width: 35%;
   display: inline-block;
-}
-
-.static__box--text {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.static__box--text span {
-  display: block;
-  font-size: 1.7rem;
 }
 
 .static__box--logo-big {
@@ -323,6 +313,16 @@ ul {
     margin-bottom: 3rem;
   }
 
+  .static__box--text {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .static__box--text span {
+    display: block;
+    font-size: 1.7rem;
+  }
+
   .img-arrow {
     background-color: white;
     border-bottom-left-radius: 13px;
@@ -498,6 +498,16 @@ ul {
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
 
+  .static__box--text {
+    font-weight: bold;
+    font-size: 1vw;
+  }
+  
+  .static__box--text span {
+    display: block;
+    font-size: 1.3vw;
+  }
+
   .contact_info{
     height: 100%;
     display: flex;
@@ -557,7 +567,7 @@ ul {
   } 
 
   .static__box--logo-big {
-    width: 100%;
+    width: 90%;
   }
 
   .static {
@@ -567,7 +577,7 @@ ul {
   }
 
   .face-img {
-    width: 42rem;
+    width: 30%;
   }
 
   .contact__background {
